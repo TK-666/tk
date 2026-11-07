@@ -51,7 +51,7 @@ class SmokeTest(unittest.TestCase):
     def test_profile_and_favorite_removal(self):
         self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})
         tag = self.admin.post("/api/admin/tags", json={"name": "水墨", "category": "style"}).json["item"]
-        artwork = self.admin.post("/api/admin/artworks", json={"title": "山川", "status": "published"}).json["item"]
+        artwork = self.admin.post("/api/admin/artworks", json={"title": "山川", "image_url": "https://example.test/art.jpg", "status": "published"}).json["item"]
         self.user.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"})
 
         profile = self.user.patch("/api/auth/me", json={"display_name": "山水", "tag_ids": [tag["id"]]})

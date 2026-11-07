@@ -15,6 +15,7 @@ defineProps({ items: { type: Array, default: () => [] }, empty: { type: String, 
           <h3>{{ item.title }}</h3>
           <p>{{ item.artist || '佚名' }}</p>
           <div class="tags"><el-tag v-for="tag in item.tags.slice(0, 3)" :key="tag.id" size="small" effect="plain">{{ tag.name }}</el-tag></div>
+          <p v-if="item.recommendation_reason" class="recommendation-reason">{{ item.recommendation_reason }}</p>
         </div>
       </router-link>
       <div v-if="$slots.actions" class="art-meta"><slot name="actions" :item="item" /></div>

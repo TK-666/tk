@@ -5,7 +5,7 @@
 - `backend/app/api/auth.py`：普通用户认证、资料、偏好风格。
 - `backend/app/api/artworks.py`：公开标签与作品检索、详情。
 - `backend/app/api/interactions.py`：收藏、点赞、评分及行为日志。
-- `backend/app/api/recommendations.py`：标签匹配、用户共同收藏/点赞的 ItemCF 线索、热门与最新排序。
+- `backend/app/api/recommendations.py`：推荐接口入口和参数校验；`backend/app/services/recommendation.py` 负责标签匹配、ItemCF、热门与最新排序。
 - `backend/app/api/admin.py`：管理员作品、标签、用户、统计、权重与上传。
 - `frontend/src/api.js`：统一请求和错误处理；组件不直接拼接后端域名。
 
@@ -32,7 +32,7 @@
 | GET | `/api/artworks/{id}` | 作品详情，登录时记一次浏览 |
 | GET/PUT | `/api/artworks/{id}/interaction` | 点赞、收藏、评分 |
 | GET | `/api/me/favorites` | 收藏夹 |
-| GET | `/api/recommendations` | `kind=personal|hot|latest` |
+| GET | `/api/recommendations` | `kind=personal|hot|latest`，`limit=1..50`（默认 20） |
 | GET/POST/PATCH | `/api/admin/artworks[/{id}]` | 作品管理；列表支持 `q`、`status`、`page`、`per_page` |
 | POST/PATCH/DELETE | `/api/admin/tags[/{id}]` | 标签管理 |
 | GET/PATCH | `/api/admin/users[/{id}]` | 用户管理 |
@@ -40,7 +40,9 @@
 | GET/PUT | `/api/admin/settings` | 推荐权重 |
 | POST | `/api/admin/uploads` | 上传图片，表单字段 `file` 与 `purpose=original|cover`；原图上传返回 `url` 和 `cover_url` |
 
-交互请求示例：`{"action":"favorite","active":true}` 或 `{"action":"rate","score":5}`。推荐以偏好风格标签为基础，叠加相似作品的标签重合度及共同收藏/点赞用户的作品票数。当前为演示规模的计算实现，大数据量需离线计算、缓存和效果评估。
+交互请求示例：`{"action":"favorite","active":true}` 或 `{"action":"rate","score":5}`。个性化推荐先利用用户明确选择的风格标签，再从浏览、当前点赞、当前收藏和高评分构建用户与作品的正向行为矩阵；物品协同过滤对共同被正向交互的作品计算余弦相似度，并结合标签、热门度及管理员置顶进行排序。浏览次数设上限，取消点赞或收藏后不再把旧操作日志当作正向信号；低评分作品不出现在个人推荐中。已互动作品排在未互动作品之后，作品不足时仍可作为补充。接口返回 `strategy`（访客热门、冷启动、仅偏好或混合推荐）与每件作品的 `recommendation_reason`。热门榜依据当前有效行为排序，最新榜按上传时间排序。当前为演示规模的请求时计算实现，大数据量需离线计算、缓存、压测和效果评估。
+
+推荐权重、公式与边界见 [recommendation.md](recommendation.md)。
 
 ## 集成检查
 
