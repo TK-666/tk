@@ -1,0 +1,48 @@
+# 架构与协作约定
+
+## 模块边界
+
+- `backend/app/api/auth.py`：普通用户认证、资料、偏好风格。
+- `backend/app/api/artworks.py`：公开标签与作品检索、详情。
+- `backend/app/api/interactions.py`：收藏、点赞、评分及行为日志。
+- `backend/app/api/recommendations.py`：标签匹配、用户共同收藏/点赞的 ItemCF 线索、热门与最新排序。
+- `backend/app/api/admin.py`：管理员作品、标签、用户、统计、权重与上传。
+- `frontend/src/api.js`：统一请求和错误处理；组件不直接拼接后端域名。
+
+功能分支可在各自模块内迭代。新增 API 应保持 `/api` 前缀、JSON 响应、错误结构 `{ "error": "..." }`，并在对应页面和本文件更新约定。
+
+## 数据与权限
+
+使用服务端会话 Cookie；`user` 和 `admin` 两种角色。公开访问作品和标签；交互与偏好需要登录；管理接口需要管理员。停用用户无法继续调用受保护接口。图片上传只接受 JPEG、PNG、WebP，默认限制 10 MB。
+
+作品状态：`draft` 草稿、`published` 公开、`archived` 下架。普通用户只会看到 `published`。标签类别：`style`、`topic`、`medium`、`era`。
+
+## 主要接口
+
+| 方法 | 路径 | 用途 |
+| --- | --- | --- |
+| GET | `/api/health` | 服务状态 |
+| POST | `/api/auth/register`, `/api/auth/login`, `/api/auth/logout` | 账号 |
+| GET/PATCH | `/api/auth/me` | 当前用户资料 |
+| PUT | `/api/auth/preferences` | 风格标签 ID 数组 |
+| GET | `/api/tags` | 标签列表，可用 `category` 过滤 |
+| GET | `/api/artworks` | `q`、`style`、`topic`、`medium`、`era`、`page`、`per_page` |
+| GET | `/api/artworks/{id}` | 作品详情，登录时记一次浏览 |
+| GET/PUT | `/api/artworks/{id}/interaction` | 点赞、收藏、评分 |
+| GET | `/api/me/favorites` | 收藏夹 |
+| GET | `/api/recommendations` | `kind=personal|hot|latest` |
+| GET/POST/PATCH | `/api/admin/artworks[/{id}]` | 作品管理 |
+| POST/PATCH/DELETE | `/api/admin/tags[/{id}]` | 标签管理 |
+| GET/PATCH | `/api/admin/users[/{id}]` | 用户管理 |
+| GET | `/api/admin/stats` | 数量统计 |
+| GET/PUT | `/api/admin/settings` | 推荐权重 |
+| POST | `/api/admin/uploads` | 上传图片，表单字段 `file` |
+
+交互请求示例：`{"action":"favorite","active":true}` 或 `{"action":"rate","score":5}`。推荐以偏好风格标签为基础，叠加相似作品的标签重合度及共同收藏/点赞用户的作品票数。当前为演示规模的计算实现，大数据量需离线计算、缓存和效果评估。
+
+## 集成检查
+
+1. 合并前先检查分支是否真的有提交，并确认工作区没有未提交的改动。
+2. 保持模型字段、状态值、标签类别、API 路径与前端约定一致。
+3. 在空库运行初始化、注册、管理员建号、作品发布、用户交互与推荐的完整流程。
+4. 补充迁移、功能测试、压测和 MySQL 部署验证后，再宣称满足任务书的最终交付要求。
