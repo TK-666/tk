@@ -1,4 +1,5 @@
 from flask import abort, jsonify
+from sqlalchemy.exc import IntegrityError
 
 from ..extensions import db
 from ..models import Artwork, BehaviorLog, Favorite, Like, Rating
@@ -45,13 +46,16 @@ def set_interaction(artwork_id):
         if not isinstance(data.get("active"), bool):
             abort(400, description="active 必须为布尔值")
         model = Like if action == "like" else Favorite
-        existing = db.session.get(model, (user_id, artwork_id))
-        if data["active"] and not existing:
-            db.session.add(model(user_id=user_id, artwork_id=artwork_id))
-            event = action
-        elif not data["active"] and existing:
-            db.session.delete(existing)
-            event = "unlike" if action == "like" else "unfavorite"
+        if data["active"]:
+            if not db.session.get(model, (user_id, artwork_id)):
+                db.session.add(model(user_id=user_id, artwork_id=artwork_id))
+                event = action
+        else:
+            deleted = db.session.execute(db.delete(model).where(
+                model.user_id == user_id, model.artwork_id == artwork_id,
+            ))
+            if deleted.rowcount:
+                event = "unlike" if action == "like" else "unfavorite"
     elif action == "rate":
         score = data.get("score")
         if type(score) is not int or not 1 <= score <= 5:
@@ -67,5 +71,21 @@ def set_interaction(artwork_id):
         abort(400, description="action 必须是 like、favorite 或 rate")
     if event:
         db.session.add(BehaviorLog(user_id=user_id, artwork_id=artwork_id, action=event))
+        try:
+            db.session.commit()
+        except IntegrityError:
+            db.session.rollback()
+            # Another identical request may have inserted the same interaction.
+            if action in ("like", "favorite") and data["active"]:
+                if db.session.get(model, (user_id, artwork_id)) is not None:
+                    return get_interaction(artwork_id)
+            elif action == "rate":
+                current = db.session.get(Rating, (user_id, artwork_id))
+                if current is not None and current.score == score:
+                    return get_interaction(artwork_id)
+            raise
+    elif action in ("like", "favorite") and not data["active"]:
+        # End the DELETE transaction even when another request removed the row.
+        # This also refreshes MySQL's repeatable-read snapshot before responding.
         db.session.commit()
     return get_interaction(artwork_id)

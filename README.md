@@ -56,9 +56,11 @@ DATABASE_URL=mysql+pymysql://art_user:password@127.0.0.1:3306/art_recommend?char
 
 在 `backend` 执行 `.\.venv\Scripts\python.exe -m unittest discover -s tests -v`，在 `frontend` 执行 `npm.cmd run build`。测试覆盖账号、管理员、作品与标签、交互和推荐。MySQL 表结构可在无凭据情况下编译检查；实库测试需要明确提供 `MYSQL_TEST_PASSWORD`，会建立并清理独立的临时数据库。
 
+功能测试、缺陷修复和本地性能测试记录见 [docs/system-testing.md](docs/system-testing.md)。可在项目根目录运行 `.\backend\.venv\Scripts\python.exe .\scripts\system_load_test.py --requests 60`，脚本使用临时 SQLite 数据库和本机 HTTP 端口。
+
 ## 当前覆盖范围
 
-| 任务书需求 | `main` 现状 |
+| 任务书需求 | 当前分支现状 |
 | --- | --- |
 | 用户注册、登录、资料、偏好标签 | 基础 API 和页面已接通 |
 | 作品录入、封面/原图上传、发布与下架 | 管理界面支持分页检索、上传预览和自动生成封面；发布前要求原图 |
@@ -67,7 +69,7 @@ DATABASE_URL=mysql+pymysql://art_user:password@127.0.0.1:3306/art_recommend?char
 | 点赞、收藏、评分、浏览记录 | 数据模型与接口已建立，详情页可操作 |
 | 个性化、热门、最新推荐 | 风格偏好、浏览/点赞/收藏/评分行为与余弦相似度 ItemCF 已接入；冷启动和推荐原因可见，效果评估待做 |
 | 用户管理、统计、推荐权重 | 基础 API 和管理页面已建立，管理员可重置密码 |
-| 自动化测试、压测、部署、论文及过程文档 | 已有基础流程测试；完整测试、压测、部署和论文材料仍待完成 |
+| 自动化测试、压测、部署、论文及过程文档 | 已完成接口回归、浏览器检查和本地演示规模压测；目标环境部署、长期压测和论文材料仍需完善 |
 
 接口与数据约定见 [docs/architecture.md](docs/architecture.md)。`init-db` 仅用于首次本地建表；后续变更数据库结构时需引入正式迁移方案，不要在已有数据的库上依赖 `create_all` 更新表。
 

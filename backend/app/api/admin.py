@@ -120,7 +120,10 @@ def update_artwork(artwork_id):
 @require_admin
 def create_tag():
     data = payload()
-    name = str(data.get("name", "")).strip()
+    name = data.get("name")
+    if not isinstance(name, str):
+        abort(400, description="标签名称或类别不合法")
+    name = name.strip()
     category = data.get("category")
     if not name or len(name) > 60 or category not in TAG_CATEGORIES:
         abort(400, description="标签名称或类别不合法")
@@ -140,7 +143,9 @@ def update_tag(tag_id):
         abort(404, description="标签不存在")
     data = payload()
     if "name" in data:
-        name = str(data["name"]).strip()
+        if not isinstance(data["name"], str):
+            abort(400, description="标签名称不合法")
+        name = data["name"].strip()
         if not name or len(name) > 60:
             abort(400, description="标签名称不合法")
         tag.name = name
@@ -193,8 +198,8 @@ def update_user(user_id):
             abort(400, description="不能禁用当前管理员账号")
         user.enabled = data["enabled"]
     if "password" in data:
-        password = str(data["password"])
-        if not 8 <= len(password) <= 128:
+        password = data["password"]
+        if not isinstance(password, str) or not 8 <= len(password) <= 128:
             abort(400, description="密码需为 8–128 字符")
         user.set_password(password)
     db.session.commit()
