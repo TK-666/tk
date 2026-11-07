@@ -1,5 +1,6 @@
 import unittest
 from io import BytesIO
+from tempfile import TemporaryDirectory
 
 from PIL import Image
 
@@ -10,7 +11,8 @@ from app.models import User
 
 class SmokeTest(unittest.TestCase):
     def setUp(self):
-        self.app = create_app({"TESTING": True, "SECRET_KEY": "test-key", "SQLALCHEMY_DATABASE_URI": "sqlite://"})
+        self.uploads = TemporaryDirectory()
+        self.app = create_app({"TESTING": True, "SECRET_KEY": "test-key", "SQLALCHEMY_DATABASE_URI": "sqlite://", "UPLOAD_FOLDER": self.uploads.name})
         self.context = self.app.app_context()
         self.context.push()
         db.create_all()
@@ -25,13 +27,14 @@ class SmokeTest(unittest.TestCase):
         db.session.remove()
         db.drop_all()
         self.context.pop()
+        self.uploads.cleanup()
 
     def test_full_flow(self):
         self.assertEqual(self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"}).status_code, 200)
         tag = self.admin.post("/api/admin/tags", json={"name": "印象派", "category": "style"})
         self.assertEqual(tag.status_code, 201)
         tag_id = tag.json["item"]["id"]
-        artwork = self.admin.post("/api/admin/artworks", json={"title": "日出", "artist": "示例画家", "status": "published", "tag_ids": [tag_id]})
+        artwork = self.admin.post("/api/admin/artworks", json={"title": "日出", "artist": "示例画家", "image_url": "https://example.test/art.jpg", "status": "published", "tag_ids": [tag_id]})
         self.assertEqual(artwork.status_code, 201)
         artwork_id = artwork.json["item"]["id"]
 
@@ -60,7 +63,7 @@ class SmokeTest(unittest.TestCase):
 
         tag_id = self.admin.post("/api/admin/tags", json={"name": "水彩", "category": "style"}).json["item"]["id"]
         self.assertEqual(self.admin.patch(f"/api/admin/tags/{tag_id}", json={"name": "现代水彩"}).json["item"]["name"], "现代水彩")
-        artwork_id = self.admin.post("/api/admin/artworks", json={"title": "画", "status": "published", "tag_ids": [tag_id]}).json["item"]["id"]
+        artwork_id = self.admin.post("/api/admin/artworks", json={"title": "画", "image_url": "https://example.test/art.jpg", "status": "published", "tag_ids": [tag_id]}).json["item"]["id"]
         self.user.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"})
         self.user.put("/api/auth/preferences", json={"tag_ids": [tag_id]})
         self.assertEqual(self.admin.delete(f"/api/admin/tags/{tag_id}").status_code, 200)
@@ -81,7 +84,7 @@ class SmokeTest(unittest.TestCase):
         }).json["item"]["id"]
         self.assertEqual(self.user.get("/api/artworks").json["total"], 0)
         self.assertEqual(self.user.get(f"/api/artworks/{artwork_id}").status_code, 404)
-        self.assertEqual(self.admin.patch(f"/api/admin/artworks/{artwork_id}", json={"status": "published"}).status_code, 200)
+        self.assertEqual(self.admin.patch(f"/api/admin/artworks/{artwork_id}", json={"status": "published", "image_url": "https://example.test/art.jpg"}).status_code, 200)
         for category, tag_id in tags.items():
             self.assertEqual(self.user.get("/api/artworks", query_string={category: tag_id, "q": "青山"}).json["total"], 1)
         self.assertEqual(self.user.get("/api/artworks", query_string={"q": "测试作者"}).json["total"], 1)
@@ -94,7 +97,7 @@ class SmokeTest(unittest.TestCase):
     def test_interactions_recommendations_and_settings(self):
         self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})
         tag_id = self.admin.post("/api/admin/tags", json={"name": "抽象", "category": "style"}).json["item"]["id"]
-        artwork_ids = [self.admin.post("/api/admin/artworks", json={"title": title, "status": "published", "tag_ids": tags}).json["item"]["id"]
+        artwork_ids = [self.admin.post("/api/admin/artworks", json={"title": title, "image_url": "https://example.test/art.jpg", "status": "published", "tag_ids": tags}).json["item"]["id"]
                        for title, tags in (("甲", [tag_id]), ("乙", [tag_id]), ("丙", []))]
         self.user.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"})
         self.user.put("/api/auth/preferences", json={"tag_ids": [tag_id]})
@@ -125,9 +128,9 @@ class SmokeTest(unittest.TestCase):
 
     def test_itemcf_weight_changes_personal_order(self):
         self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})
-        source = self.admin.post("/api/admin/artworks", json={"title": "共同收藏", "status": "published"}).json["item"]["id"]
-        collaborative = self.admin.post("/api/admin/artworks", json={"title": "协同候选", "status": "published"}).json["item"]["id"]
-        featured = self.admin.post("/api/admin/artworks", json={"title": "置顶候选", "status": "published", "featured": True}).json["item"]["id"]
+        source = self.admin.post("/api/admin/artworks", json={"title": "共同收藏", "image_url": "https://example.test/art.jpg", "status": "published"}).json["item"]["id"]
+        collaborative = self.admin.post("/api/admin/artworks", json={"title": "协同候选", "image_url": "https://example.test/art.jpg", "status": "published"}).json["item"]["id"]
+        featured = self.admin.post("/api/admin/artworks", json={"title": "置顶候选", "image_url": "https://example.test/art.jpg", "status": "published", "featured": True}).json["item"]["id"]
         peer = self.app.test_client()
         peer.post("/api/auth/register", json={"username": "peer", "password": "peer-password"})
         peer.put(f"/api/artworks/{source}/interaction", json={"action": "favorite", "active": True})

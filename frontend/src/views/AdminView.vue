@@ -6,17 +6,41 @@ import { api, json } from '../api.js'
 const { user } = inject('session')
 const stats = ref(null)
 const artworks = ref([])
+const artworkPage = ref(1)
+const artworkTotal = ref(0)
+const artworkQuery = ref('')
+const artworkStatus = ref('')
 const tags = ref([])
 const users = ref([])
 const settings = ref({ tag_weight: 3, itemcf_weight: 2 })
-const form = ref({ title: '', artist: '', description: '', artist_bio: '', cover_url: '', image_url: '', tag_ids: [], status: 'draft', featured: false })
+const form = ref(emptyArtwork())
 const tagForm = ref({ name: '', category: 'style' })
 const error = ref('')
+function emptyArtwork() { return { title: '', artist: '', description: '', artist_bio: '', cover_url: '', image_url: '', tag_ids: [], status: 'draft', featured: false } }
+function resetArtwork() { form.value = emptyArtwork() }
+function artworkPath() {
+  const params = new URLSearchParams({ page: artworkPage.value, per_page: 20 })
+  if (artworkQuery.value) params.set('q', artworkQuery.value)
+  if (artworkStatus.value) params.set('status', artworkStatus.value)
+  return `/admin/artworks?${params}`
+}
+async function loadArtworks() {
+  const result = await api(artworkPath())
+  artworks.value = result.items
+  artworkTotal.value = result.total
+}
+async function searchArtworks() {
+  artworkPage.value = 1
+  try { await loadArtworks(); error.value = '' } catch (err) { error.value = err.message }
+}
+async function changeArtworkPage() {
+  try { await loadArtworks(); error.value = '' } catch (err) { error.value = err.message }
+}
 async function load() {
   if (user.value?.role !== 'admin') return
   try {
-    const [a, b, c, d, e] = await Promise.all([api('/admin/stats'), api('/admin/artworks'), api('/tags'), api('/admin/users'), api('/admin/settings')])
-    stats.value = a; artworks.value = b.items; tags.value = c.items; users.value = d.items
+    const [a, b, c, d, e] = await Promise.all([api('/admin/stats'), api(artworkPath()), api('/tags'), api('/admin/users'), api('/admin/settings')])
+    stats.value = a; artworks.value = b.items; artworkTotal.value = b.total; tags.value = c.items; users.value = d.items
     settings.value = { tag_weight: Number(e.items.tag_weight ?? 3), itemcf_weight: Number(e.items.itemcf_weight ?? 2) }; error.value = ''
   } catch (err) { error.value = err.message }
 }
@@ -24,12 +48,20 @@ async function saveArtwork() {
   try {
     const id = form.value.id
     await api(id ? `/admin/artworks/${id}` : '/admin/artworks', json(id ? 'PATCH' : 'POST', form.value))
-    ElMessage.success('作品已保存'); form.value = { title: '', artist: '', description: '', artist_bio: '', cover_url: '', image_url: '', tag_ids: [], status: 'draft', featured: false }; load()
+    ElMessage.success('作品已保存'); resetArtwork(); artworkPage.value = 1; await load()
   } catch (err) { ElMessage.error(err.message) }
 }
 function editArtwork(item) { form.value = { ...item, tag_ids: item.tags.map(tag => tag.id) }; window.scrollTo({ top: 0, behavior: 'smooth' }) }
 async function upload(file, field) {
-  try { const body = new FormData(); body.append('file', file.raw); form.value[field] = (await api('/admin/uploads', { method: 'POST', body })).url; ElMessage.success('上传完成') }
+  try {
+    const body = new FormData()
+    body.append('file', file.raw)
+    body.append('purpose', field === 'image_url' ? 'original' : 'cover')
+    const result = await api('/admin/uploads', { method: 'POST', body })
+    form.value[field] = result.url
+    if (field === 'image_url' && !form.value.cover_url) form.value.cover_url = result.cover_url
+    ElMessage.success('上传完成')
+  }
   catch (err) { ElMessage.error(err.message) }
 }
 async function saveTag() {
@@ -38,8 +70,10 @@ async function saveTag() {
 }
 function editTag(item) { tagForm.value = { ...item } }
 async function removeTag(id) {
-  try { await api(`/admin/tags/${id}`, { method: 'DELETE' }); load() }
-  catch (err) { ElMessage.error(err.message) }
+  try {
+    await ElMessageBox.confirm('删除后，作品与用户偏好中的这个标签也会移除。', '确认删除标签', { type: 'warning' })
+    await api(`/admin/tags/${id}`, { method: 'DELETE' }); await load()
+  } catch (err) { if (err !== 'cancel') ElMessage.error(err.message || String(err)) }
 }
 async function toggleUser(item) {
   try { await api(`/admin/users/${item.id}`, json('PATCH', { enabled: !item.enabled })); load() }
@@ -75,12 +109,15 @@ watch(user, load)
             <el-form-item label="作品简介"><el-input v-model="form.description" type="textarea" :rows="3" /></el-form-item>
             <el-form-item label="作者介绍"><el-input v-model="form.artist_bio" type="textarea" :rows="2" /></el-form-item>
             <div class="form-row"><el-form-item label="封面地址"><el-input v-model="form.cover_url" /></el-form-item><el-upload :show-file-list="false" :auto-upload="false" accept="image/png,image/jpeg,image/webp" @change="file => upload(file, 'cover_url')"><el-button>上传封面</el-button></el-upload></div>
-            <div class="form-row"><el-form-item label="原图地址"><el-input v-model="form.image_url" /></el-form-item><el-upload :show-file-list="false" :auto-upload="false" accept="image/png,image/jpeg,image/webp" @change="file => upload(file, 'image_url')"><el-button>上传原图</el-button></el-upload></div>
+            <img v-if="form.cover_url" class="upload-preview" :src="form.cover_url" alt="封面预览" />
+            <div class="form-row"><el-form-item label="原图地址（发布前必填）"><el-input v-model="form.image_url" /></el-form-item><el-upload :show-file-list="false" :auto-upload="false" accept="image/png,image/jpeg,image/webp" @change="file => upload(file, 'image_url')"><el-button>上传原图并生成封面</el-button></el-upload></div>
             <el-form-item label="标签"><el-select v-model="form.tag_ids" multiple filterable placeholder="选择标签"><el-option v-for="tag in tags" :key="tag.id" :label="`${tag.category} · ${tag.name}`" :value="tag.id" /></el-select></el-form-item>
             <div class="form-row"><el-form-item label="状态"><el-select v-model="form.status"><el-option label="草稿" value="draft" /><el-option label="发布" value="published" /><el-option label="下架" value="archived" /></el-select></el-form-item><el-form-item label="热门置顶"><el-switch v-model="form.featured" /></el-form-item></div>
-            <el-button type="primary" native-type="submit">保存作品</el-button>
+            <el-button type="primary" native-type="submit">保存作品</el-button><el-button v-if="form.id" @click="resetArtwork">取消编辑</el-button>
           </el-form>
-          <el-table :data="artworks" class="admin-table"><el-table-column prop="title" label="作品" /><el-table-column prop="artist" label="作者" /><el-table-column prop="status" label="状态" /><el-table-column label="操作"><template #default="scope"><el-button text type="primary" @click="editArtwork(scope.row)">编辑</el-button></template></el-table-column></el-table>
+          <div class="form-row"><el-input v-model="artworkQuery" placeholder="搜索作品或作者" clearable @keyup.enter="searchArtworks" /><el-select v-model="artworkStatus" placeholder="全部状态" clearable><el-option label="草稿" value="draft" /><el-option label="发布" value="published" /><el-option label="下架" value="archived" /></el-select><el-button @click="searchArtworks">查询</el-button></div>
+          <el-table :data="artworks" class="admin-table"><el-table-column label="封面" width="90"><template #default="scope"><img v-if="scope.row.cover_url" class="table-cover" :src="scope.row.cover_url" :alt="scope.row.title" /></template></el-table-column><el-table-column prop="title" label="作品" /><el-table-column prop="artist" label="作者" /><el-table-column prop="status" label="状态" /><el-table-column label="操作"><template #default="scope"><el-button text type="primary" @click="editArtwork(scope.row)">编辑</el-button></template></el-table-column></el-table>
+          <el-pagination v-if="artworkTotal > 20" v-model:current-page="artworkPage" class="pagination" background layout="prev, pager, next" :total="artworkTotal" :page-size="20" @current-change="changeArtworkPage" />
         </el-tab-pane>
         <el-tab-pane label="标签管理"><div class="form-row"><el-input v-model="tagForm.name" placeholder="标签名称" /><el-select v-model="tagForm.category"><el-option label="风格" value="style" /><el-option label="题材" value="topic" /><el-option label="媒介" value="medium" /><el-option label="年代" value="era" /></el-select><el-button type="primary" @click="saveTag">{{ tagForm.id ? '保存修改' : '添加' }}</el-button></div>
           <el-table :data="tags" class="admin-table"><el-table-column prop="name" label="名称" /><el-table-column prop="category" label="类别" /><el-table-column label="操作"><template #default="scope"><el-button text type="primary" @click="editTag(scope.row)">编辑</el-button><el-button text type="danger" @click="removeTag(scope.row.id)">删除</el-button></template></el-table-column></el-table>
