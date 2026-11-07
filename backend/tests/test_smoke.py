@@ -48,6 +48,19 @@ class SmokeTest(unittest.TestCase):
         self.assertEqual(self.admin.get("/api/admin/stats").json["views"], 1)
         self.assertEqual(self.user.post("/api/admin/tags", json={"name": "x", "category": "style"}).status_code, 403)
 
+    def test_separate_tab_sessions_and_logout(self):
+        client = self.app.test_client()
+        admin_tab = {"X-Tab-Session": "a" * 32}
+        user_tab = {"X-Tab-Session": "b" * 32}
+        self.assertEqual(client.post('/api/auth/login', json={'username': 'admin', 'password': 'admin-password'}, headers=admin_tab).status_code, 200)
+        self.assertEqual(client.post('/api/auth/register', json={'username': 'visitor', 'password': 'visitor-password'}, headers=user_tab).status_code, 201)
+        self.assertEqual(client.get('/api/auth/me', headers=admin_tab).json['user']['role'], 'admin')
+        self.assertEqual(client.get('/api/admin/stats', headers=user_tab).status_code, 403)
+        self.assertEqual(client.get('/api/admin/stats', headers=admin_tab).status_code, 200)
+        client.post('/api/auth/logout', headers=user_tab)
+        self.assertEqual(client.get('/api/auth/me', headers=user_tab).status_code, 401)
+        self.assertEqual(client.get('/api/admin/stats', headers=admin_tab).status_code, 200)
+
     def test_profile_and_favorite_removal(self):
         self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})
         tag = self.admin.post("/api/admin/tags", json={"name": "水墨", "category": "style"}).json["item"]

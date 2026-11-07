@@ -1,9 +1,11 @@
 import os
+import re
 from pathlib import Path
 
 import click
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask.cli import with_appcontext
+from flask.sessions import SecureCookieSessionInterface
 from sqlalchemy.exc import IntegrityError
 from werkzeug.exceptions import HTTPException
 
@@ -11,8 +13,17 @@ from .config import Config
 from .extensions import db
 
 
+class TabSessionInterface(SecureCookieSessionInterface):
+    def get_cookie_name(self, app):
+        tab_id = request.headers.get("X-Tab-Session", "")
+        if re.fullmatch(r"[a-f0-9]{32}", tab_id):
+            return f"{app.config['SESSION_COOKIE_NAME']}_{tab_id}"
+        return app.config["SESSION_COOKIE_NAME"]
+
+
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
+    app.session_interface = TabSessionInterface()
     app.config.from_object(Config)
     if test_config:
         app.config.update(test_config)
