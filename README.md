@@ -54,7 +54,11 @@ DATABASE_URL=mysql+pymysql://art_user:password@127.0.0.1:3306/art_recommend?char
 
 ## 检查与测试
 
-在 `backend` 执行 `.\.venv\Scripts\python.exe -m unittest discover -s tests -v`，在 `frontend` 执行 `npm.cmd run build`。测试覆盖账号、管理员、作品与标签、交互和推荐。MySQL 表结构可在无凭据情况下编译检查；实库测试需要明确提供 `MYSQL_TEST_PASSWORD`，会建立并清理独立的临时数据库。
+在 `backend` 执行 `.\.venv\Scripts\python.exe -m unittest discover -s tests -v`，在 `frontend` 执行 `npm.cmd run build`。测试覆盖账号、管理员、作品与标签、交互和推荐。
+
+复测 MySQL 实库时，先在当前终端设置 `MYSQL_TEST_USER` 和 `MYSQL_TEST_PASSWORD`，再运行上述后端命令。`MYSQL_TEST_HOST` 默认为 `127.0.0.1`，端口为 `3306`。测试账号需要具备创建和删除临时数据库的权限。未设置测试密码时，仍会检查 MySQL 表结构，并跳过实库用例。
+
+本机 MySQL 8.4.9 验收中，后端 21 项测试全部通过，无跳过。实库用例验证了建表、管理员登录、标签和作品创建、用户注册、作品筛选、推荐以及并发收藏和取消收藏。测试结束后确认临时数据库已清理。
 
 功能测试、缺陷修复和本地性能测试记录见 [docs/system-testing.md](docs/system-testing.md)。可在项目根目录运行 `.\backend\.venv\Scripts\python.exe .\scripts\system_load_test.py --requests 60`，脚本使用临时 SQLite 数据库和本机 HTTP 端口。
 
