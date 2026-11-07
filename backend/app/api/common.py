@@ -16,7 +16,10 @@ def payload():
 def current_user():
     user_id = session.get("user_id")
     user = db.session.get(User, user_id) if user_id else None
-    return user if user and user.enabled else None
+    # SQLite can reuse the ID of a deleted account.
+    if user and user.enabled and session.get("user_created_at") == user.created_at.isoformat():
+        return user
+    return None
 
 
 def require_user(view):

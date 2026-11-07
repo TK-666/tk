@@ -6,7 +6,7 @@ from PIL import Image
 
 from app import create_app
 from app.extensions import db
-from app.models import BehaviorLog, User
+from app.models import BehaviorLog, Favorite, Like, Rating, User, user_preferences
 
 
 class SmokeTest(unittest.TestCase):
@@ -110,6 +110,44 @@ class SmokeTest(unittest.TestCase):
         self.assertEqual(self.admin.patch(f"/api/admin/users/{user_id}", json={"password": "reset-password"}).status_code, 200)
         self.assertEqual(self.admin.patch(f"/api/admin/users/{user_id}", json={"enabled": False}).status_code, 200)
         self.assertEqual(self.user.get("/api/me/favorites").status_code, 401)
+
+    def test_admin_deletes_user_and_revokes_old_session(self):
+        admin = self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"}).json["user"]
+        tag = self.admin.post("/api/admin/tags", json={"name": "水彩", "category": "style"}).json["item"]
+        artwork = self.admin.post("/api/admin/artworks", json={
+            "title": "画", "image_url": "https://example.test/art.jpg", "status": "published",
+        }).json["item"]
+        credentials = {"username": "visitor", "password": "visitor-password"}
+        target = self.user.post("/api/auth/register", json=credentials).json["user"]
+        accounts = self.admin.get("/api/admin/users").json["items"]
+        created_at = next(account["created_at"] for account in accounts if account["id"] == target["id"])
+        headers = {"If-Match": f'"{created_at}"'}
+        endpoint = f"/api/admin/users/{target['id']}"
+        self.assertEqual(self.user.delete(endpoint).status_code, 403)
+        self.assertEqual(self.admin.delete(f"/api/admin/users/{admin['id']}").status_code, 403)
+        self.assertEqual(self.user.put("/api/auth/preferences", json={"tag_ids": [tag["id"]]}).status_code, 200)
+        self.assertEqual(self.user.get(f"/api/artworks/{artwork['id']}").status_code, 200)
+        interactions = (
+            {"action": "like", "active": True},
+            {"action": "favorite", "active": True},
+            {"action": "rate", "score": 5},
+        )
+        for interaction in interactions:
+            response = self.user.put(f"/api/artworks/{artwork['id']}/interaction", json=interaction)
+            self.assertEqual(response.status_code, 200, response.json)
+
+        self.assertEqual(self.admin.delete(endpoint, headers=headers).status_code, 200)
+        self.assertEqual(self.admin.delete(endpoint).status_code, 404)
+        self.assertEqual([account["id"] for account in self.admin.get("/api/admin/users").json["items"]], [admin["id"]])
+        self.assertEqual(self.user.post("/api/auth/login", json=credentials).status_code, 401)
+        for table in (user_preferences, Favorite.__table__, Like.__table__, Rating.__table__, BehaviorLog.__table__):
+            self.assertIsNone(db.session.scalar(db.select(table.c.user_id).where(table.c.user_id == target["id"])), table.name)
+
+        replacement = self.app.test_client()
+        self.assertEqual(replacement.post("/api/auth/register", json=credentials).json["user"]["id"], target["id"])
+        self.assertEqual(self.user.get("/api/auth/me").status_code, 401)
+        self.assertEqual(self.admin.delete(endpoint, headers=headers).status_code, 412)
+        self.assertEqual(replacement.get("/api/auth/me").status_code, 200)
 
     def test_catalog_filters_and_publication(self):
         self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})

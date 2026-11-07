@@ -33,8 +33,8 @@ class RecommendationTest(unittest.TestCase):
     def client(self, user=None):
         client = self.app.test_client()
         if user:
-            with client.session_transaction() as session:
-                session["user_id"] = user.id
+            response = client.post("/api/auth/login", json={"username": user.username, "password": "test-password"})
+            self.assertEqual(response.status_code, 200, response.json)
         return client
 
     def test_guest_hot_latest_limit_and_unpublished(self):

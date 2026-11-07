@@ -9,13 +9,17 @@ from PIL import Image, ImageOps, UnidentifiedImageError
 from sqlalchemy import or_
 
 from ..extensions import db
-from ..models import Artwork, BehaviorLog, RecommendationSetting, Tag, User, artwork_tags, user_preferences
+from ..models import (
+    Artwork, BehaviorLog, Favorite, Like, Rating, RecommendationSetting, Tag, User,
+    artwork_tags, user_preferences,
+)
 from . import api
 from .common import current_user, integer, payload, require_admin
 
 
 TAG_CATEGORIES = ("style", "topic", "medium", "era")
 ARTWORK_STATUSES = ("draft", "published", "archived")
+INTERACTION_TABLES = (Favorite.__table__, Like.__table__, Rating.__table__, BehaviorLog.__table__)
 
 
 def _valid_image_url(value):
@@ -116,6 +120,25 @@ def update_artwork(artwork_id):
     return jsonify(item=artwork.to_dict())
 
 
+@api.delete("/admin/artworks/<int:artwork_id>")
+@require_admin
+def delete_artwork(artwork_id):
+    # On MySQL, lock the parent before removing rows that reference it.
+    existing_id = db.session.scalar(
+        db.select(Artwork.id).where(Artwork.id == artwork_id).with_for_update()
+    )
+    if existing_id is None:
+        abort(404, description="作品不存在")
+    for table in (artwork_tags, *INTERACTION_TABLES):
+        db.session.execute(db.delete(table).where(table.c.artwork_id == artwork_id))
+    deleted = db.session.execute(db.delete(Artwork).where(Artwork.id == artwork_id))
+    if not deleted.rowcount:
+        db.session.rollback()
+        abort(404, description="作品不存在")
+    db.session.commit()
+    return jsonify(ok=True)
+
+
 @api.post("/admin/tags")
 @require_admin
 def create_tag():
@@ -181,7 +204,7 @@ def delete_tag(tag_id):
 @require_admin
 def admin_users():
     users = db.session.scalars(db.select(User).order_by(User.id)).all()
-    return jsonify(items=[user.to_dict() for user in users])
+    return jsonify(items=[{**user.to_dict(), "created_at": user.created_at.isoformat()} for user in users])
 
 
 @api.patch("/admin/users/<int:user_id>")
@@ -204,6 +227,28 @@ def update_user(user_id):
         user.set_password(password)
     db.session.commit()
     return jsonify(user=user.to_dict())
+
+
+@api.delete("/admin/users/<int:user_id>")
+@require_admin
+def delete_user(user_id):
+    target = db.session.execute(
+        db.select(User.role, User.created_at).where(User.id == user_id).with_for_update()
+    ).one_or_none()
+    if target is None:
+        abort(404, description="用户不存在")
+    if target.role == "admin":
+        abort(403, description="不能删除管理员账号")
+    if "If-Match" in request.headers and target.created_at.isoformat() not in request.if_match:
+        abort(412, description="账号已变更，请刷新用户列表后重试")
+    for table in (user_preferences, *INTERACTION_TABLES):
+        db.session.execute(db.delete(table).where(table.c.user_id == user_id))
+    deleted = db.session.execute(db.delete(User).where(User.id == user_id, User.created_at == target.created_at))
+    if not deleted.rowcount:
+        db.session.rollback()
+        abort(412, description="账号已变更，请刷新用户列表后重试")
+    db.session.commit()
+    return jsonify(ok=True)
 
 
 @api.get("/admin/stats")

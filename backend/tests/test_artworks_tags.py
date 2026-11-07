@@ -6,7 +6,7 @@ from PIL import Image
 
 from app import create_app
 from app.extensions import db
-from app.models import User
+from app.models import BehaviorLog, Favorite, Like, Rating, User, artwork_tags
 
 
 class ArtworksTagsTest(unittest.TestCase):
@@ -79,6 +79,34 @@ class ArtworksTagsTest(unittest.TestCase):
         self.visitor.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"})
         self.visitor.put("/api/auth/preferences", json={"tag_ids": [tag["id"]]})
         self.assertEqual(self.admin.patch(f"/api/admin/tags/{tag['id']}", json={"category": "topic"}).status_code, 409)
+
+    def test_delete_artwork_removes_only_its_records(self):
+        tag = self.admin.post("/api/admin/tags", json={"name": "国风", "category": "style"}).json["item"]
+        target = self.artwork("待删除作品", tag_ids=[tag["id"]])
+        retained = self.artwork("保留作品", tag_ids=[tag["id"]])
+        endpoint = f"/api/admin/artworks/{target}"
+        self.assertEqual(self.visitor.delete(endpoint).status_code, 401)
+        self.visitor.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"})
+        self.assertEqual(self.visitor.delete(endpoint).status_code, 403)
+        interactions = (
+            {"action": "like", "active": True},
+            {"action": "favorite", "active": True},
+            {"action": "rate", "score": 5},
+        )
+        for artwork_id in (target, retained):
+            self.assertEqual(self.visitor.get(f"/api/artworks/{artwork_id}").status_code, 200)
+            for interaction in interactions:
+                response = self.visitor.put(f"/api/artworks/{artwork_id}/interaction", json=interaction)
+                self.assertEqual(response.status_code, 200, response.json)
+
+        self.assertEqual(self.admin.delete(endpoint).status_code, 200)
+        self.assertEqual(self.admin.delete(endpoint).status_code, 404)
+        self.assertEqual(self.visitor.get(f"/api/artworks/{target}").status_code, 404)
+        self.assertEqual(self.admin.get("/api/admin/artworks").json["total"], 1)
+        self.assertEqual(self.visitor.get("/api/tags").json["items"], [tag])
+        for table in (artwork_tags, Favorite.__table__, Like.__table__, Rating.__table__, BehaviorLog.__table__):
+            artwork_ids = set(db.session.scalars(db.select(table.c.artwork_id)))
+            self.assertEqual(artwork_ids, {retained}, table.name)
 
     def test_original_upload_generates_small_cover(self):
         image = Image.new("RGB", (1800, 900), "navy")

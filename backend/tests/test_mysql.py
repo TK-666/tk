@@ -64,13 +64,15 @@ class MySQLIntegrationTest(unittest.TestCase):
                 self.assertEqual(visitor.get("/api/recommendations?kind=personal").status_code, 200)
                 artwork_id = artwork.json["item"]["id"]
                 user_id = registered.json["user"]["id"]
+                with visitor.session_transaction() as session:
+                    authenticated_session = dict(session)
                 for active in (True, False):
                     barrier = Barrier(10)
 
                     def change_favorite(_):
                         client = app.test_client()
                         with client.session_transaction() as session:
-                            session["user_id"] = user_id
+                            session.update(authenticated_session)
                         barrier.wait(timeout=10)
                         response = client.put(f"/api/artworks/{artwork_id}/interaction", json={"action": "favorite", "active": active})
                         return response.status_code, response.json.get("favorited")

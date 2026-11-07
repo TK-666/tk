@@ -6,6 +6,7 @@ import click
 from flask import Flask, jsonify, request
 from flask.cli import with_appcontext
 from flask.sessions import SecureCookieSessionInterface
+from sqlalchemy import event
 from sqlalchemy.exc import IntegrityError
 from werkzeug.exceptions import HTTPException
 
@@ -21,6 +22,12 @@ class TabSessionInterface(SecureCookieSessionInterface):
         return app.config["SESSION_COOKIE_NAME"]
 
 
+def _enable_sqlite_foreign_keys(connection, _record):
+    cursor = connection.cursor()
+    cursor.execute("PRAGMA foreign_keys = ON")
+    cursor.close()
+
+
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.session_interface = TabSessionInterface()
@@ -34,6 +41,9 @@ def create_app(test_config=None):
     app.config["UPLOAD_FOLDER"] = str(upload_path)
     upload_path.mkdir(parents=True, exist_ok=True)
     db.init_app(app)
+    with app.app_context():
+        if db.engine.dialect.name == "sqlite":
+            event.listen(db.engine, "connect", _enable_sqlite_foreign_keys)
 
     from . import models  # noqa: F401 - register all tables
     from .api import api

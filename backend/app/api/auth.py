@@ -6,6 +6,12 @@ from . import api
 from .common import current_user, integer, payload, require_user
 
 
+def _start_session(user):
+    session.clear()
+    session["user_id"] = user.id
+    session["user_created_at"] = user.created_at.isoformat()
+
+
 @api.post("/auth/register")
 def register():
     data = payload()
@@ -22,8 +28,7 @@ def register():
     user.set_password(password)
     db.session.add(user)
     db.session.commit()
-    session.clear()
-    session["user_id"] = user.id
+    _start_session(user)
     return jsonify(user=user.to_dict()), 201
 
 
@@ -36,8 +41,7 @@ def login():
     user = db.session.scalar(db.select(User).filter_by(username=username.strip()))
     if not user or not user.enabled or not user.check_password(password):
         abort(401, description="用户名或密码错误，或账号已禁用")
-    session.clear()
-    session["user_id"] = user.id
+    _start_session(user)
     return jsonify(user=user.to_dict())
 
 

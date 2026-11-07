@@ -34,8 +34,10 @@
 | GET | `/api/me/favorites` | 收藏夹 |
 | GET | `/api/recommendations` | `kind=personal|hot|latest`，`limit=1..50`（默认 20） |
 | GET/POST/PATCH | `/api/admin/artworks[/{id}]` | 作品管理；列表支持 `q`、`status`、`page`、`per_page` |
+| DELETE | `/api/admin/artworks/{id}` | 永久删除作品及其标签关联和用户互动记录 |
 | POST/PATCH/DELETE | `/api/admin/tags[/{id}]` | 标签管理 |
 | GET/PATCH | `/api/admin/users[/{id}]` | 用户管理 |
+| DELETE | `/api/admin/users/{id}` | 永久删除普通用户及其偏好和互动记录 |
 | GET | `/api/admin/stats` | 数量统计 |
 | GET/PUT | `/api/admin/settings` | 推荐权重 |
 | POST | `/api/admin/uploads` | 上传图片，表单字段 `file` 与 `purpose=original|cover`；原图上传返回 `url` 和 `cover_url` |
