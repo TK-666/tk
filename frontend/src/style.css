@@ -28,6 +28,9 @@ nav a.router-link-exact-active, nav a:hover { color: #1b5048; font-weight: 600; 
 .art-meta { padding: 17px 19px 20px; }
 .art-meta h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; }
 .art-meta p { color: #7d857f; font-size: 13px; margin: 0 0 12px; }
+.art-meta .recommendation-reason { color: #1b5048; margin: 13px 0 0; font-size: 12px; }
+.recommendation-guidance { color: #66756b; margin: -10px 0 22px; font-size: 14px; }
+.recommendation-guidance a { color: #1b5048; font-weight: 600; text-decoration: underline; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .filters { display: flex; gap: 12px; margin-bottom: 28px; }
 .filters .el-input { max-width: 350px; }
