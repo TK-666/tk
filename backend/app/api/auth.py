@@ -52,11 +52,11 @@ def me():
 def update_me():
     data = payload()
     user = current_user()
+    tags = _style_tags(data["tag_ids"]) if "tag_ids" in data else None
     if "display_name" in data:
         name = str(data["display_name"]).strip()
         if len(name) > 80:
             abort(400, description="昵称过长")
-        user.display_name = name
     if "password" in data:
         password = str(data["password"])
         if not 8 <= len(password) <= 128:
@@ -64,6 +64,10 @@ def update_me():
         if not user.check_password(str(data.get("current_password", ""))):
             abort(400, description="当前密码错误")
         user.set_password(password)
+    if "display_name" in data:
+        user.display_name = name
+    if tags is not None:
+        user.preferences = tags
     db.session.commit()
     return jsonify(user=user.to_dict())
 
@@ -71,14 +75,17 @@ def update_me():
 @api.put("/auth/preferences")
 @require_user
 def set_preferences():
-    ids = payload().get("tag_ids")
+    user = current_user()
+    user.preferences = _style_tags(payload().get("tag_ids"))
+    db.session.commit()
+    return jsonify(user=user.to_dict())
+
+
+def _style_tags(ids):
     if not isinstance(ids, list) or len(ids) > 30:
         abort(400, description="tag_ids 必须为不超过 30 项的数组")
     selected = {integer(item, "标签 ID", 1) for item in ids}
     tags = db.session.scalars(db.select(Tag).where(Tag.id.in_(selected), Tag.category == "style")).all()
     if len(tags) != len(selected):
         abort(400, description="只能选择存在的风格标签")
-    user = current_user()
-    user.preferences = tags
-    db.session.commit()
-    return jsonify(user=user.to_dict())
+    return tags

@@ -1,9 +1,9 @@
-from flask import abort, jsonify, request
+from flask import abort, jsonify
 
 from ..extensions import db
 from ..models import Artwork, BehaviorLog, Favorite, Like, Rating
 from . import api
-from .common import current_user, integer, payload, require_user
+from .common import current_user, payload, require_user
 
 
 @api.get("/me/favorites")
@@ -40,6 +40,7 @@ def set_interaction(artwork_id):
     data = payload()
     action = data.get("action")
     user_id = current_user().id
+    event = None
     if action in ("like", "favorite"):
         if not isinstance(data.get("active"), bool):
             abort(400, description="active 必须为布尔值")
@@ -47,17 +48,24 @@ def set_interaction(artwork_id):
         existing = db.session.get(model, (user_id, artwork_id))
         if data["active"] and not existing:
             db.session.add(model(user_id=user_id, artwork_id=artwork_id))
+            event = action
         elif not data["active"] and existing:
             db.session.delete(existing)
+            event = "unlike" if action == "like" else "unfavorite"
     elif action == "rate":
-        score = integer(data.get("score"), "score", 1, 5)
-        existing = db.session.get(Rating, (user_id, artwork_id))
-        if existing:
-            existing.score = score
-        else:
+        score = data.get("score")
+        if type(score) is not int or not 1 <= score <= 5:
+            abort(400, description="评分必须为 1–5 的整数")
+        rating = db.session.get(Rating, (user_id, artwork_id))
+        if rating is None:
             db.session.add(Rating(user_id=user_id, artwork_id=artwork_id, score=score))
+            event = action
+        elif rating.score != score:
+            rating.score = score
+            event = action
     else:
         abort(400, description="action 必须是 like、favorite 或 rate")
-    db.session.add(BehaviorLog(user_id=user_id, artwork_id=artwork_id, action=action))
-    db.session.commit()
+    if event:
+        db.session.add(BehaviorLog(user_id=user_id, artwork_id=artwork_id, action=event))
+        db.session.commit()
     return get_interaction(artwork_id)
