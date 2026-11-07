@@ -119,7 +119,21 @@ watch(user, load)
           <el-table :data="artworks" class="admin-table"><el-table-column label="封面" width="90"><template #default="scope"><img v-if="scope.row.cover_url" class="table-cover" :src="scope.row.cover_url" :alt="scope.row.title" /></template></el-table-column><el-table-column prop="title" label="作品" /><el-table-column prop="artist" label="作者" /><el-table-column prop="status" label="状态" /><el-table-column label="操作"><template #default="scope"><el-button text type="primary" @click="editArtwork(scope.row)">编辑</el-button></template></el-table-column></el-table>
           <el-pagination v-if="artworkTotal > 20" v-model:current-page="artworkPage" class="pagination" background layout="prev, pager, next" :total="artworkTotal" :page-size="20" @current-change="changeArtworkPage" />
         </el-tab-pane>
-        <el-tab-pane label="标签管理"><div class="form-row"><el-input v-model="tagForm.name" placeholder="标签名称" /><el-select v-model="tagForm.category"><el-option label="风格" value="style" /><el-option label="题材" value="topic" /><el-option label="媒介" value="medium" /><el-option label="年代" value="era" /></el-select><el-button type="primary" @click="saveTag">{{ tagForm.id ? '保存修改' : '添加' }}</el-button></div>
+        <el-tab-pane label="标签管理">
+          <el-form class="tag-editor" label-position="top" size="large" @submit.prevent="saveTag">
+            <el-form-item label="标签名称">
+              <el-input v-model="tagForm.name" placeholder="请输入标签名称" />
+            </el-form-item>
+            <el-form-item label="标签类别">
+              <el-select v-model="tagForm.category">
+                <el-option label="风格" value="style" />
+                <el-option label="题材" value="topic" />
+                <el-option label="媒介" value="medium" />
+                <el-option label="年代" value="era" />
+              </el-select>
+            </el-form-item>
+            <el-button type="primary" native-type="submit">{{ tagForm.id ? '保存修改' : '添加' }}</el-button>
+          </el-form>
           <el-table :data="tags" class="admin-table"><el-table-column prop="name" label="名称" /><el-table-column prop="category" label="类别" /><el-table-column label="操作"><template #default="scope"><el-button text type="primary" @click="editTag(scope.row)">编辑</el-button><el-button text type="danger" @click="removeTag(scope.row.id)">删除</el-button></template></el-table-column></el-table>
         </el-tab-pane>
         <el-tab-pane label="用户管理"><el-table :data="users"><el-table-column prop="username" label="用户名" /><el-table-column prop="role" label="角色" /><el-table-column label="状态"><template #default="scope">{{ scope.row.enabled ? '启用' : '禁用' }}</template></el-table-column><el-table-column label="操作"><template #default="scope"><el-button text @click="toggleUser(scope.row)">{{ scope.row.enabled ? '禁用' : '启用' }}</el-button><el-button text @click="resetPassword(scope.row)">重置密码</el-button></template></el-table-column></el-table></el-tab-pane>
@@ -128,3 +142,20 @@ watch(user, load)
     </template>
   </section>
 </template>
+
+<style scoped>
+.tag-editor {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(128px, 1fr) auto;
+  align-items: end;
+  gap: 16px;
+  max-width: 640px;
+}
+
+.tag-editor .el-form-item { margin-bottom: 0; }
+
+@media (max-width: 600px) {
+  .tag-editor { grid-template-columns: minmax(0, 1fr); }
+  .tag-editor .el-button { justify-self: start; }
+}
+</style>
