@@ -11,7 +11,7 @@ load_dotenv(ROOT / ".env")
 class Config:
     SECRET_KEY = os.getenv("SECRET_KEY", "development-only-change-this-key")
     SQLALCHEMY_DATABASE_URI = os.getenv(
-        "DATABASE_URL", "sqlite:///instance/artworks.db"
+        "DATABASE_URL", "sqlite:///artworks.db"
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     MAX_CONTENT_LENGTH = int(os.getenv("MAX_CONTENT_LENGTH", "10485760"))
