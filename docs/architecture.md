@@ -17,6 +17,8 @@
 
 作品状态：`draft` 草稿、`published` 公开、`archived` 下架。普通用户只会看到 `published`。标签类别：`style`、`topic`、`medium`、`era`。
 
+发布作品前必须填写原图地址。图片地址接受 HTTP(S) 或站内路径；管理员上传原图时，接口会保留原图并自动生成最长边不超过 1200 像素的 WebP 封面。封面也可以单独上传。单次上传限制 10 MB，图片尺寸不超过 4000 万像素，最长边不超过 12000 像素。
+
 ## 主要接口
 
 | 方法 | 路径 | 用途 |
@@ -31,12 +33,12 @@
 | GET/PUT | `/api/artworks/{id}/interaction` | 点赞、收藏、评分 |
 | GET | `/api/me/favorites` | 收藏夹 |
 | GET | `/api/recommendations` | `kind=personal|hot|latest` |
-| GET/POST/PATCH | `/api/admin/artworks[/{id}]` | 作品管理 |
+| GET/POST/PATCH | `/api/admin/artworks[/{id}]` | 作品管理；列表支持 `q`、`status`、`page`、`per_page` |
 | POST/PATCH/DELETE | `/api/admin/tags[/{id}]` | 标签管理 |
 | GET/PATCH | `/api/admin/users[/{id}]` | 用户管理 |
 | GET | `/api/admin/stats` | 数量统计 |
 | GET/PUT | `/api/admin/settings` | 推荐权重 |
-| POST | `/api/admin/uploads` | 上传图片，表单字段 `file` |
+| POST | `/api/admin/uploads` | 上传图片，表单字段 `file` 与 `purpose=original|cover`；原图上传返回 `url` 和 `cover_url` |
 
 交互请求示例：`{"action":"favorite","active":true}` 或 `{"action":"rate","score":5}`。推荐以偏好风格标签为基础，叠加相似作品的标签重合度及共同收藏/点赞用户的作品票数。当前为演示规模的计算实现，大数据量需离线计算、缓存和效果评估。
 

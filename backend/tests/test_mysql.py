@@ -54,7 +54,7 @@ class MySQLIntegrationTest(unittest.TestCase):
                 visitor = app.test_client()
                 self.assertEqual(administrator.post("/api/auth/login", json={"username": "admin", "password": "admin-password"}).status_code, 200)
                 tag_id = administrator.post("/api/admin/tags", json={"name": "国风", "category": "style"}).json["item"]["id"]
-                artwork = administrator.post("/api/admin/artworks", json={"title": "示例", "status": "published", "tag_ids": [tag_id]})
+                artwork = administrator.post("/api/admin/artworks", json={"title": "示例", "image_url": "https://example.test/art.jpg", "status": "published", "tag_ids": [tag_id]})
                 self.assertEqual(artwork.status_code, 201)
                 self.assertEqual(visitor.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"}).status_code, 201)
                 self.assertEqual(visitor.get("/api/artworks", query_string={"style": tag_id}).json["total"], 1)

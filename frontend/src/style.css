@@ -29,9 +29,11 @@ nav a.router-link-exact-active, nav a:hover { color: #1b5048; font-weight: 600; 
 .art-meta h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; }
 .art-meta p { color: #7d857f; font-size: 13px; margin: 0 0 12px; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.filters { display: flex; gap: 12px; margin-bottom: 28px; }
-.filters .el-input { max-width: 350px; }
-.filters .el-select { max-width: 180px; }
+.filters { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+.filters .el-input { flex: 2 1 240px; }
+.filters .el-select { flex: 1 1 140px; }
+.upload-preview { display: block; max-width: 220px; max-height: 160px; object-fit: contain; margin: -4px 0 18px; border: 1px solid #e7e5df; }
+.table-cover { width: 48px; height: 48px; object-fit: cover; }
 .pagination { justify-content: center; margin-top: 32px; }
 .detail { max-width: 1200px; margin: auto; padding: 64px 28px 100px; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr); gap: 60px; }
 .detail-image { min-height: 420px; display: flex; justify-content: center; align-items: center; background: #e7e7df; color: #aab4a8; font: italic 60px Georgia, serif; }
