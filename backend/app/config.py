@@ -1,4 +1,5 @@
 import os
+import secrets
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -9,7 +10,7 @@ load_dotenv(ROOT / ".env")
 
 
 class Config:
-    SECRET_KEY = os.getenv("SECRET_KEY", "development-only-change-this-key")
+    SECRET_KEY = os.getenv("SECRET_KEY") or secrets.token_hex(32)
     SQLALCHEMY_DATABASE_URI = os.getenv(
         "DATABASE_URL", "sqlite:///artworks.db"
     )

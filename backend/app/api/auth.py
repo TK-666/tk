@@ -61,6 +61,8 @@ def update_me():
         password = str(data["password"])
         if not 8 <= len(password) <= 128:
             abort(400, description="密码需为 8–128 字符")
+        if not user.check_password(str(data.get("current_password", ""))):
+            abort(400, description="当前密码错误")
         user.set_password(password)
     db.session.commit()
     return jsonify(user=user.to_dict())

@@ -19,6 +19,9 @@ def favorites():
 @api.get("/artworks/<int:artwork_id>/interaction")
 @require_user
 def get_interaction(artwork_id):
+    artwork = db.session.get(Artwork, artwork_id)
+    if not artwork or artwork.status != "published":
+        abort(404, description="作品不存在")
     user_id = current_user().id
     rating = db.session.get(Rating, (user_id, artwork_id))
     return jsonify(

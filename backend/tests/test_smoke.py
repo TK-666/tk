@@ -56,16 +56,88 @@ class SmokeTest(unittest.TestCase):
         with self.admin.get(response.json["url"]) as uploaded:
             self.assertEqual(uploaded.status_code, 200)
             uploaded.close()
+        self.assertEqual(self.admin.post("/api/admin/uploads", data={"file": (BytesIO(b"not an image"), "bad.png")}).status_code, 400)
 
         tag_id = self.admin.post("/api/admin/tags", json={"name": "水彩", "category": "style"}).json["item"]["id"]
+        self.assertEqual(self.admin.patch(f"/api/admin/tags/{tag_id}", json={"name": "现代水彩"}).json["item"]["name"], "现代水彩")
         artwork_id = self.admin.post("/api/admin/artworks", json={"title": "画", "status": "published", "tag_ids": [tag_id]}).json["item"]["id"]
         self.user.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"})
         self.user.put("/api/auth/preferences", json={"tag_ids": [tag_id]})
         self.assertEqual(self.admin.delete(f"/api/admin/tags/{tag_id}").status_code, 200)
         self.assertEqual(self.user.get(f"/api/artworks/{artwork_id}").json["item"]["tags"], [])
         user_id = self.user.get("/api/auth/me").json["user"]["id"]
+        self.assertEqual(self.admin.patch("/api/admin/users/1", json={"enabled": False}).status_code, 400)
+        self.assertEqual(self.admin.patch(f"/api/admin/users/{user_id}", json={"password": "reset-password"}).status_code, 200)
         self.assertEqual(self.admin.patch(f"/api/admin/users/{user_id}", json={"enabled": False}).status_code, 200)
         self.assertEqual(self.user.get("/api/me/favorites").status_code, 401)
+
+    def test_catalog_filters_and_publication(self):
+        self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})
+        tags = {}
+        for category, name in (("style", "国风"), ("topic", "山水"), ("medium", "水彩"), ("era", "现代")):
+            tags[category] = self.admin.post("/api/admin/tags", json={"name": name, "category": category}).json["item"]["id"]
+        artwork_id = self.admin.post("/api/admin/artworks", json={
+            "title": "青山", "artist": "测试作者", "tag_ids": list(tags.values()),
+        }).json["item"]["id"]
+        self.assertEqual(self.user.get("/api/artworks").json["total"], 0)
+        self.assertEqual(self.user.get(f"/api/artworks/{artwork_id}").status_code, 404)
+        self.assertEqual(self.admin.patch(f"/api/admin/artworks/{artwork_id}", json={"status": "published"}).status_code, 200)
+        for category, tag_id in tags.items():
+            self.assertEqual(self.user.get("/api/artworks", query_string={category: tag_id, "q": "青山"}).json["total"], 1)
+        self.assertEqual(self.user.get("/api/artworks", query_string={"q": "测试作者"}).json["total"], 1)
+        self.assertEqual(self.user.get("/api/artworks", query_string={"q": "不存在"}).json["total"], 0)
+        self.assertEqual(self.user.get("/api/artworks", query_string={"page": 0}).status_code, 400)
+        self.assertEqual(self.admin.patch(f"/api/admin/artworks/{artwork_id}", json={"status": "archived"}).status_code, 200)
+        self.assertEqual(self.user.get("/api/artworks").json["total"], 0)
+        self.assertEqual(self.user.get(f"/api/artworks/{artwork_id}/interaction").status_code, 401)
+
+    def test_interactions_recommendations_and_settings(self):
+        self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})
+        tag_id = self.admin.post("/api/admin/tags", json={"name": "抽象", "category": "style"}).json["item"]["id"]
+        artwork_ids = [self.admin.post("/api/admin/artworks", json={"title": title, "status": "published", "tag_ids": tags}).json["item"]["id"]
+                       for title, tags in (("甲", [tag_id]), ("乙", [tag_id]), ("丙", []))]
+        self.user.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"})
+        self.user.put("/api/auth/preferences", json={"tag_ids": [tag_id]})
+        self.assertEqual(self.user.get(f"/api/artworks/{artwork_ids[0]}/interaction").json["rating"], None)
+        self.assertEqual(self.user.put(f"/api/artworks/{artwork_ids[0]}/interaction", json={"action": "rate", "score": 5}).json["rating"], 5)
+        self.assertTrue(self.user.put(f"/api/artworks/{artwork_ids[0]}/interaction", json={"action": "like", "active": True}).json["liked"])
+        self.assertFalse(self.user.put(f"/api/artworks/{artwork_ids[0]}/interaction", json={"action": "like", "active": False}).json["liked"])
+        self.assertEqual(self.user.put(f"/api/artworks/{artwork_ids[0]}/interaction", json={"action": "rate", "score": 6}).status_code, 400)
+        self.assertEqual(self.user.get("/api/recommendations?kind=personal").json["items"][0]["id"], artwork_ids[1])
+        self.assertEqual(len(self.user.get("/api/recommendations?kind=hot").json["items"]), 3)
+        self.assertEqual(self.user.get("/api/recommendations?kind=latest").json["items"][0]["id"], artwork_ids[2])
+        self.assertEqual(self.user.get("/api/recommendations?kind=invalid").status_code, 400)
+        self.assertEqual(self.admin.put("/api/admin/settings", json={"tag_weight": 8, "itemcf_weight": 4}).status_code, 200)
+        self.assertEqual(self.admin.get("/api/admin/settings").json["items"]["tag_weight"], "8.0")
+        self.assertEqual(self.admin.put("/api/admin/settings", json={"tag_weight": -1}).status_code, 400)
+
+    def test_account_validation_and_password_update(self):
+        self.assertEqual(self.user.post("/api/auth/register", json={"username": "ab", "password": "short"}).status_code, 400)
+        self.assertEqual(self.user.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"}).status_code, 201)
+        self.assertEqual(self.admin.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"}).status_code, 409)
+        self.assertEqual(self.user.patch("/api/auth/me", json={"display_name": "新名字"}).json["user"]["display_name"], "新名字")
+        self.assertEqual(self.user.patch("/api/auth/me", json={"password": "new-password"}).status_code, 400)
+        self.assertEqual(self.user.patch("/api/auth/me", json={"current_password": "visitor-password", "password": "new-password"}).status_code, 200)
+        self.assertEqual(self.user.post("/api/auth/logout").status_code, 200)
+        self.assertEqual(self.user.get("/api/auth/me").status_code, 401)
+        self.assertEqual(self.user.post("/api/auth/login", json={"username": "visitor", "password": "visitor-password"}).status_code, 401)
+        self.assertEqual(self.user.post("/api/auth/login", json={"username": "visitor", "password": "new-password"}).status_code, 200)
+
+    def test_itemcf_weight_changes_personal_order(self):
+        self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})
+        source = self.admin.post("/api/admin/artworks", json={"title": "共同收藏", "status": "published"}).json["item"]["id"]
+        collaborative = self.admin.post("/api/admin/artworks", json={"title": "协同候选", "status": "published"}).json["item"]["id"]
+        featured = self.admin.post("/api/admin/artworks", json={"title": "置顶候选", "status": "published", "featured": True}).json["item"]["id"]
+        peer = self.app.test_client()
+        peer.post("/api/auth/register", json={"username": "peer", "password": "peer-password"})
+        peer.put(f"/api/artworks/{source}/interaction", json={"action": "favorite", "active": True})
+        peer.put(f"/api/artworks/{collaborative}/interaction", json={"action": "favorite", "active": True})
+        self.user.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"})
+        self.user.put(f"/api/artworks/{source}/interaction", json={"action": "favorite", "active": True})
+        self.admin.put("/api/admin/settings", json={"tag_weight": 0, "itemcf_weight": 0})
+        self.assertEqual(self.user.get("/api/recommendations?kind=personal").json["items"][0]["id"], featured)
+        self.admin.put("/api/admin/settings", json={"itemcf_weight": 10})
+        self.assertEqual(self.user.get("/api/recommendations?kind=personal").json["items"][0]["id"], collaborative)
 
 
 if __name__ == "__main__":

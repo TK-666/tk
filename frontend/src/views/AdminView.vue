@@ -16,7 +16,8 @@ async function load() {
   if (user.value?.role !== 'admin') return
   try {
     const [a, b, c, d, e] = await Promise.all([api('/admin/stats'), api('/admin/artworks'), api('/tags'), api('/admin/users'), api('/admin/settings')])
-    stats.value = a; artworks.value = b.items; tags.value = c.items; users.value = d.items; settings.value = { ...settings.value, ...e.items }; error.value = ''
+    stats.value = a; artworks.value = b.items; tags.value = c.items; users.value = d.items
+    settings.value = { tag_weight: Number(e.items.tag_weight ?? 3), itemcf_weight: Number(e.items.itemcf_weight ?? 2) }; error.value = ''
   } catch (err) { error.value = err.message }
 }
 async function saveArtwork() {
