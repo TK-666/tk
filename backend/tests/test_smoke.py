@@ -6,7 +6,7 @@ from PIL import Image
 
 from app import create_app
 from app.extensions import db
-from app.models import User
+from app.models import BehaviorLog, User
 
 
 class SmokeTest(unittest.TestCase):
@@ -47,6 +47,30 @@ class SmokeTest(unittest.TestCase):
         self.assertEqual(self.user.get("/api/recommendations?kind=personal").json["items"][0]["id"], artwork_id)
         self.assertEqual(self.admin.get("/api/admin/stats").json["views"], 1)
         self.assertEqual(self.user.post("/api/admin/tags", json={"name": "x", "category": "style"}).status_code, 403)
+
+    def test_profile_and_favorite_removal(self):
+        self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})
+        tag = self.admin.post("/api/admin/tags", json={"name": "水墨", "category": "style"}).json["item"]
+        artwork = self.admin.post("/api/admin/artworks", json={"title": "山川", "status": "published"}).json["item"]
+        self.user.post("/api/auth/register", json={"username": "visitor", "password": "visitor-password"})
+
+        profile = self.user.patch("/api/auth/me", json={"display_name": "山水", "tag_ids": [tag["id"]]})
+        self.assertEqual(profile.status_code, 200)
+        self.assertEqual(profile.json["user"]["preference_tag_ids"], [tag["id"]])
+        rejected = self.user.patch("/api/auth/me", json={"display_name": "不应保存", "tag_ids": [99999]})
+        self.assertEqual(rejected.status_code, 400)
+        self.assertEqual(self.user.get("/api/auth/me").json["user"]["display_name"], "山水")
+
+        url = f'/api/artworks/{artwork["id"]}/interaction'
+        for active in (True, True, False, False):
+            response = self.user.put(url, json={"action": "favorite", "active": active})
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json["favorited"], active)
+        self.assertEqual(self.user.get("/api/me/favorites").json["items"], [])
+        for score in (True, 2.5):
+            self.assertEqual(self.user.put(url, json={"action": "rate", "score": score}).status_code, 400)
+        events = db.session.scalars(db.select(BehaviorLog.action).order_by(BehaviorLog.id)).all()
+        self.assertEqual(events, ["favorite", "unfavorite"])
 
     def test_admin_upload_tag_cleanup_and_disabled_user(self):
         self.admin.post("/api/auth/login", json={"username": "admin", "password": "admin-password"})
