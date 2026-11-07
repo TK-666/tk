@@ -9,6 +9,9 @@ backend/app/api/       统一 /api 接口：认证、作品、交互、推荐、
 backend/app/models.py  用户、作品、标签、收藏、点赞、评分、行为日志和推荐配置
 frontend/src/views/    用户端与管理员端页面
 docs/                  架构、接口和分支协作约定
+data/                  馆方公有领域作品样本清单与图片
+scripts/collect_artworks.py  样本采集脚本
+scripts/import_artworks.py   样本导入脚本
 ```
 
 ## 本地启动
@@ -34,6 +37,10 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\dev.ps1 Fronte
 打开 `http://127.0.0.1:5173/`。`http://127.0.0.1:5173/api/health` 应返回 `{"status":"ok"}`。如果与其他工作树并行运行，给两条命令传相同的 `-BackendPort`，并给前端单独传 `-FrontendPort`。默认端口分别为 5000 和 5173。
 
 SQLite 文件在 `backend/instance/artworks.db`，本地上传默认在 `backend/instance/uploads/`。需要管理员时，在 `backend` 目录设置进程环境变量 `ADMIN_PASSWORD`（至少 8 字符），运行 `.\.venv\Scripts\python.exe -m flask --app run create-admin admin`，再清除该环境变量。
+
+### 导入作品样本
+
+数据库初始化后，在项目根目录运行 `.\backend\.venv\Scripts\python.exe .\scripts\import_artworks.py`。仓库附有 46 件馆方标记为公有领域的绘画样本及图片；导入可重复执行，不会重复创建作品。样本来源、筛选和标签映射见 [docs/data-collection.md](docs/data-collection.md)。
 
 ### 使用 MySQL 8
 
