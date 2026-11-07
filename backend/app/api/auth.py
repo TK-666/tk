@@ -9,8 +9,11 @@ from .common import current_user, integer, payload, require_user
 @api.post("/auth/register")
 def register():
     data = payload()
-    username = str(data.get("username", "")).strip()
-    password = str(data.get("password", ""))
+    username = data.get("username")
+    password = data.get("password")
+    if not isinstance(username, str) or not isinstance(password, str):
+        abort(400, description="用户名和密码必须是文本")
+    username = username.strip()
     if not 3 <= len(username) <= 50 or not 8 <= len(password) <= 128:
         abort(400, description="用户名需为 3–50 字符，密码需为 8–128 字符")
     if db.session.scalar(db.select(User).filter_by(username=username)):
@@ -27,8 +30,11 @@ def register():
 @api.post("/auth/login")
 def login():
     data = payload()
-    user = db.session.scalar(db.select(User).filter_by(username=str(data.get("username", "")).strip()))
-    if not user or not user.enabled or not user.check_password(str(data.get("password", ""))):
+    username, password = data.get("username"), data.get("password")
+    if not isinstance(username, str) or not isinstance(password, str):
+        abort(401, description="用户名或密码错误，或账号已禁用")
+    user = db.session.scalar(db.select(User).filter_by(username=username.strip()))
+    if not user or not user.enabled or not user.check_password(password):
         abort(401, description="用户名或密码错误，或账号已禁用")
     session.clear()
     session["user_id"] = user.id
@@ -54,14 +60,17 @@ def update_me():
     user = current_user()
     tags = _style_tags(data["tag_ids"]) if "tag_ids" in data else None
     if "display_name" in data:
-        name = str(data["display_name"]).strip()
+        if not isinstance(data["display_name"], str):
+            abort(400, description="昵称必须是文本")
+        name = data["display_name"].strip()
         if len(name) > 80:
             abort(400, description="昵称过长")
     if "password" in data:
-        password = str(data["password"])
-        if not 8 <= len(password) <= 128:
+        password = data["password"]
+        if not isinstance(password, str) or not 8 <= len(password) <= 128:
             abort(400, description="密码需为 8–128 字符")
-        if not user.check_password(str(data.get("current_password", ""))):
+        current_password = data.get("current_password")
+        if not isinstance(current_password, str) or not user.check_password(current_password):
             abort(400, description="当前密码错误")
         user.set_password(password)
     if "display_name" in data:

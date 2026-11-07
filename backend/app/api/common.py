@@ -43,9 +43,11 @@ def require_admin(view):
 
 
 def integer(value, name, minimum=None, maximum=None):
+    if isinstance(value, bool) or not isinstance(value, (int, str)):
+        abort(400, description=f"{name} 必须是整数")
     try:
         number = int(value)
-    except (TypeError, ValueError):
+    except (TypeError, ValueError, OverflowError):
         abort(400, description=f"{name} 必须是整数")
     if (minimum is not None and number < minimum) or (maximum is not None and number > maximum):
         abort(400, description=f"{name} 超出范围")
