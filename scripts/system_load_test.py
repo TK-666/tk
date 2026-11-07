@@ -39,8 +39,8 @@ class QuietHandler(WSGIRequestHandler):
 
 def make_fixture(temp_dir):
     manifest = json.loads((ROOT / "data" / "artworks.json").read_text(encoding="utf-8"))["artworks"]
-    if len(manifest) != 46:
-        raise ValueError("This benchmark expects the 46-artwork sample catalog")
+    if len(manifest) < 10:
+        raise ValueError("This benchmark needs at least 10 artworks to seed user interactions")
     upload_dir = temp_dir / "uploads"
     upload_dir.mkdir()
     shutil.copyfile(ROOT / "data" / manifest[0]["image_file"], upload_dir / "sample.jpg")
@@ -88,7 +88,7 @@ def make_fixture(temp_dir):
         if cookie is None:
             raise RuntimeError("No benchmark session cookie")
         cookie_header = f"session={cookie.value}"
-    return app, cookie_header
+    return app, cookie_header, len(manifest)
 
 
 def request_once(port, path, cookie):
@@ -206,7 +206,7 @@ def main():
         ("image", "/api/uploads/sample.jpg", False),
     ]
     with tempfile.TemporaryDirectory(prefix="art-system-load-") as directory:
-        app, cookie = make_fixture(Path(directory))
+        app, cookie, artwork_count = make_fixture(Path(directory))
         server = make_server("127.0.0.1", 0, app, threaded=True, request_handler=QuietHandler)
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
@@ -228,7 +228,7 @@ def main():
                 "environment": {"os": platform.platform(), "python": platform.python_version(),
                                 "flask": version("Flask"), "sqlalchemy": version("SQLAlchemy"),
                                 "logical_cpus": os.cpu_count(), "database": "SQLite", "server": "Werkzeug threaded development server"},
-                "fixture": {"artworks": 46, "synthetic_users": 50, "views": 500,
+                "fixture": {"artworks": artwork_count, "synthetic_users": 50, "views": 500,
                             "favorites": 150, "likes": 150, "ratings": 50,
                             "client_and_server_same_machine": True},
                 "results": results,

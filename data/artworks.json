@@ -1,7 +1,7 @@
 {
   "source": "Art Institute of Chicago public API",
   "source_docs": "https://api.artic.edu/docs/",
-  "collected_at": "2026-11-07T12:57:54.609321+00:00",
+  "collected_at": "2026-11-07T14:21:18.886506+00:00",
   "artworks": [
     {
       "source": "Art Institute of Chicago",
@@ -2337,6 +2337,2577 @@
       ],
       "image_file": "images/aic-13455.jpg",
       "image_sha256": "db69c9bff3c3e5f5e8b3363604c43007d0ba85bb5344e5ad4ebf41ec4c715411"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 25865,
+      "source_url": "https://www.artic.edu/artworks/25865",
+      "api_url": "https://api.artic.edu/api/v1/artworks/25865",
+      "iiif_url": "https://www.artic.edu/iiif/2/5dca7347-c6dc-24dd-d073-d705b9cdc575/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Herring Net",
+      "artist": "Winslow Homer",
+      "artist_display": "Winslow Homer (American, 1836–1910)",
+      "date_display": "1885",
+      "date_start": 1885,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Mr. and Mrs. Martin A. Ryerson Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "people",
+        "work",
+        "weather/seasons",
+        "food",
+        "water",
+        "men",
+        "fishing",
+        "boats",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "animals",
+        "landscapes",
+        "portraits"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-25865.jpg",
+      "image_sha256": "baa1267de3942f5ca49f68beaaf156dd236725e34fe14fa1600a96b253e95b51"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 69780,
+      "source_url": "https://www.artic.edu/artworks/69780",
+      "api_url": "https://api.artic.edu/api/v1/artworks/69780",
+      "iiif_url": "https://www.artic.edu/iiif/2/3f9aa9db-61e1-7060-fdb0-bfd7e41ddd08/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Fountain, Villa Torlonia, Frascati, Italy",
+      "artist": "John Singer Sargent",
+      "artist_display": "John Singer Sargent (American, 1856–1925)",
+      "date_display": "1907",
+      "date_start": 1907,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Friends of American Art Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "people",
+        "men",
+        "women",
+        "water",
+        "leisure",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "Chicago",
+        "fashion",
+        "portraits"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "20世纪"
+        }
+      ],
+      "image_file": "images/aic-69780.jpg",
+      "image_sha256": "901ff9f28d026d0b63ac297e7d6c01136becfbb2ead7ada3d21a10c0820b535f"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 56905,
+      "source_url": "https://www.artic.edu/artworks/56905",
+      "api_url": "https://api.artic.edu/api/v1/artworks/56905",
+      "iiif_url": "https://www.artic.edu/iiif/2/50034c7f-ce51-00f1-430e-a6f7efc233fc/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Nocturne: Blue and Gold—Southampton Water",
+      "artist": "James McNeill Whistler",
+      "artist_display": "James McNeill Whistler (American, 1834–1903)",
+      "date_display": "1872",
+      "date_start": 1872,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Stickney Fund",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "landscapes",
+        "water",
+        "weather/seasons",
+        "night scenes",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-56905.jpg",
+      "image_sha256": "c0133be73f9a190d8b0e06bd8338a9b87d7e529b6917c0707966c30509baeca5"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 81558,
+      "source_url": "https://www.artic.edu/artworks/81558",
+      "api_url": "https://api.artic.edu/api/v1/artworks/81558",
+      "iiif_url": "https://www.artic.edu/iiif/2/321c45f5-22a3-84a2-44cc-cf66642d4cf2/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Acrobats at the Cirque Fernando (Francisca and Angelina Wartenberg)",
+      "artist": "Pierre-Auguste Renoir",
+      "artist_display": "Pierre-Auguste Renoir (French, 1841–1919)",
+      "date_display": "1879",
+      "date_start": 1879,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Potter Palmer Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "Century of Progress",
+        "public",
+        "costume",
+        "entertainment",
+        "girls",
+        "portraits",
+        "work",
+        "leisure",
+        "children",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "uniforms",
+        "acrobats",
+        "fruit",
+        "oranges"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-81558.jpg",
+      "image_sha256": "402bc47c7b84cc26816808d1fbf81bbadfb0d5c766da8b9325945161b6a533af"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 109780,
+      "source_url": "https://www.artic.edu/artworks/109780",
+      "api_url": "https://api.artic.edu/api/v1/artworks/109780",
+      "iiif_url": "https://www.artic.edu/iiif/2/18ab0c35-e35c-0216-9afd-f93357920db1/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Love of Winter",
+      "artist": "George Wesley Bellows",
+      "artist_display": "George Wesley Bellows (American, 1882–1925)",
+      "date_display": "1914",
+      "date_start": 1914,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Friends of American Art Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "landscapes",
+        "children",
+        "families",
+        "weather/seasons",
+        "leisure",
+        "winter",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "fashion",
+        "people",
+        "portraits"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "20世纪"
+        }
+      ],
+      "image_file": "images/aic-109780.jpg",
+      "image_sha256": "ce87936092b8baff4ab95c9f593c5290acf30f8723d79ca7c58a3f6b2ab84f5b"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 14572,
+      "source_url": "https://www.artic.edu/artworks/14572",
+      "api_url": "https://api.artic.edu/api/v1/artworks/14572",
+      "iiif_url": "https://www.artic.edu/iiif/2/6f513908-03cc-b974-633b-adfce56b7936/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Millinery Shop",
+      "artist": "Hilaire Germain Edgar Degas",
+      "artist_display": "Edgar Degas (French, 1834–1917)",
+      "date_display": "1879-86",
+      "date_start": 1879,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Mr. and Mrs. Lewis Larned Coburn Memorial Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "women",
+        "fashion",
+        "portrait",
+        "everyday life (genre)",
+        "work",
+        "urban life",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "hats"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "城市"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-14572.jpg",
+      "image_sha256": "e183a1f684dd4b319075ec07ceda2537b7c2498ac9eec58f4db79338b6854807"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 28849,
+      "source_url": "https://www.artic.edu/artworks/28849",
+      "api_url": "https://api.artic.edu/api/v1/artworks/28849",
+      "iiif_url": "https://www.artic.edu/iiif/2/72a76270-d6f4-e744-d47b-307873a8e8ff/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "A City Park",
+      "artist": "William Merritt Chase",
+      "artist_display": "William Merritt Chase (American, 1849–1916)",
+      "date_display": "c. 1887",
+      "date_start": 1887,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Bequest of Dr. John J. Ireland",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "cityscapes",
+        "women",
+        "weather/seasons",
+        "leisure",
+        "landscapes",
+        "urban life"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "城市"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-28849.jpg",
+      "image_sha256": "72703750e39448d47aa3b715540eda2ee2b4457af80bea974b5fa1bb3409c14a"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 15401,
+      "source_url": "https://www.artic.edu/artworks/15401",
+      "api_url": "https://api.artic.edu/api/v1/artworks/15401",
+      "iiif_url": "https://www.artic.edu/iiif/2/b146368d-a855-63ac-6115-04b835c60bb0/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "At Mouquin's",
+      "artist": "William James Glackens",
+      "artist_display": "William Glackens (American, 1870–1938)",
+      "date_display": "1905",
+      "date_start": 1905,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Friends of American Art Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "fashion",
+        "women",
+        "men",
+        "night scenes",
+        "leisure",
+        "urban life",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "dining",
+        "drinking",
+        "people",
+        "portraits"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "城市"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "20世纪"
+        }
+      ],
+      "image_file": "images/aic-15401.jpg",
+      "image_sha256": "988a788002151512f4524a265374f90058b21d280fe53cb070a4c552c6aa8881"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 44018,
+      "source_url": "https://www.artic.edu/artworks/44018",
+      "api_url": "https://api.artic.edu/api/v1/artworks/44018",
+      "iiif_url": "https://www.artic.edu/iiif/2/f7b2db45-f393-653c-07ef-84319b0cdb92/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Croquet Scene",
+      "artist": "Winslow Homer",
+      "artist_display": "Winslow Homer (American, 1836–1910)",
+      "date_display": "1866",
+      "date_start": 1866,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Friends of American Art Collection; Goodman Fund",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "fashion",
+        "women",
+        "weather/seasons",
+        "leisure",
+        "men"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-44018.jpg",
+      "image_sha256": "0fd428870e707739d147e5644d8abde0a313df3d14b0eb9fb1ba818e238db14d"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 14591,
+      "source_url": "https://www.artic.edu/artworks/14591",
+      "api_url": "https://api.artic.edu/api/v1/artworks/14591",
+      "iiif_url": "https://www.artic.edu/iiif/2/fd991fea-0c13-8444-7879-aba467f1d9db/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Woman Reading",
+      "artist": "Édouard Manet",
+      "artist_display": "Édouard Manet (French, 1832–1883)",
+      "date_display": "1880–82",
+      "date_start": 1880,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Mr. and Mrs. Lewis Larned Coburn Memorial Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "everyday life (genre)",
+        "table",
+        "reading",
+        "painting",
+        "magazine",
+        "floral",
+        "fashion",
+        "black (color)",
+        "tankard",
+        "beer",
+        "women",
+        "portraits",
+        "leisure",
+        "urban life",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "城市"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-14591.jpg",
+      "image_sha256": "d6c4ed66486d13cc8c454c4c7676ce805fa5d73848f0507927190ff7e15af84a"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 72801,
+      "source_url": "https://www.artic.edu/artworks/72801",
+      "api_url": "https://api.artic.edu/api/v1/artworks/72801",
+      "iiif_url": "https://www.artic.edu/iiif/2/3ae75415-0551-ae17-c478-3b8687a6f246/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Icebound",
+      "artist": "John Henry Twachtman",
+      "artist_display": "John Henry Twachtman (American, 1853–1902)",
+      "date_display": "c. 1889",
+      "date_start": 1889,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Friends of American Art Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "landscapes",
+        "winter",
+        "snow",
+        "trees",
+        "weather/seasons",
+        "water",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-72801.jpg",
+      "image_sha256": "7609d32dd6dca50bda8c2c3b6bf3c128e5ffc6637cbd74b15bd18c6ac688d9e6"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 14574,
+      "source_url": "https://www.artic.edu/artworks/14574",
+      "api_url": "https://api.artic.edu/api/v1/artworks/14574",
+      "iiif_url": "https://www.artic.edu/iiif/2/ba4d7ead-bd10-e02d-6f5f-613050d7062e/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Henri Degas and His Niece Lucie Degas (The Artist's Uncle and Cousin)",
+      "artist": "Hilaire Germain Edgar Degas",
+      "artist_display": "Edgar Degas (French, 1834–1917)",
+      "date_display": "1875–76",
+      "date_start": 1875,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Mr. and Mrs. Lewis Larned Coburn Memorial Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "families",
+        "interiors",
+        "interior",
+        "portraits",
+        "domestic scenes",
+        "emotions",
+        "men",
+        "children",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-14574.jpg",
+      "image_sha256": "f15c5eec9215978d84cfc2b1651afc5fc5832c029e5e72520a72a80303072bee"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 64729,
+      "source_url": "https://www.artic.edu/artworks/64729",
+      "api_url": "https://api.artic.edu/api/v1/artworks/64729",
+      "iiif_url": "https://www.artic.edu/iiif/2/ef96e79b-f481-8114-0804-4bd39c101983/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Early Morning, Tarpon Springs",
+      "artist": "George Inness",
+      "artist_display": "George Inness (American, 1825–1894)",
+      "date_display": "1892",
+      "date_start": 1892,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Edward B. Butler Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "landscapes",
+        "weather/seasons"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-64729.jpg",
+      "image_sha256": "414b38d816e03ab51d88343f927e2f822cae3ed7abc04a87571a49e3b4a2b11a"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 14620,
+      "source_url": "https://www.artic.edu/artworks/14620",
+      "api_url": "https://api.artic.edu/api/v1/artworks/14620",
+      "iiif_url": "https://www.artic.edu/iiif/2/b0effb1c-ff23-bbaa-f809-9fd94e31c1a0/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Cliff Walk at Pourville",
+      "artist": "Claude Monet",
+      "artist_display": "Claude Monet (French, 1840–1926)",
+      "date_display": "1882",
+      "date_start": 1882,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Mr. and Mrs. Lewis Larned Coburn Memorial Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "landscapes",
+        "sailing",
+        "boats",
+        "cliff",
+        "parasols",
+        "sky",
+        "summer",
+        "France",
+        "women",
+        "weather/seasons",
+        "leisure",
+        "water",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-14620.jpg",
+      "image_sha256": "ab989ce864619f09c3cc92cc9b0cbbb25fb00654853372fedf368a886236176a"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 87088,
+      "source_url": "https://www.artic.edu/artworks/87088",
+      "api_url": "https://api.artic.edu/api/v1/artworks/87088",
+      "iiif_url": "https://www.artic.edu/iiif/2/8534685d-1102-e1e3-e194-94f6e925e8b0/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Water Lily Pond",
+      "artist": "Claude Monet",
+      "artist_display": "Claude Monet (French, 1840–1926)",
+      "date_display": "1900",
+      "date_start": 1900,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Mr. and Mrs. Lewis Larned Coburn Memorial Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "landscapes",
+        "water lilies",
+        "trees",
+        "pond",
+        "Nymphaea",
+        "garden",
+        "France",
+        "foliage",
+        "flowers",
+        "bridge",
+        "weather/seasons",
+        "water"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-87088.jpg",
+      "image_sha256": "ca44616f5081901d816b473c124c011cf979ff6194fdfd54b6071bce35ae2f08"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 138,
+      "source_url": "https://www.artic.edu/artworks/138",
+      "api_url": "https://api.artic.edu/api/v1/artworks/138",
+      "iiif_url": "https://www.artic.edu/iiif/2/e72305c9-1a1c-8a36-7450-582619366338/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Flower Girl in Holland",
+      "artist": "George Hitchcock",
+      "artist_display": "George Hitchcock\nAmerican, 1850–1913",
+      "date_display": "1887",
+      "date_start": 1887,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Potter Palmer Collection",
+      "style_title": "Impressionism",
+      "subject_titles": [
+        "landscapes",
+        "countryside",
+        "women",
+        "flowers",
+        "Holland",
+        "Chicago"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-138.jpg",
+      "image_sha256": "9420cf7d949783603450055caf3e776f0d83da2927bdbe2b7b3853f044378eaa"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 64724,
+      "source_url": "https://www.artic.edu/artworks/64724",
+      "api_url": "https://api.artic.edu/api/v1/artworks/64724",
+      "iiif_url": "https://www.artic.edu/iiif/2/0f2d999d-0173-2935-a6d0-0175bb97b2a9/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Home of the Heron",
+      "artist": "George Inness",
+      "artist_display": "George Inness (American, 1825–1894)",
+      "date_display": "1893",
+      "date_start": 1893,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Edward B. Butler Collection",
+      "style_title": "Post-Impressionism",
+      "subject_titles": [
+        "landscapes",
+        "birds",
+        "weather/seasons",
+        "circles",
+        "animals"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "后印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-64724.jpg",
+      "image_sha256": "ba4e4eb6d180658f455d91e6cee0c93bd9447a218575ff79d05af25a1595293d"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 62371,
+      "source_url": "https://www.artic.edu/artworks/62371",
+      "api_url": "https://api.artic.edu/api/v1/artworks/62371",
+      "iiif_url": "https://www.artic.edu/iiif/2/4822cd01-44ac-041a-36b8-c0542377b750/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Madame Cezanne in a Yellow Chair",
+      "artist": "Paul Cezanne",
+      "artist_display": "Paul Cezanne (French, 1839–1906)",
+      "date_display": "1888–90",
+      "date_start": 1893,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Wilson L. Mead Fund",
+      "style_title": "Post-Impressionism",
+      "subject_titles": [
+        "portraits",
+        "chair",
+        "interior",
+        "portraits: European subject",
+        "portraits: female subject",
+        "portraits: French subject",
+        "emotions",
+        "women",
+        "families"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "后印象派"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-62371.jpg",
+      "image_sha256": "cd0abce6f3dc3faabf24c546ea5153c5afc57b94dd3d9ca5a6016e4630b09fae"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 60812,
+      "source_url": "https://www.artic.edu/artworks/60812",
+      "api_url": "https://api.artic.edu/api/v1/artworks/60812",
+      "iiif_url": "https://www.artic.edu/iiif/2/48268fc7-2eb4-ded6-1293-e91f27b66478/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Merahi metua no Tehamana (Tehamana Has Many Parents or The Ancestors of Tehamana)",
+      "artist": "Paul Gauguin",
+      "artist_display": "Paul Gauguin (French, 1848–1903)",
+      "date_display": "1893",
+      "date_start": 1893,
+      "medium_display": "Oil on jute canvas",
+      "credit_line": "Gift of Mr. and Mrs. Charles Deering McCormick",
+      "style_title": "Post-Impressionism",
+      "subject_titles": [
+        "portraits: child subject",
+        "deities",
+        "fruit",
+        "flowers",
+        "symbols",
+        "decoration",
+        "white (color)",
+        "blue (color)",
+        "fans",
+        "stripes",
+        "portraits: female subject",
+        "portrait",
+        "women",
+        "portraits",
+        "mysteries/fantasies",
+        "interiors",
+        "fashion",
+        "dresses",
+        "text",
+        "Tahiti",
+        "Tahitian people"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "后印象派"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-60812.jpg",
+      "image_sha256": "b3473986fa7d5acde63f3ae304619aaeeaf3b9b04209e87f2e799ff038fc5bbc"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 109926,
+      "source_url": "https://www.artic.edu/artworks/109926",
+      "api_url": "https://api.artic.edu/api/v1/artworks/109926",
+      "iiif_url": "https://www.artic.edu/iiif/2/a1dc6109-6e0c-7801-ebe8-8c95fec2c4e4/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Landscape: Window Overlooking the Woods",
+      "artist": "Édouard Jean Vuillard",
+      "artist_display": "Édouard Vuillard (French, 1868-1940)",
+      "date_display": "1899",
+      "date_start": 1899,
+      "medium_display": "Oil on canvas",
+      "credit_line": "L.L. and A.S. Coburn Fund, Martha E. Leverone, Charles Norton Owen funds, and purchased with funds provided by an anonymous donor",
+      "style_title": "Post-Impressionism",
+      "subject_titles": [
+        "landscapes",
+        "window",
+        "trees",
+        "people",
+        "landscape",
+        "forests",
+        "figures",
+        "farm",
+        "bushes",
+        "flowers",
+        "house",
+        "building",
+        "buildings",
+        "church",
+        "animals",
+        "horse",
+        "weather/seasons"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "后印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-109926.jpg",
+      "image_sha256": "9a229fe054b1f186696a08d3bdeb3ef3cb9659eb67dfac0d3f4587143781f908"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 87643,
+      "source_url": "https://www.artic.edu/artworks/87643",
+      "api_url": "https://api.artic.edu/api/v1/artworks/87643",
+      "iiif_url": "https://www.artic.edu/iiif/2/46ff0699-8905-a7d7-92f3-5210c2cc5e51/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Two Disciples at the Tomb",
+      "artist": "Henry Ossawa Tanner",
+      "artist_display": "Henry Ossawa Tanner (American, 1859–1937)",
+      "date_display": "c. 1906",
+      "date_start": 1906,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Robert A. Waller Fund",
+      "style_title": "Post-Impressionism",
+      "subject_titles": [
+        "Century of Progress",
+        "emotions",
+        "religious scenes",
+        "men",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "people",
+        "portraits"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "后印象派"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "20世纪"
+        }
+      ],
+      "image_file": "images/aic-87643.jpg",
+      "image_sha256": "006a188f2e4f96d10f2898b08cb89990daa7cf3f4f46033b6a824bc777139c08"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 27943,
+      "source_url": "https://www.artic.edu/artworks/27943",
+      "api_url": "https://api.artic.edu/api/v1/artworks/27943",
+      "iiif_url": "https://www.artic.edu/iiif/2/a4bef587-48a4-d186-813d-f297441b1ab3/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Mahana no atua (Day of the God)",
+      "artist": "Paul Gauguin",
+      "artist_display": "Paul Gauguin (French, 1848–1903)",
+      "date_display": "1894",
+      "date_start": 1894,
+      "medium_display": "Oil on linen canvas",
+      "credit_line": "Helen Birch Bartlett Memorial Collection",
+      "style_title": "Post-Impressionism",
+      "subject_titles": [
+        "women",
+        "abstract",
+        "beach",
+        "celebrations",
+        "clouds",
+        "colonialism",
+        "figure",
+        "figures",
+        "France",
+        "French",
+        "nudes",
+        "shore",
+        "sky",
+        "statues",
+        "trees",
+        "weather/seasons",
+        "dancers",
+        "landscapes",
+        "mysteries/fantasies",
+        "religious scenes",
+        "water",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "后印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-27943.jpg",
+      "image_sha256": "93a9bdec1863aba59b495a8a20b8e5e9dd4965b6e7744670fa68c2df40adc245"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 79349,
+      "source_url": "https://www.artic.edu/artworks/79349",
+      "api_url": "https://api.artic.edu/api/v1/artworks/79349",
+      "iiif_url": "https://www.artic.edu/iiif/2/107958b1-8367-df7c-be17-bb3a076479d8/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Drinkers",
+      "artist": "Vincent van Gogh",
+      "artist_display": "Vincent van Gogh (Dutch, 1853–1890)",
+      "date_display": "1890",
+      "date_start": 1890,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Joseph Winterbotham Collection",
+      "style_title": "Post-Impressionism",
+      "subject_titles": [
+        "drinking",
+        "pitcher",
+        "table",
+        "clouds",
+        "work",
+        "hats",
+        "factory",
+        "alcohol",
+        "men",
+        "leisure"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "后印象派"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-79349.jpg",
+      "image_sha256": "e1acac8bd47977293f42bd158c32730563c304ba887170526a4fddf84ebcbe2b"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 61616,
+      "source_url": "https://www.artic.edu/artworks/61616",
+      "api_url": "https://api.artic.edu/api/v1/artworks/61616",
+      "iiif_url": "https://www.artic.edu/iiif/2/081be15c-8812-c174-eeb2-cf318a2e67cf/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Oil Sketch for \"A Sunday on La Grande Jatte — 1884\"",
+      "artist": "Georges Seurat",
+      "artist_display": "Georges Seurat (French, 1859–1891)",
+      "date_display": "1884",
+      "date_start": 1884,
+      "medium_display": "Oil on panel",
+      "credit_line": "Gift of Mary and Leigh Block",
+      "style_title": "Post-Impressionism",
+      "subject_titles": [
+        "leisure",
+        "sketch",
+        "park",
+        "nature",
+        "men",
+        "landscape",
+        "figures",
+        "fashion",
+        "dresses",
+        "weather/seasons",
+        "women",
+        "landscapes",
+        "water",
+        "urban life"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "后印象派"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "城市"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-61616.jpg",
+      "image_sha256": "05268a9f7af0e647a4e67a52d7539bd2cdff2ede15f3ce0656ed2b5086d9479c"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 31285,
+      "source_url": "https://www.artic.edu/artworks/31285",
+      "api_url": "https://api.artic.edu/api/v1/artworks/31285",
+      "iiif_url": "https://www.artic.edu/iiif/2/8cb9f5ea-c955-96fd-c2d6-c720b0dbf7d4/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Portrait of Mary Adeline Williams",
+      "artist": "Thomas Eakins",
+      "artist_display": "Thomas Eakins (American, 1844–1916)",
+      "date_display": "1899",
+      "date_start": 1899,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Friends of American Art Collection",
+      "style_title": "Realism",
+      "subject_titles": [
+        "fashion",
+        "people",
+        "portraits"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-31285.jpg",
+      "image_sha256": "0d45c11f774dbed537f778b33eb3546c712ee403d5524a178a5e0dffd489fa58"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 28862,
+      "source_url": "https://www.artic.edu/artworks/28862",
+      "api_url": "https://api.artic.edu/api/v1/artworks/28862",
+      "iiif_url": "https://www.artic.edu/iiif/2/1d3a275d-45dd-6026-b6ed-d7d8df417a3d/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "A Peasant Woman Digging in Front of Her Cottage",
+      "artist": "Vincent van Gogh",
+      "artist_display": "Vincent van Gogh (Dutch, 1853–1890)",
+      "date_display": "c. 1885",
+      "date_start": 1880,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Bequest of Dr. John J. Ireland",
+      "style_title": "Realism",
+      "subject_titles": [
+        "everyday life (genre)",
+        "green (color)",
+        "brown (color)",
+        "trees",
+        "clouds",
+        "house",
+        "woman",
+        "peasants",
+        "rural life",
+        "work",
+        "women",
+        "weather/seasons"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-28862.jpg",
+      "image_sha256": "80a43753edbfd382c9903a1eb82e5cde42d9aa2e0ee95d99c60c7ac245e613f8"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 95183,
+      "source_url": "https://www.artic.edu/artworks/95183",
+      "api_url": "https://api.artic.edu/api/v1/artworks/95183",
+      "iiif_url": "https://www.artic.edu/iiif/2/1a087ef7-8455-e5d0-0b2b-9738cd33058c/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Beggar with a Duffle Coat (Philosopher)",
+      "artist": "Édouard Manet",
+      "artist_display": "Édouard Manet (French, 1832-1883)",
+      "date_display": "1865–67",
+      "date_start": 1865,
+      "medium_display": "Oil on canvas",
+      "credit_line": "A. A. Munger Collection",
+      "style_title": "Realism",
+      "subject_titles": [
+        "portraits: male subject",
+        "philosophers",
+        "peasants",
+        "portraits",
+        "emotions",
+        "men",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-95183.jpg",
+      "image_sha256": "3e8ec8375c5aaf7996453da2229d8a3b0a2c76f28b80d9553124c407159bf9e4"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 27138,
+      "source_url": "https://www.artic.edu/artworks/27138",
+      "api_url": "https://api.artic.edu/api/v1/artworks/27138",
+      "iiif_url": "https://www.artic.edu/iiif/2/e1f6ef79-7216-4f19-ac78-a307a2fb4f32/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "A Friendly Warning",
+      "artist": "Thomas Hicks",
+      "artist_display": "Thomas Hicks\nAmerican, 1823–1890",
+      "date_display": "1881–90",
+      "date_start": 1881,
+      "medium_display": "Oil on canvas",
+      "credit_line": "A. A. McKay Fund",
+      "style_title": "Realism",
+      "subject_titles": [],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-27138.jpg",
+      "image_sha256": "98a42b8bef6b5e66262d4e5e651e192d9c7b953d92da7a354acdb85aee413147"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 897,
+      "source_url": "https://www.artic.edu/artworks/897",
+      "api_url": "https://api.artic.edu/api/v1/artworks/897",
+      "iiif_url": "https://www.artic.edu/iiif/2/5ae91cbf-66c5-cf9b-f355-629e458cb063/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Pasture in Normandy",
+      "artist": "Constant Troyon",
+      "artist_display": "Constant Troyon (French, 1810–1865)",
+      "date_display": "1852",
+      "date_start": 1852,
+      "medium_display": "Oil on panel",
+      "credit_line": "Henry Field Memorial Collection",
+      "style_title": "Realism",
+      "subject_titles": [
+        "animals",
+        "trees",
+        "sky",
+        "sheep",
+        "pastures",
+        "nature",
+        "landscapes",
+        "landscape",
+        "figures",
+        "farm",
+        "cows",
+        "clouds"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-897.jpg",
+      "image_sha256": "d0ea6080947a8af165b716d24ff05df4e02b63334501af9894cbe5e9c09edf6e"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 8969,
+      "source_url": "https://www.artic.edu/artworks/8969",
+      "api_url": "https://api.artic.edu/api/v1/artworks/8969",
+      "iiif_url": "https://www.artic.edu/iiif/2/4e074d70-4424-331b-ec89-0776a45d6825/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Beggar with Oysters (Philosopher)",
+      "artist": "Édouard Manet",
+      "artist_display": "Édouard Manet (French, 1832–1883)",
+      "date_display": "1865–67",
+      "date_start": 1865,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Arthur Jerome Eddy Memorial Collection",
+      "style_title": "Realism",
+      "subject_titles": [
+        "portraits: male subject",
+        "peasants",
+        "portrait",
+        "men",
+        "portraits",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-8969.jpg",
+      "image_sha256": "a38bc5ae9371d7634a4fef2f817fd19f79e75a01864bd99b836fc1fab6747114"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 86780,
+      "source_url": "https://www.artic.edu/artworks/86780",
+      "api_url": "https://api.artic.edu/api/v1/artworks/86780",
+      "iiif_url": "https://www.artic.edu/iiif/2/49f45b42-b565-199f-6ef5-f09dea142205/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Mother and Child",
+      "artist": "Julius Gari Melchers",
+      "artist_display": "Julius Gari Melchers (American, 1860–1932)",
+      "date_display": "c. 1906",
+      "date_start": 1906,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Gift of James Deering",
+      "style_title": "Realism",
+      "subject_titles": [
+        "Century of Progress",
+        "mothers",
+        "children",
+        "babies",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "people",
+        "portraits"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "20世纪"
+        }
+      ],
+      "image_file": "images/aic-86780.jpg",
+      "image_sha256": "68dd2b592ea58a4c8d424323a2779a7538bbeda1228074dde4094f392af68d3e"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 121629,
+      "source_url": "https://www.artic.edu/artworks/121629",
+      "api_url": "https://api.artic.edu/api/v1/artworks/121629",
+      "iiif_url": "https://www.artic.edu/iiif/2/e6dd6199-c245-d1b4-a997-ce89eafb48ca/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Life Study (Study of an Egyptian Girl)",
+      "artist": "John Singer Sargent",
+      "artist_display": "John Singer Sargent (American, 1856–1925)",
+      "date_display": "1891",
+      "date_start": 1891,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Anonymous loan",
+      "style_title": "Realism",
+      "subject_titles": [
+        "Chicago"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-121629.jpg",
+      "image_sha256": "1caa238110c1737d2931d24243f5ac688a2e89e3020c970583feb81423d77cff"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 44065,
+      "source_url": "https://www.artic.edu/artworks/44065",
+      "api_url": "https://api.artic.edu/api/v1/artworks/44065",
+      "iiif_url": "https://www.artic.edu/iiif/2/e49ad195-1f62-2fd4-f4df-61f0f0f4951f/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Just Dessert",
+      "artist": "William Michael Harnett",
+      "artist_display": "William Michael Harnett (American, born Ireland, 1848–1892)",
+      "date_display": "1891",
+      "date_start": 1891,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Friends of American Art Collection",
+      "style_title": "Realism",
+      "subject_titles": [
+        "still life",
+        "dining",
+        "drinking"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "topic",
+          "name": "静物"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-44065.jpg",
+      "image_sha256": "590d7e8968345e269e273572570d3a8b724aa289bbab2c99d33b31af8e3a0054"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 181777,
+      "source_url": "https://www.artic.edu/artworks/181777",
+      "api_url": "https://api.artic.edu/api/v1/artworks/181777",
+      "iiif_url": "https://www.artic.edu/iiif/2/6754947f-4ccf-b3ff-41ee-45b738534769/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Irish Question",
+      "artist": "De Scott Evans",
+      "artist_display": "De Scott Evans\nAmerican, 1847–1898",
+      "date_display": "1880s",
+      "date_start": 1880,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Purchased with funds provided by Carol W. Wardlaw and Jill Burnside Zeno; Roger and J. Peter McCormick Endowment Fund",
+      "style_title": "Realism",
+      "subject_titles": [
+        "still life",
+        "potatoes",
+        "potato"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "topic",
+          "name": "静物"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-181777.jpg",
+      "image_sha256": "d6268091c71b03ab8d681ec4df174de496b9f3bc63735517a045ff74086d4b53"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 13742,
+      "source_url": "https://www.artic.edu/artworks/13742",
+      "api_url": "https://api.artic.edu/api/v1/artworks/13742",
+      "iiif_url": "https://www.artic.edu/iiif/2/641c5259-1a92-4a3a-714b-62e09efa3b23/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Herself",
+      "artist": "Robert Henri",
+      "artist_display": "Robert Henri (American, 1865–1929)",
+      "date_display": "1913",
+      "date_start": 1913,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Walter H. Schulze Memorial Collection",
+      "style_title": "Realism",
+      "subject_titles": [
+        "fashion",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "people",
+        "portraits"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "写实主义"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "20世纪"
+        }
+      ],
+      "image_file": "images/aic-13742.jpg",
+      "image_sha256": "dcf33829a88278e49ca32a657bea3bcb2907d322bd7a916378d5559f210f91c3"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 16169,
+      "source_url": "https://www.artic.edu/artworks/16169",
+      "api_url": "https://api.artic.edu/api/v1/artworks/16169",
+      "iiif_url": "https://www.artic.edu/iiif/2/af91bb7d-0af4-ef10-5b4d-052da0b6e21a/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Beheading of Saint John the Baptist",
+      "artist": "Giovanni di Paolo",
+      "artist_display": "Giovanni di Paolo (Italian, 1398–1482)",
+      "date_display": "1455–60",
+      "date_start": 1455,
+      "medium_display": "Tempera on panel",
+      "credit_line": "Mr. and Mrs. Martin A. Ryerson Collection",
+      "style_title": "Renaissance",
+      "subject_titles": [
+        "Saint John the Baptist",
+        "biblical",
+        "Devotion",
+        "Italy",
+        "religious",
+        "religious figures",
+        "religious scenes",
+        "saints",
+        "religion",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "architecture",
+        "castles",
+        "weapons",
+        "swords",
+        "blood",
+        "death",
+        "executions",
+        "beheadings",
+        "violence",
+        "Christianity",
+        "Christian subjects"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "文艺复兴"
+        },
+        {
+          "category": "medium",
+          "name": "蛋彩"
+        },
+        {
+          "category": "era",
+          "name": "15世纪"
+        }
+      ],
+      "image_file": "images/aic-16169.jpg",
+      "image_sha256": "9332cbaf52dfd245fb4baace4064921e76a93b51caa3504fb1ffbf76887693b0"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 11434,
+      "source_url": "https://www.artic.edu/artworks/11434",
+      "api_url": "https://api.artic.edu/api/v1/artworks/11434",
+      "iiif_url": "https://www.artic.edu/iiif/2/8eccb189-92f3-353a-3337-c0778c2680d9/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Salome with the Head of Saint John the Baptist",
+      "artist": "Guido Reni",
+      "artist_display": "Guido Reni (Italian, 1575–1642)",
+      "date_display": "c. 1639–42",
+      "date_start": 1634,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Louise B. and Frank H. Woods Purchase Fund",
+      "style_title": "Renaissance",
+      "subject_titles": [
+        "biblical",
+        "women",
+        "plates",
+        "pink (color)",
+        "yellow (color)",
+        "headdresses",
+        "jewelry",
+        "royal",
+        "wealth",
+        "Christian subjects",
+        "Christianity",
+        "religious",
+        "religion",
+        "religious figures",
+        "religious scenes",
+        "Salome",
+        "saints",
+        "Saint John the Baptist",
+        "violence",
+        "death",
+        "decapitation"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "文艺复兴"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "17世纪"
+        }
+      ],
+      "image_file": "images/aic-11434.jpg",
+      "image_sha256": "3ba9bc262d9d7fa46cbc8f91c56706bff438cef7fb44878ba9d094227ca49bbb"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 16298,
+      "source_url": "https://www.artic.edu/artworks/16298",
+      "api_url": "https://api.artic.edu/api/v1/artworks/16298",
+      "iiif_url": "https://www.artic.edu/iiif/2/108f44fc-d93b-abf0-c33c-2920d57844c3/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Portrait of Jean Gros (recto); Coat of Arms of Jean Gros (verso)",
+      "artist": "Rogier van der Weyden",
+      "artist_display": "Rogier van der Weyden (Netherlandish, c. 1399–1464)\nWorkshop of Rogier van der Weyden (Netherlandish, c. 1399–1464)",
+      "date_display": "1460–64",
+      "date_start": 1460,
+      "medium_display": "Oil on panel",
+      "credit_line": "Mr. and Mrs. Martin A. Ryerson Collection",
+      "style_title": "Renaissance",
+      "subject_titles": [
+        "portraits: male subject",
+        "portrait",
+        "prayer",
+        "jewelry",
+        "man",
+        "coat of arms",
+        "tower",
+        "shields",
+        "tassels",
+        "blue",
+        "blue (color)",
+        "gold (color)",
+        "portraits",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "文艺复兴"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "15世纪"
+        }
+      ],
+      "image_file": "images/aic-16298.jpg",
+      "image_sha256": "fb0e6846380e5ff7788ec27dbe6ea53000a4efd62a7e94680fa07e472bdfcf27"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 234781,
+      "source_url": "https://www.artic.edu/artworks/234781",
+      "api_url": "https://api.artic.edu/api/v1/artworks/234781",
+      "iiif_url": "https://www.artic.edu/iiif/2/13a251ba-2c7a-2d0c-3f65-820c0e1f1a39/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Christ Carrying the Cross",
+      "artist": "Sebastiano del Piombo",
+      "artist_display": "Sebastiano del Piombo (Italian, c. 1485–1547)",
+      "date_display": "c. 1515–17",
+      "date_start": 1515,
+      "medium_display": "Oil on panel",
+      "credit_line": "Lacy Armour, Ada Turnbull Hertle, Mary Swissler Oldberg Acquisition, Charles H. and Mary F. S. Worcester Collection funds; Wirt D. Walker Trust; Alyce and Edwin DeCosta and the Walter E. Heller Foundation Fund; Estate of Walter Aitken; Frederick W. Renshaw Acquisition, Marian and Samuel Klasstorner funds; Edward E. Ayer Fund in Memory of Charles L. Hutchinson; Lara T. Magnuson Acquisition, Director's funds; Samuel A. Marx Purchase Fund for Major Acquisitions; Edward Johnson, Maurice D. Galleher Endowment, Simeon B. Williams, Capital Campaign General Acquisitions, Wentworth Greene Field Memorial, Samuel P. Avery, Morris L. Parker, Irving and June Seaman Endowment, and Betty Bell Spooner funds",
+      "style_title": "Renaissance",
+      "subject_titles": [
+        "Jesus",
+        "Christianity",
+        "Christian subjects",
+        "blue",
+        "horses",
+        "landscape",
+        "men",
+        "soldiers",
+        "crucifixions",
+        "crosses",
+        "biblical"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "文艺复兴"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "16世纪"
+        }
+      ],
+      "image_file": "images/aic-234781.jpg",
+      "image_sha256": "26f4859bac356606d5704aa4aee3b86b7c2c621bf767e3560f5daf2adb66b15f"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 80530,
+      "source_url": "https://www.artic.edu/artworks/80530",
+      "api_url": "https://api.artic.edu/api/v1/artworks/80530",
+      "iiif_url": "https://www.artic.edu/iiif/2/b59cc3e9-a7c0-5aa1-1a22-bb472bb2e6d4/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Virgin and Child with an Angel",
+      "artist": "Sandro Botticelli",
+      "artist_display": "Sandro Botticelli (Italian, 1444/45–1510)",
+      "date_display": "1475–85",
+      "date_start": 1475,
+      "medium_display": "Tempera on panel",
+      "credit_line": "Max and Leola Epstein Collection",
+      "style_title": "Renaissance",
+      "subject_titles": [
+        "Virgin and child/Madonna and child",
+        "mother",
+        "angels",
+        "children",
+        "Christian subjects",
+        "Christianity",
+        "families",
+        "family",
+        "holy family",
+        "interior",
+        "love",
+        "religion",
+        "religious",
+        "woman",
+        "woman with children",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "文艺复兴"
+        },
+        {
+          "category": "medium",
+          "name": "蛋彩"
+        },
+        {
+          "category": "era",
+          "name": "15世纪"
+        }
+      ],
+      "image_file": "images/aic-80530.jpg",
+      "image_sha256": "54ae20a80f4f3274846ede43ec5cdbf609d5b06cf6dc161f1470404d39eddaa9"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 25740,
+      "source_url": "https://www.artic.edu/artworks/25740",
+      "api_url": "https://api.artic.edu/api/v1/artworks/25740",
+      "iiif_url": "https://www.artic.edu/iiif/2/a6c18204-e035-5fd0-408e-46b27d1ee6c5/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Scenes from the Life of Saint John the Baptist",
+      "artist": "Bartolomeo di Giovanni",
+      "artist_display": "Bartolomeo di Giovanni (Italian, active c. 1465-1501)",
+      "date_display": "1490/95",
+      "date_start": 1490,
+      "medium_display": "Tempera on panel (poplar)",
+      "credit_line": "Mr. and Mrs. Martin A. Ryerson Collection",
+      "style_title": "Renaissance",
+      "subject_titles": [
+        "Saint John the Baptist",
+        "interior",
+        "saints",
+        "Christian subjects",
+        "Christianity",
+        "religious",
+        "religion"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "文艺复兴"
+        },
+        {
+          "category": "medium",
+          "name": "蛋彩"
+        },
+        {
+          "category": "era",
+          "name": "15世纪"
+        }
+      ],
+      "image_file": "images/aic-25740.jpg",
+      "image_sha256": "2c6e1250174c113df53dd52ea05bfe81afd8889cb03ce2924104edc70aa16a39"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 62536,
+      "source_url": "https://www.artic.edu/artworks/62536",
+      "api_url": "https://api.artic.edu/api/v1/artworks/62536",
+      "iiif_url": "https://www.artic.edu/iiif/2/b73febc4-d31c-41e3-bd59-db48c387f59e/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Autumn Mountains 秋山圖",
+      "artist": "Wen Zhengming",
+      "artist_display": "Wen Zhengming 文徵明 (Chinese, 1470-1559)",
+      "date_display": "Ming dynasty (1368–1644), early 16th century 明朝",
+      "date_start": 1510,
+      "medium_display": "Handscroll; ink on gold-flecked paper",
+      "credit_line": "Kate S. Buckingham Endowment Fund",
+      "style_title": "Chinese (culture or style)",
+      "subject_titles": [],
+      "tags": [
+        {
+          "category": "style",
+          "name": "国风"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "era",
+          "name": "16世纪"
+        }
+      ],
+      "image_file": "images/aic-62536.jpg",
+      "image_sha256": "748f98576562e333a21f65b7f7c4735eb4c57c634879b86ebe5f876127765945"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 40558,
+      "source_url": "https://www.artic.edu/artworks/40558",
+      "api_url": "https://api.artic.edu/api/v1/artworks/40558",
+      "iiif_url": "https://www.artic.edu/iiif/2/d1e735ec-0dd2-1035-0486-7dba99e7e74e/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Tea Drinking Under the Wutong Tree",
+      "artist": "Tang Yin",
+      "artist_display": "Tang Yin 唐寅 (Chinese, 1470-1523)",
+      "date_display": "Ming dynasty (1369–1644), 1509",
+      "date_start": 1470,
+      "medium_display": "Handscroll; ink and slight color on paper",
+      "credit_line": "Kate S. Buckingham Endowment Fund",
+      "style_title": "Chinese (culture or style)",
+      "subject_titles": [],
+      "tags": [
+        {
+          "category": "style",
+          "name": "国风"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "era",
+          "name": "15世纪"
+        }
+      ],
+      "image_file": "images/aic-40558.jpg",
+      "image_sha256": "d64230724b9995532775d985aef5bd08584ca873589cc040a692073a921a6dbb"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 75317,
+      "source_url": "https://www.artic.edu/artworks/75317",
+      "api_url": "https://api.artic.edu/api/v1/artworks/75317",
+      "iiif_url": "https://www.artic.edu/iiif/2/ec57d7e6-1205-ce06-f21c-76d77b457aba/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Flowers of the Four Seasons 四季花卉圖",
+      "artist": "Chen Jiayan",
+      "artist_display": "Chen Jiayan 陳嘉言 (Chinese, 1539-after 1625)",
+      "date_display": "Ming dynasty (1368–1644), dated 1599",
+      "date_start": 1599,
+      "medium_display": "Handscroll; ink on paper",
+      "credit_line": "Kate S. Buckingham Fund",
+      "style_title": "Chinese (culture or style)",
+      "subject_titles": [],
+      "tags": [
+        {
+          "category": "style",
+          "name": "国风"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "era",
+          "name": "16世纪"
+        }
+      ],
+      "image_file": "images/aic-75317.jpg",
+      "image_sha256": "1c332f9b1d95550b78b47c8fdf3b3dddd6227647e4946ad6457c964c9df1594b"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 84123,
+      "source_url": "https://www.artic.edu/artworks/84123",
+      "api_url": "https://api.artic.edu/api/v1/artworks/84123",
+      "iiif_url": "https://www.artic.edu/iiif/2/480d33f9-7328-a1f8-bb37-7373230b841b/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Drinking at Night",
+      "artist": "Tang Yin",
+      "artist_display": "Tang Yin\nChinese, 1470-1523",
+      "date_display": "Ming dynasty (1368–1644); c. 1520/23",
+      "date_start": 1520,
+      "medium_display": "Handscroll; ink on paper",
+      "credit_line": "Gift of the Joseph and Helen Regenstein Foundation",
+      "style_title": "Chinese (culture or style)",
+      "subject_titles": [],
+      "tags": [
+        {
+          "category": "style",
+          "name": "国风"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "era",
+          "name": "16世纪"
+        }
+      ],
+      "image_file": "images/aic-84123.jpg",
+      "image_sha256": "0da55a0cd9aabe89ab3a02e75719aec646d8da3c9fc28a0351a6f465ad3798d2"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 150406,
+      "source_url": "https://www.artic.edu/artworks/150406",
+      "api_url": "https://api.artic.edu/api/v1/artworks/150406",
+      "iiif_url": "https://www.artic.edu/iiif/2/7739a403-99b6-d151-c892-e93a0b17e4ef/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Landscape with Daoist Immortals Playing Weiqi",
+      "artist": "Dai Jin",
+      "artist_display": "Attributed to Dai Jin (Chinese, c.1388-1462)",
+      "date_display": "Ming dynasty (1368–1644), 15th-16th century",
+      "date_start": 1400,
+      "medium_display": "Hanging scroll; ink and colors on silk",
+      "credit_line": "Russell Tyson, Avery Brundage, and Samuel M. Nickerson Endowment Funds",
+      "style_title": "Chinese (culture or style)",
+      "subject_titles": [],
+      "tags": [
+        {
+          "category": "style",
+          "name": "国风"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "era",
+          "name": "14世纪"
+        }
+      ],
+      "image_file": "images/aic-150406.jpg",
+      "image_sha256": "a940ea5b6bae2dc1881d96043b1387dab0741af84bc4618526c14db83b1ded36"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 72380,
+      "source_url": "https://www.artic.edu/artworks/72380",
+      "api_url": "https://api.artic.edu/api/v1/artworks/72380",
+      "iiif_url": "https://www.artic.edu/iiif/2/6ae82203-7056-0e36-450b-71d1bd12eac2/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "United by Music 合樂圖",
+      "artist": "Zhou Wenju",
+      "artist_display": "Artist unknown (Chinese, 16th century)\nTraditionally attributed to Zhou Wenju (10th century) 傳周文矩",
+      "date_display": "Ming dynasty (1368–1644), 15th/16th century",
+      "date_start": 1401,
+      "medium_display": "Handscroll; ink and colors on silk",
+      "credit_line": "Kate S. Buckingham Endowment Fund",
+      "style_title": "Chinese (culture or style)",
+      "subject_titles": [],
+      "tags": [
+        {
+          "category": "style",
+          "name": "国风"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "era",
+          "name": "15世纪"
+        }
+      ],
+      "image_file": "images/aic-72380.jpg",
+      "image_sha256": "257895b879c8416252aad3c66a80d53f6fcca721d21991d7575f7c82790ccecd"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 80720,
+      "source_url": "https://www.artic.edu/artworks/80720",
+      "api_url": "https://api.artic.edu/api/v1/artworks/80720",
+      "iiif_url": "https://www.artic.edu/iiif/2/4c6c885c-1986-df3f-298c-f7f990132eb4/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Bathing of the Buddha Festival",
+      "artist": "Hua Ziyou",
+      "artist_display": "Hua Ziyou 華子宥 (Chinese, 19th century)",
+      "date_display": "Qing dynasty, 1833",
+      "date_start": 1833,
+      "medium_display": "Hanging scroll, ink and color on silk",
+      "credit_line": "Bequest of Joseph Winterbotham",
+      "style_title": "Chinese (culture or style)",
+      "subject_titles": [],
+      "tags": [
+        {
+          "category": "style",
+          "name": "国风"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "era",
+          "name": "19世纪"
+        }
+      ],
+      "image_file": "images/aic-80720.jpg",
+      "image_sha256": "0ea8daf4f695059e5e91aa5fe001a32a76c3823e556208f1fdbdb9445280fca0"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 80215,
+      "source_url": "https://www.artic.edu/artworks/80215",
+      "api_url": "https://api.artic.edu/api/v1/artworks/80215",
+      "iiif_url": "https://www.artic.edu/iiif/2/98de0aaf-e074-2536-5e15-44a03bf2c855/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Flowers and Insects",
+      "artist": "Chai Zhenyi",
+      "artist_display": "Chai Zhenyi 柴貞儀 and Chai Jingyi 柴靜儀\nChinese, active 17th century",
+      "date_display": "Qing dynasty (1644–1911), reign of Kangxi (1662–1722)",
+      "date_start": 1662,
+      "medium_display": "Handscroll; ink and color on paper",
+      "credit_line": "Samuel M. Nickerson Fund",
+      "style_title": "Chinese (culture or style)",
+      "subject_titles": [],
+      "tags": [
+        {
+          "category": "style",
+          "name": "国风"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "era",
+          "name": "17世纪"
+        }
+      ],
+      "image_file": "images/aic-80215.jpg",
+      "image_sha256": "9db3523b39635c947043873940292e89b1278c244150024cb56494d648941f00"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 57051,
+      "source_url": "https://www.artic.edu/artworks/57051",
+      "api_url": "https://api.artic.edu/api/v1/artworks/57051",
+      "iiif_url": "https://www.artic.edu/iiif/2/62fd0e14-d7fe-0d01-ab00-1eed84b4f294/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Fountains",
+      "artist": "Hubert Robert",
+      "artist_display": "Hubert Robert (French, 1733-1808)",
+      "date_display": "1787–88",
+      "date_start": 1787,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Gift of William G. Hibbard",
+      "style_title": "Neoclassicism",
+      "subject_titles": [
+        "ruins",
+        "architechture",
+        "architecture",
+        "architecture",
+        "classical",
+        "decoration",
+        "decorative",
+        "Italy",
+        "fountains",
+        "landscapes",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs",
+        "monumental structures",
+        "equestrienne statues",
+        "horses",
+        "arches"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "新古典主义"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "18世纪"
+        }
+      ],
+      "image_file": "images/aic-57051.jpg",
+      "image_sha256": "dab4ca5ed71d1caa595d317851a8967471e569c15533de24cd4ae814948c1b53"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 57048,
+      "source_url": "https://www.artic.edu/artworks/57048",
+      "api_url": "https://api.artic.edu/api/v1/artworks/57048",
+      "iiif_url": "https://www.artic.edu/iiif/2/00fdacbb-872a-1091-3272-39967374ec07/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Old Temple",
+      "artist": "Hubert Robert",
+      "artist_display": "Hubert Robert (French, 1733-1808)",
+      "date_display": "1787/88",
+      "date_start": 1787,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Gift of Adolphus C. Bartlett",
+      "style_title": "Neoclassicism",
+      "subject_titles": [
+        "ruins",
+        "architechture",
+        "architecture",
+        "architecture",
+        "classical",
+        "decoration",
+        "decorative",
+        "Italy",
+        "temple",
+        "landscapes",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "新古典主义"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "18世纪"
+        }
+      ],
+      "image_file": "images/aic-57048.jpg",
+      "image_sha256": "5686922faf6c667c529e99d5a6427985da7a743acbdad34993302692bf3fece6"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 17161,
+      "source_url": "https://www.artic.edu/artworks/17161",
+      "api_url": "https://api.artic.edu/api/v1/artworks/17161",
+      "iiif_url": "https://www.artic.edu/iiif/2/2cdaa4b6-c9d0-7230-952b-690b8e1cf4df/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "Virgil Reading the \"Aeneid\" to Augustus, Octavia, and Livia",
+      "artist": "Jean Baptiste Joseph Wicar",
+      "artist_display": "Jean Baptiste Joseph Wicar (French, 1762–1834)",
+      "date_display": "1790–93",
+      "date_start": 1790,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Wirt D. Walker Fund",
+      "style_title": "Neoclassicism",
+      "subject_titles": [
+        "reading",
+        "women",
+        "trees",
+        "Tile",
+        "table",
+        "statues",
+        "scrolls (motifs)",
+        "Roman",
+        "red (color)",
+        "purple (color)",
+        "poetry",
+        "men",
+        "man",
+        "laurel wreaths",
+        "interior",
+        "green (color)",
+        "family",
+        "families",
+        "classical",
+        "chairs",
+        "buildings",
+        "building",
+        "architecture",
+        "architecture",
+        "architechture"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "新古典主义"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "18世纪"
+        }
+      ],
+      "image_file": "images/aic-17161.jpg",
+      "image_sha256": "14111a7108c0e8c6b67d00dbaf03ebb72759be8150c3500ac1b93325ccaf439a"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 57050,
+      "source_url": "https://www.artic.edu/artworks/57050",
+      "api_url": "https://api.artic.edu/api/v1/artworks/57050",
+      "iiif_url": "https://www.artic.edu/iiif/2/83092988-7180-21d1-b8a3-cf39ddf39a68/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Landing Place",
+      "artist": "Hubert Robert",
+      "artist_display": "Hubert Robert (French, 1733-1808)",
+      "date_display": "1788",
+      "date_start": 1788,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Gift of Richard T. Crane",
+      "style_title": "Neoclassicism",
+      "subject_titles": [
+        "ruins",
+        "architechture",
+        "architecture",
+        "architecture",
+        "classical",
+        "decoration",
+        "decorative",
+        "Italy",
+        "cityscapes",
+        "landscapes",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "新古典主义"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "城市"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "18世纪"
+        }
+      ],
+      "image_file": "images/aic-57050.jpg",
+      "image_sha256": "d01800510ee74bcfa449b51aadd65b0fdc3419cb93ddf14f2cfeaa7522529a82"
+    },
+    {
+      "source": "Art Institute of Chicago",
+      "source_id": 57049,
+      "source_url": "https://www.artic.edu/artworks/57049",
+      "api_url": "https://api.artic.edu/api/v1/artworks/57049",
+      "iiif_url": "https://www.artic.edu/iiif/2/3b8084b4-5fb4-700a-bc0a-16e6fa4698b8/full/843,/0/default.jpg",
+      "is_public_domain": true,
+      "title": "The Obelisk",
+      "artist": "Hubert Robert",
+      "artist_display": "Hubert Robert (French, 1733-1808)",
+      "date_display": "1787",
+      "date_start": 1787,
+      "medium_display": "Oil on canvas",
+      "credit_line": "Gift of Clarence Buckingham",
+      "style_title": "Neoclassicism",
+      "subject_titles": [
+        "ruins",
+        "architechture",
+        "architecture",
+        "architecture",
+        "classical",
+        "decoration",
+        "decorative",
+        "Italy",
+        "obelisks",
+        "cityscapes",
+        "landscapes",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
+      ],
+      "tags": [
+        {
+          "category": "style",
+          "name": "新古典主义"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "城市"
+        },
+        {
+          "category": "medium",
+          "name": "油画"
+        },
+        {
+          "category": "era",
+          "name": "18世纪"
+        }
+      ],
+      "image_file": "images/aic-57049.jpg",
+      "image_sha256": "a6ef2d03f36098d0166043dd2f6f909e27cac1d8668f9db103eaca1ee44a2552"
     }
   ]
 }

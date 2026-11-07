@@ -296,6 +296,7 @@ def upload_image():
 
 @api.get("/uploads/<path:name>")
 def serve_upload(name):
-    response = send_from_directory(current_app.config["UPLOAD_FOLDER"], name, max_age=31536000)
+    mimetype = "image/webp" if Path(name).suffix.lower() == ".webp" else None
+    response = send_from_directory(current_app.config["UPLOAD_FOLDER"], name, max_age=31536000, mimetype=mimetype)
     response.headers["X-Content-Type-Options"] = "nosniff"
     return response

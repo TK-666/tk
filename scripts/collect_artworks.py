@@ -1,4 +1,4 @@
-"""Collect a small, attributed public-domain artwork catalog from AIC.
+"""Extend the attributed public-domain artwork catalog from AIC.
 
 Run with backend/.venv/Scripts/python.exe scripts/collect_artworks.py from the
 repository root. Requests are serial and separated by at least one second.
@@ -8,10 +8,12 @@ import hashlib
 import json
 import re
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from PIL import Image
@@ -20,14 +22,20 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data"
 API = "https://api.artic.edu/api/v1/artworks/search"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 art-recommendation-graduation-project",
+    "AIC-User-Agent": "art-recommendation-graduation-project",
+}
+IMAGE_WIDTH = 843
 STYLES = (
-    ("Impressionism", "印象派", 8),
-    ("Post-Impressionism", "后印象派", 8),
-    ("Realism", "写实主义", 8),
-    ("Renaissance", "文艺复兴", 8),
+    ("Impressionism", "印象派", 24),
+    ("Post-Impressionism", "后印象派", 16),
+    ("Realism", "写实主义", 19),
+    ("Renaissance", "文艺复兴", 14),
     ("Baroque", "巴洛克", 5),
     ("Pointillism", "点彩派", 1),
-    ("Chinese (culture or style)", "国风", 8),
+    ("Chinese (culture or style)", "国风", 16),
+    ("Neoclassicism", "新古典主义", 5),
 )
 FIELDS = ",".join((
     "id", "title", "image_id", "artist_title", "artist_display",
@@ -58,9 +66,10 @@ class MuseumClient:
             try:
                 with urlopen(request, timeout=30) as response:
                     return response.read()
-            except (HTTPError, URLError, TimeoutError) as error:
-                if attempt == 2:
-                    raise RuntimeError(f"AIC request failed: {request.full_url}") from error
+            except (URLError, TimeoutError) as error:
+                permanent = isinstance(error, HTTPError) and 400 <= error.code < 500 and error.code != 429
+                if permanent or attempt == 2:
+                    raise RuntimeError(f"AIC request failed: {request.full_url}: {error}") from error
                 time.sleep(2 ** attempt)
 
 
@@ -89,24 +98,31 @@ def search(client, style):
             {"term": {"artwork_type_title.keyword": "Painting"}},
             {"exists": {"field": "image_id"}},
         ]}},
-        "limit": 30,
+        "limit": 60,
         "fields": FIELDS,
     }
-    request = Request(
-        API, data=json.dumps(body).encode("utf-8"),
-        headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0 art-recommendation-graduation-project", "AIC-User-Agent": "art-recommendation-graduation-project"},
-        method="POST",
-    )
+    request = Request(f"{API}?{urlencode({'params': json.dumps(body, separators=(',', ':'))})}", headers=HEADERS)
     return json.loads(client.fetch(request))["data"]
 
 
 def main():
     image_dir = OUTPUT / "images"
     image_dir.mkdir(parents=True, exist_ok=True)
+    manifest_path = OUTPUT / "artworks.json"
+    artworks = json.loads(manifest_path.read_text(encoding="utf-8"))["artworks"] if manifest_path.exists() else []
+    for item in artworks:
+        path = OUTPUT / item["image_file"]
+        if hashlib.sha256(path.read_bytes()).hexdigest() != item["image_sha256"]:
+            raise ValueError(f"Existing catalog image has changed: {path}")
+    source_ids = {item["source_id"] for item in artworks}
+    image_ids = {item["iiif_url"].split("/")[5] for item in artworks}
+    image_hashes = {item["image_sha256"] for item in artworks}
+    counts = Counter(item["style_title"] for item in artworks)
     client = MuseumClient()
-    artworks = []
     for english_style, chinese_style, target in STYLES:
-        selected = 0
+        selected = counts[english_style]
+        if selected >= target:
+            continue
         for record in search(client, english_style):
             identifier = record.get("image_id")
             if not (record.get("is_public_domain") is True
@@ -114,27 +130,30 @@ def main():
                     and record.get("artwork_type_title") == "Painting"
                     and isinstance(record.get("id"), int)
                     and isinstance(record.get("title"), str)
-                    and len(record["title"]) <= 160
+                    and 0 < len(record["title"]) <= 160
                     and isinstance(identifier, str)
                     and re.fullmatch(r"[0-9a-f-]{36}", identifier)):
                 continue
             artwork_id = record["id"]
+            if artwork_id in source_ids or identifier in image_ids:
+                continue
             filename = f"aic-{artwork_id}.jpg"
             path = image_dir / filename
-            image_url = f"https://www.artic.edu/iiif/2/{identifier}/full/1200,/0/default.jpg"
+            image_url = f"https://www.artic.edu/iiif/2/{identifier}/full/{IMAGE_WIDTH},/0/default.jpg"
+            try:
+                raw = path.read_bytes() if path.exists() else client.fetch(Request(image_url, headers=HEADERS))
+                with Image.open(BytesIO(raw)) as image:
+                    if image.format != "JPEG" or image.width > IMAGE_WIDTH:
+                        raise ValueError("Unexpected image format or dimensions")
+                    image.load()
+            except (RuntimeError, ValueError, OSError) as error:
+                print(f"Skipping image {artwork_id}: {error}")
+                continue
+            image_hash = hashlib.sha256(raw).hexdigest()
+            if image_hash in image_hashes:
+                continue
             if not path.exists():
-                request = Request(image_url, headers={"User-Agent": "Mozilla/5.0 art-recommendation-graduation-project", "AIC-User-Agent": "art-recommendation-graduation-project"})
-                try:
-                    raw = client.fetch(request)
-                    with Image.open(BytesIO(raw)) as image:
-                        if image.format != "JPEG" or image.width > 1200:
-                            raise ValueError("Unexpected image format or dimensions")
-                        image.verify()
-                    path.write_bytes(raw)
-                except (RuntimeError, ValueError, OSError) as error:
-                    print(f"Skipping image {artwork_id}: {error}")
-                    continue
-            raw = path.read_bytes()
+                path.write_bytes(raw)
             artworks.append({
                 "source": "Art Institute of Chicago",
                 "source_id": artwork_id,
@@ -153,21 +172,27 @@ def main():
                 "subject_titles": record.get("subject_titles") or [],
                 "tags": tags_for(record, chinese_style),
                 "image_file": f"images/{filename}",
-                "image_sha256": hashlib.sha256(raw).hexdigest(),
+                "image_sha256": image_hash,
             })
+            source_ids.add(artwork_id)
+            image_ids.add(identifier)
+            image_hashes.add(image_hash)
             selected += 1
             print(f"{english_style}: {selected}/{target} — {record['title']}")
             if selected == target:
                 break
         if selected < target:
             raise RuntimeError(f"Only collected {selected}/{target} for {english_style}")
+    if manifest_path.exists() and len(artworks) == sum(counts.values()):
+        print(f"Catalog already contains {len(artworks)} artworks and meets all style targets")
+        return
     manifest = {
         "source": "Art Institute of Chicago public API",
         "source_docs": "https://api.artic.edu/docs/",
         "collected_at": datetime.now(timezone.utc).isoformat(),
         "artworks": artworks,
     }
-    (OUTPUT / "artworks.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Saved {len(artworks)} artworks to {OUTPUT}")
 
 

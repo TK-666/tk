@@ -4,7 +4,7 @@
 
 演示数据来自 [芝加哥艺术学院公开 API](https://api.artic.edu/docs/) 的作品检索接口。采集时只选取馆方元数据中 `is_public_domain=true`、`artwork_type_title=Painting`、有 `image_id` 的记录；风格直接使用馆方 `style_title`，不根据画面自行猜测。图片来自同馆 [IIIF 图片接口](https://api.artic.edu/docs/#images)，按馆方建议串行请求并限速。馆方的公有领域标记和具体使用条件应以其[图片授权说明](https://www.artic.edu/image-licensing)及条款为准。
 
-当前样本共 **46 件**：印象派 8、后印象派 8、写实主义 8、文艺复兴 8、巴洛克 5、点彩派 1、国风 8。其中“国风”对应馆方的 `Chinese (culture or style)`，表示该馆的中国文化或风格分类，不代表对所有中国绘画流派的细分。每件记录保留馆方作品编号、原始标题、艺术家、创作年代、材料、原始风格、题材词、作品网页和 API 地址、IIIF 地址，以及本地图片的 SHA-256。原始数据位于 [`data/artworks.json`](../data/artworks.json)，图片位于 `data/images/`；导入后系统使用本地 `/api/uploads/` 图片地址，可在断网情况下展示。
+当前样本共 **100 件**，包括印象派 24、后印象派 16、写实主义 19、文艺复兴 14、巴洛克 5、点彩派 1、国风 16、新古典主义 5。其中“国风”对应馆方的 `Chinese (culture or style)`，表示该馆的中国文化或风格分类，不代表对所有中国绘画流派的细分。每件记录保留馆方作品编号、原始标题、艺术家、创作年代、材料、原始风格、题材词、作品网页和 API 地址、IIIF 地址，以及本地图片的 SHA-256。原始数据位于 [`data/artworks.json`](../data/artworks.json)，图片位于 `data/images/`；导入后系统使用本地 `/api/uploads/` 图片地址，可在断网情况下展示。
 
 ## 标签处理
 
@@ -13,7 +13,7 @@
 - `medium`：从馆方 `medium_display` 中识别油画、水彩、蛋彩、粉彩或水墨；没有匹配词时不补猜。
 - `era`：用馆方 `date_start` 计算世纪，原始年代文字仍保留在元数据和作品简介中。
 
-映射规则写在 [`scripts/collect_artworks.py`](../scripts/collect_artworks.py)，可复核和重新运行。图片以宽度不超过 1200 像素的 JPEG 保存；导入时再生成 WebP 封面，不修改原始下载文件。作品简介只组合馆方提供的事实字段，并附馆方作品页面链接；不复制馆方的长篇解说文字。
+映射规则写在 [`scripts/collect_artworks.py`](../scripts/collect_artworks.py)，可复核和重新运行。新增 JPEG 采用馆方推荐的 843 像素宽度，首批图片的宽度不超过 1200 像素。导入时再生成 WebP 封面。作品简介组合馆方提供的事实字段，并附馆方作品页面链接。
 
 ## 导入与复现
 
@@ -29,7 +29,7 @@
 .\backend\.venv\Scripts\python.exe .\scripts\collect_artworks.py
 ```
 
-重新采集会重新生成清单；应先核查馆方元数据和图片变化，再提交更新。用户浏览、点赞、收藏和评分属于系统运行时产生的行为数据，**没有从外部网站获取或伪造**。
+采集脚本保留现有记录和图片，按风格补足配额，并按馆方作品编号、图片编号和图片哈希去重。提交前应核查新增元数据和图片。用户浏览、点赞、收藏和评分属于系统运行时产生的行为数据，**没有从外部网站获取或伪造**。
 
 ## 样本边界
 

@@ -92,6 +92,7 @@ class ArtworksTagsTest(unittest.TestCase):
             self.assertEqual(original.data, source)
             original.close()
         with self.admin.get(response.json["cover_url"]) as cover:
+            self.assertEqual(cover.mimetype, "image/webp")
             self.assertEqual(cover.headers["X-Content-Type-Options"], "nosniff")
             with Image.open(BytesIO(cover.data)) as thumbnail:
                 self.assertLessEqual(max(thumbnail.size), 1200)
