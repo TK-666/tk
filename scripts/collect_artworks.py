@@ -4,6 +4,7 @@ Run with backend/.venv/Scripts/python.exe scripts/collect_artworks.py from the
 repository root. Requests are serial and separated by at least one second.
 """
 
+import argparse
 import hashlib
 import json
 import re
@@ -50,12 +51,59 @@ FIELDS = ",".join((
 TOPICS = {
     "风景": {"landscape", "landscapes", "landscape painting", "nature"},
     "城市": {"cityscapes", "urban life", "street"},
-    "肖像": {"portrait", "portraits", "portraiture"},
+    "肖像": {"portrait", "portraits", "portraiture", "portraits: female subject", "portraits: male subject", "self-portraits"},
     "静物": {"still life", "still lifes"},
-    "人物": {"figures", "figure", "everyday life (genre)"},
-    "花卉": {"flowers", "floral"},
+    "人物": {"figures", "figure", "everyday life (genre)", "people", "women", "men", "woman", "man", "children"},
+    "花卉": {"flowers", "floral", "flower"},
     "海景": {"seascapes", "seascape"},
+    "动物": {"animals", "birds", "horses", "dogs", "cats", "fish", "insects"},
+    "山水": {"mountains", "mountain", "rivers", "river", "lakes", "lake", "waterfalls"},
+    "建筑": {"architecture", "building", "buildings", "house", "houses", "castles", "bridges"},
+    "室内": {"interior", "interiors", "bedrooms", "domestic scenes"},
+    "宗教": {"religion", "religious", "religious scenes", "religious figures", "devotion", "christian subjects", "christianity", "biblical", "buddhism", "hinduism", "jain", "saints"},
+    "音乐": {"music", "musicians", "musical instruments"},
+    "家庭": {"family", "families", "mother", "woman with children", "domestic life"},
+    "乡村生活": {"rural life", "farmers", "farming", "peasants", "agriculture"},
+    "休闲": {"leisure", "recreation", "sports", "games"},
+    "劳动": {"work", "labor", "workers"},
+    "服饰": {"fashion", "clothing", "costume", "costumes"},
+    "航船": {"boats", "ships", "sailing", "sailboats"},
+    "夜景": {"night scenes", "nocturnes", "moonlight"},
+    "季节与天气": {"weather/seasons", "rain", "snow", "storms", "winter", "summer", "autumn", "spring"},
 }
+
+# Apply narrower phrases to the artwork title before any series or source citation.
+TITLE_TOPICS = {
+    "风景": r"landscapes?",
+    "肖像": r"portraits?",
+    "静物": r"still lifes?",
+    "花卉": r"flowers?|lotus|orchids?|chrysanthemums?|(?:plum|peach) blossoms?",
+    "海景": r"seascapes?",
+    "动物": r"birds?|horses?|dogs?|cats?|fish|insects?|elephants?|ducks?|geese|deer",
+    "山水": r"mountains?|rivers?|lakes?|waterfalls?",
+    "建筑": r"temples?|pagodas?|bridges?|pavilions?",
+    "宗教": r"buddhas?|bodhisattvas?|buddhist|mandalas?|christ|madonna|krishna|shiva|arhats?",
+    "音乐": r"music|musicians?|lutes?|flutes?",
+    "航船": r"boats?|ships?|sailboats?",
+    "夜景": r"at night|by moonlight|nocturne",
+}
+
+MEDIUMS = (
+    (r"oil", "油画"),
+    (r"watercolou?r", "水彩"),
+    (r"tempera", "蛋彩"),
+    (r"pastels?", "粉彩"),
+    (r"ink", "水墨"),
+    (r"gouache", "水粉"),
+    (r"charcoal", "炭笔"),
+    (r"graphite", "石墨"),
+    (r"paper", "纸本"),
+    (r"silk", "绢本"),
+    (r"canvas", "布面"),
+    (r"wood|wooden panel|on panel", "木板"),
+    (r"cotton", "棉布"),
+    (r"gold", "金彩"),
+)
 
 
 class MuseumClient:
@@ -80,15 +128,16 @@ class MuseumClient:
 
 def tags_for(record, style_name):
     tags = [{"category": "style", "name": style_name}]
-    subjects = {str(value).casefold() for value in record.get("subject_titles") or []}
+    subjects = {value.strip().casefold() for value in record.get("subject_titles") or []}
+    title = re.split(r",\s+(?:from|page from)\b", record["title"].casefold(), maxsplit=1)[0]
     for topic, names in TOPICS.items():
-        if subjects & names:
+        title_terms = TITLE_TOPICS.get(topic)
+        if subjects & names or (title_terms and re.search(rf"\b(?:{title_terms})\b", title)):
             tags.append({"category": "topic", "name": topic})
     medium = (record.get("medium_display") or "").casefold()
-    for token, name in (("watercolor", "水彩"), ("oil", "油画"), ("tempera", "蛋彩"), ("pastel", "粉彩"), ("ink", "水墨")):
-        if token in medium:
+    for pattern, name in MEDIUMS:
+        if re.search(rf"\b(?:{pattern})\b", medium):
             tags.append({"category": "medium", "name": name})
-            break
     year = record.get("date_start")
     if isinstance(year, int) and 1000 <= year <= 2100:
         tags.append({"category": "era", "name": f"{(year - 1) // 100 + 1}世纪"})
@@ -116,10 +165,38 @@ def search(client, style):
             break
 
 
+def write_manifest(path, manifest):
+    pending = path.with_suffix(".json.tmp")
+    pending.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    pending.replace(path)
+
+
+def refresh_catalog_tags(path):
+    manifest = json.loads(path.read_text(encoding="utf-8"))
+    style_names = {original: localized for original, localized, _ in STYLES}
+    changed = 0
+    for item in manifest["artworks"]:
+        inferred = tags_for(item, style_names[item["style_title"]])
+        missing = [tag for tag in inferred if tag not in item["tags"]]
+        if missing:
+            item["tags"].extend(missing)
+            changed += 1
+    if changed:
+        write_manifest(path, manifest)
+    print(f"Added tags to {changed}/{len(manifest['artworks'])} catalog artworks")
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--refresh-tags", action="store_true", help="append tags from saved museum metadata without downloading images")
+    args = parser.parse_args()
+    manifest_path = OUTPUT / "artworks.json"
+    if args.refresh_tags:
+        refresh_catalog_tags(manifest_path)
+        return
+
     image_dir = OUTPUT / "images"
     image_dir.mkdir(parents=True, exist_ok=True)
-    manifest_path = OUTPUT / "artworks.json"
     artworks = json.loads(manifest_path.read_text(encoding="utf-8"))["artworks"] if manifest_path.exists() else []
     for item in artworks:
         path = OUTPUT / item["image_file"]
@@ -203,9 +280,7 @@ def main():
         "collected_at": datetime.now(timezone.utc).isoformat(),
         "artworks": artworks,
     }
-    pending_manifest = manifest_path.with_suffix(".json.tmp")
-    pending_manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    pending_manifest.replace(manifest_path)
+    write_manifest(manifest_path, manifest)
     print(f"Saved {len(artworks)} artworks to {OUTPUT}")
 
 

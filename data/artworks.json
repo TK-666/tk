@@ -56,6 +56,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-20684.jpg",
@@ -110,6 +126,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-64818.jpg",
@@ -163,6 +195,14 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16568.jpg",
@@ -229,6 +269,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14655.jpg",
@@ -280,6 +344,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-111442.jpg",
@@ -339,6 +415,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16571.jpg",
@@ -386,6 +470,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-11723.jpg",
@@ -445,6 +549,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14598.jpg",
@@ -499,6 +623,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-28560.jpg",
@@ -548,6 +680,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
         }
       ],
       "image_file": "images/aic-80607.jpg",
@@ -603,6 +739,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-61128.jpg",
@@ -652,6 +808,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-111436.jpg",
@@ -698,6 +858,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-154235.jpg",
@@ -748,6 +924,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16487.jpg",
@@ -802,6 +990,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16146.jpg",
@@ -860,6 +1072,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-19339.jpg",
@@ -915,6 +1143,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-869.jpg",
@@ -965,6 +1205,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16499.jpg",
@@ -1012,6 +1264,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-120154.jpg",
@@ -1052,6 +1308,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-111377.jpg",
@@ -1112,6 +1376,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-43145.jpg",
@@ -1152,6 +1428,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81564.jpg",
@@ -1208,6 +1492,22 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-23333.jpg",
@@ -1253,6 +1553,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-146953.jpg",
@@ -1319,6 +1627,22 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-15468.jpg",
@@ -1362,6 +1686,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-80084.jpg",
@@ -1421,6 +1757,22 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-59847.jpg",
@@ -1470,6 +1822,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-5848.jpg",
@@ -1519,6 +1879,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-95998.jpg",
@@ -1567,6 +1939,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-84709.jpg",
@@ -1626,6 +2006,30 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16327.jpg",
@@ -1673,6 +2077,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-184371.jpg",
@@ -1726,6 +2142,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-62042.jpg",
@@ -1798,6 +2226,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16488.jpg",
@@ -1860,6 +2300,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16495.jpg",
@@ -1925,6 +2373,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16492.jpg",
@@ -1976,6 +2436,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-109220.jpg",
@@ -2045,6 +2517,34 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-27992.jpg",
@@ -2093,6 +2593,30 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-76279.jpg",
@@ -2129,6 +2653,10 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-79507.jpg",
@@ -2162,6 +2690,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-79505.jpg",
@@ -2201,6 +2737,10 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-68041.jpg",
@@ -2234,6 +2774,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-75361.jpg",
@@ -2267,6 +2815,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-8209.jpg",
@@ -2300,6 +2856,10 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-41426.jpg",
@@ -2333,6 +2893,14 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-13455.jpg",
@@ -2389,6 +2957,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-25865.jpg",
@@ -2438,6 +3030,22 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-69780.jpg",
@@ -2483,6 +3091,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-56905.jpg",
@@ -2536,6 +3156,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81558.jpg",
@@ -2590,6 +3230,30 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-109780.jpg",
@@ -2646,6 +3310,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14572.jpg",
@@ -2694,6 +3370,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-28849.jpg",
@@ -2749,6 +3441,26 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-15401.jpg",
@@ -2788,6 +3500,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-44018.jpg",
@@ -2855,6 +3587,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14591.jpg",
@@ -2902,6 +3646,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-72801.jpg",
@@ -2951,6 +3703,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14574.jpg",
@@ -2991,6 +3759,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-64729.jpg",
@@ -3044,6 +3820,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14620.jpg",
@@ -3098,6 +3894,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-87088.jpg",
@@ -3146,6 +3950,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-138.jpg",
@@ -3189,6 +4001,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-64724.jpg",
@@ -3236,6 +4060,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-62371.jpg",
@@ -3299,6 +4139,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-60812.jpg",
@@ -3362,6 +4218,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-109926.jpg",
@@ -3408,6 +4280,18 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-87643.jpg",
@@ -3474,6 +4358,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-27943.jpg",
@@ -3518,6 +4414,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-79349.jpg",
@@ -3578,6 +4490,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-61616.jpg",
@@ -3619,6 +4547,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-31285.jpg",
@@ -3669,6 +4609,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-28862.jpg",
@@ -3716,6 +4676,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-95183.jpg",
@@ -3749,6 +4721,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-27138.jpg",
@@ -3803,6 +4779,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-897.jpg",
@@ -3849,6 +4833,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-8969.jpg",
@@ -3895,6 +4891,14 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-86780.jpg",
@@ -3930,6 +4934,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-121629.jpg",
@@ -3971,6 +4979,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-44065.jpg",
@@ -4012,6 +5024,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-181777.jpg",
@@ -4056,6 +5072,18 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-13742.jpg",
@@ -4113,6 +5141,18 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16169.jpg",
@@ -4168,6 +5208,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-11434.jpg",
@@ -4222,6 +5274,14 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16298.jpg",
@@ -4271,6 +5331,22 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-234781.jpg",
@@ -4323,6 +5399,26 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-80530.jpg",
@@ -4364,6 +5460,18 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-25740.jpg",
@@ -4397,6 +5505,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-62536.jpg",
@@ -4430,6 +5550,10 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-40558.jpg",
@@ -4463,6 +5587,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-75317.jpg",
@@ -4496,6 +5628,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-84123.jpg",
@@ -4529,6 +5669,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-150406.jpg",
@@ -4562,6 +5710,14 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-72380.jpg",
@@ -4595,6 +5751,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-80720.jpg",
@@ -4628,6 +5792,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-80215.jpg",
@@ -4683,6 +5859,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-57051.jpg",
@@ -4734,6 +5922,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-57048.jpg",
@@ -4793,6 +5989,26 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-17161.jpg",
@@ -4848,6 +6064,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-57050.jpg",
@@ -4904,6 +6128,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-57049.jpg",
@@ -4954,6 +6186,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81537.jpg",
@@ -5001,6 +6241,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14624.jpg",
@@ -5055,6 +6307,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-25825.jpg",
@@ -5101,6 +6373,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16564.jpg",
@@ -5167,6 +6451,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-109314.jpg",
@@ -5231,6 +6535,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81539.jpg",
@@ -5280,6 +6608,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16549.jpg",
@@ -5343,6 +6675,34 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16554.jpg",
@@ -5403,6 +6763,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81533.jpg",
@@ -5441,6 +6821,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-663.jpg",
@@ -5495,6 +6879,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-4783.jpg",
@@ -5534,6 +6930,22 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-71573.jpg",
@@ -5577,6 +6989,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-4749.jpg",
@@ -5632,6 +7056,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14556.jpg",
@@ -5687,6 +7123,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16584.jpg",
@@ -5736,6 +7184,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-20545.jpg",
@@ -5793,6 +7249,22 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16544.jpg",
@@ -5843,6 +7315,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81555.jpg",
@@ -5894,6 +7390,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-103139.jpg",
@@ -5941,6 +7449,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-15705.jpg",
@@ -5993,6 +7513,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-97933.jpg",
@@ -6044,6 +7568,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-4887.jpg",
@@ -6097,6 +7625,22 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-20701.jpg",
@@ -6156,6 +7700,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-13487.jpg",
@@ -6216,6 +7768,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16617.jpg",
@@ -6264,6 +7820,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81545.jpg",
@@ -6312,6 +7880,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "海景"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81557.jpg",
@@ -6370,6 +7950,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-95654.jpg",
@@ -6419,6 +8023,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-86998.jpg",
@@ -6464,6 +8080,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-5349.jpg",
@@ -6512,6 +8140,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-111318.jpg",
@@ -6565,6 +8205,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-18951.jpg",
@@ -6616,6 +8276,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-87467.jpg",
@@ -6667,6 +8335,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-154121.jpg",
@@ -6715,6 +8391,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-20535.jpg",
@@ -6761,6 +8449,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-26650.jpg",
@@ -6805,6 +8501,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-80499.jpg",
@@ -6856,6 +8568,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14650.jpg",
@@ -6910,6 +8634,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81551.jpg",
@@ -6960,6 +8700,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81546.jpg",
@@ -7027,6 +8779,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14647.jpg",
@@ -7080,6 +8844,18 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14634.jpg",
@@ -7131,6 +8907,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-59927.jpg",
@@ -7173,6 +8969,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-191183.jpg",
@@ -7241,6 +9049,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-110541.jpg",
@@ -7299,6 +9131,18 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14630.jpg",
@@ -7352,6 +9196,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16600.jpg",
@@ -7399,6 +9251,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-100191.jpg",
@@ -7452,6 +9316,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16622.jpg",
@@ -7511,6 +9383,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-96559.jpg",
@@ -7562,6 +9446,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-25832.jpg",
@@ -7616,6 +9512,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16560.jpg",
@@ -7658,6 +9566,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-31816.jpg",
@@ -7709,6 +9629,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16629.jpg",
@@ -7761,6 +9685,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
         }
       ],
       "image_file": "images/aic-27764.jpg",
@@ -7814,6 +9750,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-110867.jpg",
@@ -7862,6 +9818,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-25812.jpg",
@@ -7908,6 +9876,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-7503.jpg",
@@ -7955,6 +9931,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81535.jpg",
@@ -8009,6 +9997,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-153798.jpg",
@@ -8061,6 +10061,18 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16579.jpg",
@@ -8120,6 +10132,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16633.jpg",
@@ -8161,6 +10197,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-121377.jpg",
@@ -8223,6 +10271,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81540.jpg",
@@ -8268,6 +10328,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-110661.jpg",
@@ -8315,6 +10387,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16542.jpg",
@@ -8368,6 +10452,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-20530.jpg",
@@ -8423,6 +10523,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-75507.jpg",
@@ -8469,6 +10577,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-84076.jpg",
@@ -8518,6 +10650,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-6005.jpg",
@@ -8570,6 +10714,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-87000.jpg",
@@ -8622,6 +10786,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-80604.jpg",
@@ -8661,6 +10849,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-14309.jpg",
@@ -8709,6 +10901,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-59944.jpg",
@@ -8771,6 +10979,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81561.jpg",
@@ -8813,6 +11037,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-29392.jpg",
@@ -8861,6 +11093,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16545.jpg",
@@ -8903,6 +11143,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81574.jpg",
@@ -8947,6 +11191,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-65709.jpg",
@@ -8990,6 +11254,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-59908.jpg",
@@ -9036,6 +11312,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-44017.jpg",
@@ -9082,6 +11366,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-75957.jpg",
@@ -9139,6 +11443,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-73054.jpg",
@@ -9180,6 +11500,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-25872.jpg",
@@ -9226,6 +11558,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-55494.jpg",
@@ -9270,6 +11618,14 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-107862.jpg",
@@ -9321,6 +11677,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "劳动"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-110761.jpg",
@@ -9361,6 +11725,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-145807.jpg",
@@ -9424,6 +11792,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-37741.jpg",
@@ -9463,6 +11847,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-8971.jpg",
@@ -9521,6 +11909,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-45838.jpg",
@@ -9571,6 +11971,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-30361.jpg",
@@ -9618,6 +12026,22 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-60294.jpg",
@@ -9657,6 +12081,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-84088.jpg",
@@ -9710,6 +12138,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-20556.jpg",
@@ -9767,6 +12199,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-100026.jpg",
@@ -9818,6 +12262,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-20199.jpg",
@@ -9875,6 +12339,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-27949.jpg",
@@ -9936,6 +12416,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-27954.jpg",
@@ -9988,6 +12480,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-64957.jpg",
@@ -10039,6 +12535,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14664.jpg",
@@ -10092,6 +12604,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-153799.jpg",
@@ -10136,6 +12668,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-9148.jpg",
@@ -10188,6 +12728,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-14561.jpg",
@@ -10241,6 +12785,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-45240.jpg",
@@ -10302,6 +12858,26 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16496.jpg",
@@ -10348,6 +12924,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "休闲"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-100476.jpg",
@@ -10400,6 +12992,22 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-34461.jpg",
@@ -10444,6 +13052,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-65811.jpg",
@@ -10503,6 +13115,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81552.jpg",
@@ -10561,6 +13189,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-81548.jpg",
@@ -10622,6 +13262,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "家庭"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-111062.jpg",
@@ -10666,6 +13322,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "topic",
+          "name": "航船"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-122130.jpg",
@@ -10723,6 +13395,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-16648.jpg",
@@ -10781,6 +13461,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-8360.jpg",
@@ -10820,6 +13512,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-2156.jpg",
@@ -10870,6 +13566,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-3546.jpg",
@@ -10923,6 +13627,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-64489.jpg",
@@ -10963,6 +13671,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-28860.jpg",
@@ -11007,6 +13727,18 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-13745.jpg",
@@ -11062,6 +13794,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16636.jpg",
@@ -11100,6 +13844,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-154495.jpg",
@@ -11141,6 +13889,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-72864.jpg",
@@ -11174,6 +13934,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-39954.jpg",
@@ -11231,6 +13995,18 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16156.jpg",
@@ -11284,6 +14060,22 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16159.jpg",
@@ -11337,6 +14129,22 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16162.jpg",
@@ -11404,6 +14212,22 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16197.jpg",
@@ -11466,6 +14290,26 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16166.jpg",
@@ -11532,6 +14376,18 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-16200.jpg",
@@ -11565,6 +14421,10 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-79310.jpg",
@@ -11598,6 +14458,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-84100.jpg",
@@ -11631,6 +14499,10 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-96627.jpg",
@@ -11664,6 +14536,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46423.jpg",
@@ -11697,6 +14573,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-50983.jpg",
@@ -11730,6 +14614,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-149075.jpg",
@@ -11763,6 +14651,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46435.jpg",
@@ -11796,6 +14696,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-105528.jpg",
@@ -11829,6 +14737,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46356.jpg",
@@ -11862,6 +14774,10 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-61483.jpg",
@@ -11895,6 +14811,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-86451.jpg",
@@ -11928,6 +14852,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-145677.jpg",
@@ -11961,6 +14893,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-75568.jpg",
@@ -11994,6 +14934,14 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-75320.jpg",
@@ -12027,6 +14975,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-51450.jpg",
@@ -12060,6 +15016,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-204588.jpg",
@@ -12093,6 +15057,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-49035.jpg",
@@ -12126,6 +15094,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46359.jpg",
@@ -12159,6 +15135,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-204587.jpg",
@@ -12198,6 +15182,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-75538.jpg",
@@ -12231,6 +15219,14 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-71771.jpg",
@@ -12264,6 +15260,14 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-105786.jpg",
@@ -12297,6 +15301,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-204589.jpg",
@@ -12330,6 +15342,10 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-80213.jpg",
@@ -12363,6 +15379,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-6793.jpg",
@@ -12396,6 +15420,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46387.jpg",
@@ -12429,6 +15461,10 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-13954.jpg",
@@ -12462,6 +15498,10 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-75574.jpg",
@@ -12495,6 +15535,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-89984.jpg",
@@ -12528,6 +15576,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-49028.jpg",
@@ -12561,6 +15613,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-13956.jpg",
@@ -12594,6 +15654,22 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-43148.jpg",
@@ -12627,6 +15703,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46466.jpg",
@@ -12660,6 +15744,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-204584.jpg",
@@ -12693,6 +15785,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-212492.jpg",
@@ -12726,6 +15826,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-75091.jpg",
@@ -12759,6 +15863,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-204586.jpg",
@@ -12792,6 +15904,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-204585.jpg",
@@ -12825,6 +15945,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-60503.jpg",
@@ -12858,6 +15986,14 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-79716.jpg",
@@ -12891,6 +16027,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-204583.jpg",
@@ -12924,6 +16068,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-76267.jpg",
@@ -12957,6 +16109,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-84767.jpg",
@@ -12990,6 +16146,14 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-11318.jpg",
@@ -13023,6 +16187,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-47089.jpg",
@@ -13056,6 +16228,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-86232.jpg",
@@ -13089,6 +16269,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-80510.jpg",
@@ -13122,6 +16314,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46429.jpg",
@@ -13155,6 +16351,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-154057.jpg",
@@ -13188,6 +16392,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-49025.jpg",
@@ -13221,6 +16433,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-217675.jpg",
@@ -13254,6 +16474,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-86233.jpg",
@@ -13287,6 +16515,10 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-36597.jpg",
@@ -13320,6 +16552,14 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-11316.jpg",
@@ -13353,6 +16593,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-86338.jpg",
@@ -13386,6 +16634,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-79572.jpg",
@@ -13419,6 +16679,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-34497.jpg",
@@ -13452,6 +16720,10 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-110824.jpg",
@@ -13485,6 +16757,14 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-204613.jpg",
@@ -13518,6 +16798,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-184638.jpg",
@@ -13551,6 +16835,10 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-28430.jpg",
@@ -13584,6 +16872,18 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-146282.jpg",
@@ -13617,6 +16917,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46461.jpg",
@@ -13650,6 +16958,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-46394.jpg",
@@ -13683,6 +16995,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-183344.jpg",
@@ -13716,6 +17032,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46401.jpg",
@@ -13745,6 +17069,10 @@
         {
           "category": "medium",
           "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
         }
       ],
       "image_file": "images/aic-160017.jpg",
@@ -13778,6 +17106,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-76391.jpg",
@@ -13811,6 +17143,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-49008.jpg",
@@ -13844,6 +17188,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-132939.jpg",
@@ -13877,6 +17225,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-103302.jpg",
@@ -13910,6 +17266,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46472.jpg",
@@ -13943,6 +17303,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-32640.jpg",
@@ -13976,6 +17344,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-140599.jpg",
@@ -14009,6 +17385,10 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-49011.jpg",
@@ -14042,6 +17422,14 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-204607.jpg",
@@ -14075,6 +17463,10 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-28426.jpg",
@@ -14108,6 +17500,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46432.jpg",
@@ -14141,6 +17537,18 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-43169.jpg",
@@ -14174,6 +17582,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46455.jpg",
@@ -14207,6 +17619,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-142521.jpg",
@@ -14240,6 +17660,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46477.jpg",
@@ -14273,6 +17705,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-43173.jpg",
@@ -14306,6 +17746,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46487.jpg",
@@ -14339,6 +17783,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46450.jpg",
@@ -14372,6 +17820,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-49039.jpg",
@@ -14405,6 +17861,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-43183.jpg",
@@ -14438,6 +17902,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46441.jpg",
@@ -14471,6 +17939,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-132937.jpg",
@@ -14504,6 +17976,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-86236.jpg",
@@ -14537,6 +18017,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-132940.jpg",
@@ -14570,6 +18054,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-23458.jpg",
@@ -14603,6 +18091,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-234480.jpg",
@@ -14636,6 +18132,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-84705.jpg",
@@ -14669,6 +18173,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46438.jpg",
@@ -14702,6 +18214,14 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-12314.jpg",
@@ -14735,6 +18255,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-23348.jpg",
@@ -14768,6 +18296,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-13447.jpg",
@@ -14801,6 +18337,10 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-71777.jpg",
@@ -14847,6 +18387,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "季节与天气"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-127644.jpg",
@@ -14884,6 +18436,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-185222.jpg",
@@ -14927,6 +18487,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-11272.jpg",
@@ -14963,6 +18531,18 @@
         {
           "category": "era",
           "name": "12世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-56731.jpg",
@@ -14996,6 +18576,10 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-11146.jpg",
@@ -15035,6 +18619,10 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-7634.jpg",
@@ -15068,6 +18656,14 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-80072.jpg",
@@ -15101,6 +18697,22 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-12032.jpg",
@@ -15134,6 +18746,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-7688.jpg",
@@ -15167,6 +18787,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-198910.jpg",
@@ -15200,6 +18828,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-7633.jpg",
@@ -15233,6 +18869,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-198899.jpg",
@@ -15266,6 +18910,30 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-146559.jpg",
@@ -15299,6 +18967,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-145673.jpg",
@@ -15335,6 +19011,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-80547.jpg",
@@ -15368,6 +19056,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-11613.jpg",
@@ -15401,6 +19093,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-35361.jpg",
@@ -15434,6 +19130,18 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-191599.jpg",
@@ -15467,6 +19175,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-198906.jpg",
@@ -15500,6 +19220,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-35689.jpg",
@@ -15533,6 +19257,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-160015.jpg",
@@ -15566,6 +19302,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-198874.jpg",
@@ -15599,6 +19343,18 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-11548.jpg",
@@ -15632,6 +19388,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-8900.jpg",
@@ -15665,6 +19425,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-17841.jpg",
@@ -15698,6 +19466,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-23481.jpg",
@@ -15731,6 +19507,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-76645.jpg",
@@ -15764,6 +19548,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-110416.jpg",
@@ -15797,6 +19585,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-14027.jpg",
@@ -15833,6 +19625,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-117201.jpg",
@@ -15866,6 +19670,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-198916.jpg",
@@ -15898,6 +19714,22 @@
         {
           "category": "era",
           "name": "11世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-193241.jpg",
@@ -15931,6 +19763,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-123402.jpg",
@@ -15964,6 +19804,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-87263.jpg",
@@ -15997,6 +19849,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-12813.jpg",
@@ -16030,6 +19886,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-198948.jpg",
@@ -16066,6 +19930,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-198908.jpg",
@@ -16099,6 +19975,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-35686.jpg",
@@ -16132,6 +20016,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-142524.jpg",
@@ -16165,6 +20053,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-23983.jpg",
@@ -16198,6 +20090,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-35427.jpg",
@@ -16231,6 +20131,10 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-80073.jpg",
@@ -16264,6 +20168,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-151047.jpg",
@@ -16297,6 +20205,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-151048.jpg",
@@ -16330,6 +20242,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-24463.jpg",
@@ -16363,6 +20279,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-110305.jpg",
@@ -16396,6 +20316,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-8044.jpg",
@@ -16429,6 +20357,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-35669.jpg",
@@ -16462,6 +20394,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-35682.jpg",
@@ -16495,6 +20435,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-74242.jpg",
@@ -16528,6 +20476,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-35677.jpg",
@@ -16561,6 +20517,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-228951.jpg",
@@ -16594,6 +20558,10 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-90437.jpg",
@@ -16630,6 +20598,18 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-152846.jpg",
@@ -16663,6 +20643,18 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-86374.jpg",
@@ -16696,6 +20688,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-60300.jpg",
@@ -16729,6 +20729,18 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-125112.jpg",
@@ -16762,6 +20774,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-241452.jpg",
@@ -16795,6 +20811,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-36550.jpg",
@@ -16828,6 +20848,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-30419.jpg",
@@ -16861,6 +20893,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "花卉"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-30420.jpg",
@@ -16894,6 +20938,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-124662.jpg",
@@ -16927,6 +20975,14 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
         }
       ],
       "image_file": "images/aic-16682.jpg",
@@ -16960,6 +21016,14 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "风景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-80071.jpg",
@@ -16989,6 +21053,14 @@
         {
           "category": "medium",
           "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-24460.jpg",
@@ -17036,6 +21108,22 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-49195.jpg",
@@ -17072,6 +21160,22 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-210511.jpg",
@@ -17105,6 +21209,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-3999.jpg",
@@ -17138,6 +21254,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-13120.jpg",
@@ -17171,6 +21299,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-49336.jpg",
@@ -17204,6 +21344,22 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-93926.jpg",
@@ -17237,6 +21393,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-76899.jpg",
@@ -17270,6 +21430,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-131858.jpg",
@@ -17303,6 +21471,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-24539.jpg",
@@ -17336,6 +21508,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-89516.jpg",
@@ -17369,6 +21545,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-183372.jpg",
@@ -17402,6 +21590,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-62243.jpg",
@@ -17435,6 +21635,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-131916.jpg",
@@ -17468,6 +21676,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-131912.jpg",
@@ -17501,6 +21717,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-131915.jpg",
@@ -17534,6 +21762,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-87310.jpg",
@@ -17567,6 +21803,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "夜景"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-120669.jpg",
@@ -17600,6 +21848,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-28293.jpg",
@@ -17635,6 +21895,22 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-28290.jpg",
@@ -17668,6 +21944,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-131822.jpg",
@@ -17701,6 +21981,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-191321.jpg",
@@ -17734,6 +22026,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-76893.jpg",
@@ -17767,6 +22067,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-49229.jpg",
@@ -17800,6 +22108,22 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-191323.jpg",
@@ -17833,6 +22157,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-131908.jpg",
@@ -17869,6 +22201,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-129866.jpg",
@@ -17902,6 +22242,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-100487.jpg",
@@ -17935,6 +22283,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-76900.jpg",
@@ -17968,6 +22324,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-89519.jpg",
@@ -18001,6 +22361,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-99362.jpg",
@@ -18037,6 +22409,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129862.jpg",
@@ -18072,6 +22456,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-142422.jpg",
@@ -18105,6 +22497,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-28275.jpg",
@@ -18138,6 +22542,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "炭笔"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-12325.jpg",
@@ -18174,6 +22586,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129856.jpg",
@@ -18210,6 +22634,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129857.jpg",
@@ -18243,6 +22679,18 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "肖像"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-28278.jpg",
@@ -18276,6 +22724,14 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-120668.jpg",
@@ -18312,6 +22768,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129905.jpg",
@@ -18348,6 +22816,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129865.jpg",
@@ -18384,6 +22864,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129880.jpg",
@@ -18423,6 +22915,22 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-99357.jpg",
@@ -18462,6 +22970,22 @@
         {
           "category": "era",
           "name": "15世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-120665.jpg",
@@ -18498,6 +23022,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-129875.jpg",
@@ -18534,6 +23066,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129858.jpg",
@@ -18570,6 +23114,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-129873.jpg",
@@ -18606,6 +23158,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129887.jpg",
@@ -18642,6 +23206,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-129869.jpg",
@@ -18678,6 +23250,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129892.jpg",
@@ -18714,6 +23298,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129871.jpg",
@@ -18750,6 +23346,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129885.jpg",
@@ -18786,6 +23394,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-129863.jpg",
@@ -18827,6 +23447,30 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "topic",
+          "name": "音乐"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-142526.jpg",
@@ -18856,6 +23500,18 @@
         {
           "category": "era",
           "name": "13世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-144397.jpg",
@@ -18885,6 +23541,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-142517.jpg",
@@ -18918,6 +23586,18 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-144918.jpg",
@@ -18951,6 +23631,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
         }
       ],
       "image_file": "images/aic-109571.jpg",
@@ -18984,6 +23668,10 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-180204.jpg",
@@ -19017,6 +23705,14 @@
         {
           "category": "era",
           "name": "16世纪"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-131816.jpg",
@@ -19046,6 +23742,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-184668.jpg",
@@ -19079,6 +23779,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
         }
       ],
       "image_file": "images/aic-103305.jpg",
@@ -19112,6 +23820,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-199647.jpg",
@@ -19141,6 +23857,10 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-185008.jpg",
@@ -19174,6 +23894,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-146860.jpg",
@@ -19210,6 +23938,18 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-49262.jpg",
@@ -19243,6 +23983,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-60237.jpg",
@@ -19276,6 +24024,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46269.jpg",
@@ -19309,6 +24065,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-34310.jpg",
@@ -19338,6 +24102,22 @@
         {
           "category": "era",
           "name": "17世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-147005.jpg",
@@ -19371,6 +24151,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-158110.jpg",
@@ -19404,6 +24192,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
         }
       ],
       "image_file": "images/aic-65926.jpg",
@@ -19437,6 +24233,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
         }
       ],
       "image_file": "images/aic-9312.jpg",
@@ -19470,6 +24274,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-158111.jpg",
@@ -19503,6 +24315,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-199649.jpg",
@@ -19536,6 +24356,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-198077.jpg",
@@ -19569,6 +24397,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-46264.jpg",
@@ -19602,6 +24438,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-199646.jpg",
@@ -19635,6 +24479,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-199650.jpg",
@@ -19668,6 +24520,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "medium",
+          "name": "绢本"
+        },
+        {
+          "category": "medium",
+          "name": "金彩"
         }
       ],
       "image_file": "images/aic-157107.jpg",
@@ -19701,6 +24561,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "宗教"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
         }
       ],
       "image_file": "images/aic-218470.jpg",
@@ -19734,6 +24602,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-199640.jpg",
@@ -19767,6 +24643,14 @@
         {
           "category": "era",
           "name": "14世纪"
+        },
+        {
+          "category": "medium",
+          "name": "水墨"
+        },
+        {
+          "category": "medium",
+          "name": "纸本"
         }
       ],
       "image_file": "images/aic-199642.jpg",
@@ -19808,6 +24692,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-55706.jpg",
@@ -19853,6 +24749,14 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-59455.jpg",
@@ -19895,6 +24799,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-61146.jpg",
@@ -19936,6 +24852,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-107939.jpg",
@@ -19977,6 +24905,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-61139.jpg",
@@ -20018,6 +24958,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-61141.jpg",
@@ -20058,6 +25010,10 @@
         {
           "category": "era",
           "name": "18世纪"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
         }
       ],
       "image_file": "images/aic-55692.jpg",
@@ -20093,6 +25049,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-68931.jpg",
@@ -20128,6 +25092,14 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-61117.jpg",
@@ -20169,6 +25141,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-61158.jpg",
@@ -20211,6 +25195,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "木板"
         }
       ],
       "image_file": "images/aic-61112.jpg",
@@ -20252,6 +25248,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-55710.jpg",
@@ -20295,6 +25303,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-8991.jpg",
@@ -20337,6 +25349,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-109819.jpg",
@@ -20384,6 +25400,22 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "动物"
+        },
+        {
+          "category": "topic",
+          "name": "建筑"
+        },
+        {
+          "category": "topic",
+          "name": "乡村生活"
+        },
+        {
+          "category": "medium",
+          "name": "棉布"
         }
       ],
       "image_file": "images/aic-111617.jpg",
@@ -20429,6 +25461,14 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "室内"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-27987.jpg",
@@ -20472,6 +25512,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-65916.jpg",
@@ -20515,6 +25559,18 @@
         {
           "category": "era",
           "name": "19世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-8958.jpg",
@@ -20554,6 +25610,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-65937.jpg",
@@ -20668,6 +25728,18 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "人物"
+        },
+        {
+          "category": "topic",
+          "name": "服饰"
+        },
+        {
+          "category": "medium",
+          "name": "布面"
         }
       ],
       "image_file": "images/aic-145808.jpg",
@@ -20701,6 +25773,10 @@
         {
           "category": "era",
           "name": "20世纪"
+        },
+        {
+          "category": "topic",
+          "name": "山水"
         }
       ],
       "image_file": "images/aic-65908.jpg",

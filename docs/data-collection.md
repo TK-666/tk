@@ -9,8 +9,8 @@
 ## 标签处理
 
 - `style`：馆方 `style_title` 的中文名称。没有馆方风格值的作品不进入样本。
-- `topic`：仅将馆方 `subject_titles` 中明确命中的词映射为风景、城市、肖像、静物、人物、花卉或海景；未命中不补猜。
-- `medium`：从馆方 `medium_display` 中识别油画、水彩、蛋彩、粉彩或水墨；没有匹配词时不补猜。
+- `topic`：优先映射馆方 `subject_titles`，同时识别馆方标题中明确的题材词，例如肖像、山水、动物和宗教。500 件作品中，384 件有题材标签，共 21 个题材标签。
+- `medium`：从馆方 `medium_display` 同时提取技法和材质，例如油画、纸本、绢本和金彩。一件作品可有多个媒介标签，目前共 12 个。
 - `era`：用馆方 `date_start` 计算世纪，原始年代文字仍保留在元数据和作品简介中。
 
 映射规则写在 [`scripts/collect_artworks.py`](../scripts/collect_artworks.py)，可复核和重新运行。新增 JPEG 采用馆方推荐的 843 像素宽度，首批图片的宽度不超过 1200 像素。导入时再生成 WebP 封面。作品简介组合馆方提供的事实字段，并附馆方作品页面链接。
@@ -23,7 +23,19 @@
 .\backend\.venv\Scripts\python.exe .\scripts\import_artworks.py
 ```
 
-先按 README 初始化数据库。导入脚本会核对每张图片的 SHA-256，在当前配置的数据库中创建缺失标签和公开作品，并把图片复制到运行时上传目录。同一作品以稳定的馆方编号文件名识别；再次运行会跳过已有作品，不改动管理员后来编辑的内容。若要重新采集馆方数据，在联网环境运行：
+先按 README 初始化数据库。导入脚本会核对每张图片的 SHA-256，在当前配置的数据库中创建缺失标签和公开作品，并把图片复制到运行时上传目录。同一作品以馆方编号识别。已有作品可用以下命令补充清单中缺少的标签，原有标签和作品资料会保留。
+
+```powershell
+.\backend\.venv\Scripts\python.exe .\scripts\import_artworks.py --update-tags
+```
+
+如果修改了标签映射，可以直接用已保存的馆方元数据更新清单，无需重新下载图片。
+
+```powershell
+.\backend\.venv\Scripts\python.exe .\scripts\collect_artworks.py --refresh-tags
+```
+
+若要采集馆方数据，在联网环境运行：
 
 ```powershell
 .\backend\.venv\Scripts\python.exe .\scripts\collect_artworks.py

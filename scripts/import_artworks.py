@@ -4,6 +4,7 @@ Run with backend/.venv/Scripts/python.exe scripts/import_artworks.py from the
 repository root after `flask --app run init-db`. Existing artworks are kept.
 """
 
+import argparse
 import hashlib
 import json
 import re
@@ -80,7 +81,7 @@ def ensure_images(item, upload_dir):
     return f"/api/uploads/{original}", f"/api/uploads/{cover}"
 
 
-def import_catalog(artworks):
+def import_catalog(artworks, *, update_tags=False):
     app = create_app()
     with app.app_context():
         if not inspect(db.engine).has_table("artworks"):
@@ -88,15 +89,16 @@ def import_catalog(artworks):
         upload_dir = Path(app.config["UPLOAD_FOLDER"])
         upload_dir.mkdir(parents=True, exist_ok=True)
         tags_by_key = {(tag.category, tag.name): tag for tag in db.session.scalars(db.select(Tag))}
-        created = skipped = 0
+        created = updated = skipped = 0
         for item in artworks:
             image_url, cover_url = ensure_images(item, upload_dir)
             # Some museum IDs are prefixes of other IDs, such as 869 and 86998.
             source_url_pattern = re.escape(item["source_url"]) + r"([^0-9]|$)"
-            if db.session.scalar(db.select(Artwork.id).where(or_(
+            existing_id = db.session.scalar(db.select(Artwork.id).where(or_(
                 Artwork.image_url == image_url,
                 Artwork.description.regexp_match(source_url_pattern),
-            ))) is not None:
+            )).order_by(Artwork.image_url != image_url, Artwork.id))
+            if existing_id is not None and not update_tags:
                 skipped += 1
                 continue
             selected_tags = []
@@ -108,6 +110,16 @@ def import_catalog(artworks):
                     db.session.add(tag)
                     tags_by_key[key] = tag
                 selected_tags.append(tag)
+            if existing_id is not None:
+                artwork = db.session.get(Artwork, existing_id)
+                missing = [tag for tag in selected_tags if tag not in artwork.tags]
+                if missing:
+                    artwork.tags.extend(missing)
+                    updated += 1
+                else:
+                    skipped += 1
+                continue
+
             facts = [f"创作年代：{item['date_display']}" if item.get("date_display") else ""]
             if item.get("medium_display"):
                 facts.append(f"材料：{item['medium_display']}")
@@ -127,8 +139,11 @@ def import_catalog(artworks):
             db.session.add(artwork)
             created += 1
         db.session.commit()
-        print(f"Database: {db.engine.dialect.name}; created: {created}; already present: {skipped}")
+        print(f"Database: {db.engine.dialect.name}; created: {created}; tags updated: {updated}; skipped: {skipped}")
 
 
 if __name__ == "__main__":
-    import_catalog(load_catalog())
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--update-tags", action="store_true", help="add missing catalog tags to existing artworks")
+    args = parser.parse_args()
+    import_catalog(load_catalog(), update_tags=args.update_tags)
