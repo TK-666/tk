@@ -1,5 +1,5 @@
 <script setup>
-import { inject, onMounted, ref, watch } from 'vue'
+import { computed, inject, onMounted, ref, watch } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { api, json } from '../api.js'
 
@@ -12,6 +12,12 @@ const artworkQuery = ref('')
 const artworkStatus = ref('')
 const tags = ref([])
 const users = ref([])
+const usersPerPage = 10
+const userPage = ref(1)
+const visibleUsers = computed(() => {
+  const start = (userPage.value - 1) * usersPerPage
+  return users.value.slice(start, start + usersPerPage)
+})
 const deletingUserId = ref(null)
 const settings = ref({ tag_weight: 3, itemcf_weight: 2 })
 const form = ref(emptyArtwork())
@@ -42,7 +48,9 @@ async function load() {
   if (user.value?.role !== 'admin') return
   try {
     const [a, b, c, d, e] = await Promise.all([api('/admin/stats'), api(artworkPath()), api('/tags'), api('/admin/users'), api('/admin/settings')])
-    stats.value = a; artworks.value = b.items; artworkTotal.value = b.total; tags.value = c.items; users.value = d.items
+    stats.value = a; artworks.value = b.items; artworkTotal.value = b.total; tags.value = c.items
+    users.value = d.items
+    userPage.value = Math.min(userPage.value, Math.max(1, Math.ceil(users.value.length / usersPerPage)))
     settings.value = { tag_weight: Number(e.items.tag_weight ?? 3), itemcf_weight: Number(e.items.itemcf_weight ?? 2) }; error.value = ''
   } catch (err) { error.value = err.message }
 }
@@ -198,7 +206,7 @@ watch(user, load)
           <el-table :data="tags" class="admin-table"><el-table-column prop="name" label="名称" /><el-table-column prop="category" label="类别" /><el-table-column label="操作"><template #default="scope"><el-button text type="primary" @click="editTag(scope.row)">编辑</el-button><el-button text type="danger" @click="removeTag(scope.row.id)">删除</el-button></template></el-table-column></el-table>
         </el-tab-pane>
         <el-tab-pane label="用户管理">
-          <el-table :data="users">
+          <el-table :data="visibleUsers" row-key="id">
             <el-table-column prop="username" label="用户名" />
             <el-table-column prop="role" label="角色" />
             <el-table-column label="状态">
@@ -212,6 +220,18 @@ watch(user, load)
               </template>
             </el-table-column>
           </el-table>
+          <el-pagination
+            v-if="users.length > usersPerPage"
+            v-model:current-page="userPage"
+            class="pagination"
+            background
+            layout="slot, prev, pager, next"
+            :total="users.length"
+            :page-size="usersPerPage"
+            :pager-count="5"
+          >
+            <span>共 {{ users.length }} 人</span>
+          </el-pagination>
         </el-tab-pane>
         <el-tab-pane label="推荐配置"><div class="form-row"><el-input-number v-model="settings.tag_weight" :min="0" :max="100" /> 标签权重 <el-input-number v-model="settings.itemcf_weight" :min="0" :max="100" /> 协同过滤权重 <el-button type="primary" @click="saveSettings">保存</el-button></div></el-tab-pane>
       </el-tabs>

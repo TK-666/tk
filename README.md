@@ -42,6 +42,10 @@ SQLite 文件在 `backend/instance/artworks.db`，本地上传默认在 `backend
 
 数据库初始化后，在项目根目录运行 `.\backend\.venv\Scripts\python.exe .\scripts\import_artworks.py`。仓库附有 100 件馆方标记为公有领域的绘画样本及图片；导入可重复执行，不会重复创建作品。样本来源、筛选和标签映射见 [docs/data-collection.md](docs/data-collection.md)。
 
+### 生成演示用户
+
+导入作品或发布作品后，在项目根目录运行 `.\backend\.venv\Scripts\python.exe .\scripts\seed_demo_users.py`。脚本向当前配置的开发数据库写入 100 个模拟普通用户（`demo_art_001` 至 `demo_art_100`），每人都有浏览、点赞、收藏和评分记录。作品有风格标签时，也会为用户设置风格偏好。重复运行只补齐缺少的账号。需要登录演示账号时，可在后台用户管理中为该账号重置密码。
+
 ### 使用 MySQL 8
 
 先在 MySQL 创建独立数据库（建议 `utf8mb4`）和该数据库专用账号。在项目根目录的 `.env` 中把 `DATABASE_URL` 改为下面的连接串，替换账号、密码和库名。密码含 `@`、`#` 等保留字符时先做 URL 编码。
