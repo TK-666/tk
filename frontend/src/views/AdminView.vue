@@ -168,7 +168,15 @@ watch(user, load)
               <el-button type="danger" plain :loading="artworkAction === 'delete'" :disabled="artworkAction === 'save'" @click="removeArtwork">删除作品</el-button>
             </template>
           </el-form>
-          <div class="form-row"><el-input v-model="artworkQuery" placeholder="搜索作品或作者" clearable @keyup.enter="searchArtworks" /><el-select v-model="artworkStatus" placeholder="全部状态" clearable><el-option label="草稿" value="draft" /><el-option label="发布" value="published" /><el-option label="下架" value="archived" /></el-select><el-button @click="searchArtworks">查询</el-button></div>
+          <div class="artwork-filters">
+            <el-input v-model="artworkQuery" placeholder="搜索作品或作者" aria-label="搜索作品或作者" clearable @keyup.enter="searchArtworks" />
+            <el-select v-model="artworkStatus" placeholder="全部状态" clearable>
+              <el-option label="草稿" value="draft" />
+              <el-option label="发布" value="published" />
+              <el-option label="下架" value="archived" />
+            </el-select>
+            <el-button @click="searchArtworks">查询</el-button>
+          </div>
           <el-table :data="artworks" class="admin-table"><el-table-column label="封面" width="90"><template #default="scope"><img v-if="scope.row.cover_url" class="table-cover" :src="scope.row.cover_url" :alt="scope.row.title" /></template></el-table-column><el-table-column prop="title" label="作品" /><el-table-column prop="artist" label="作者" /><el-table-column prop="status" label="状态" /><el-table-column label="操作"><template #default="scope"><el-button text type="primary" @click="editArtwork(scope.row)">编辑</el-button></template></el-table-column></el-table>
           <el-pagination v-if="artworkTotal > 20" v-model:current-page="artworkPage" class="pagination" background layout="prev, pager, next" :total="artworkTotal" :page-size="20" @current-change="changeArtworkPage" />
         </el-tab-pane>
@@ -212,6 +220,13 @@ watch(user, load)
 </template>
 
 <style scoped>
+.artwork-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px auto;
+  align-items: center;
+  gap: 12px;
+}
+
 .tag-editor {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(128px, 1fr) auto;
@@ -223,6 +238,8 @@ watch(user, load)
 .tag-editor .el-form-item { margin-bottom: 0; }
 
 @media (max-width: 600px) {
+  .artwork-filters { grid-template-columns: minmax(0, 1fr) auto; }
+  .artwork-filters .el-input { grid-column: 1 / -1; }
   .tag-editor { grid-template-columns: minmax(0, 1fr); }
   .tag-editor .el-button { justify-self: start; }
 }
