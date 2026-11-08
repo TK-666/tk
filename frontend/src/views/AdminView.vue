@@ -14,9 +14,19 @@ const tags = ref([])
 const users = ref([])
 const usersPerPage = 10
 const userPage = ref(1)
+const userQuery = ref('')
+const userKeyword = computed(() => userQuery.value.trim().toLowerCase())
+const filteredUsers = computed(() => {
+  const keyword = userKeyword.value
+  if (!keyword) return users.value
+  return users.value.filter(item =>
+    item.username.toLowerCase().includes(keyword) ||
+    item.display_name?.toLowerCase().includes(keyword),
+  )
+})
 const visibleUsers = computed(() => {
   const start = (userPage.value - 1) * usersPerPage
-  return users.value.slice(start, start + usersPerPage)
+  return filteredUsers.value.slice(start, start + usersPerPage)
 })
 const deletingUserId = ref(null)
 const settings = ref({ tag_weight: 3, itemcf_weight: 2 })
@@ -50,7 +60,7 @@ async function load() {
     const [a, b, c, d, e] = await Promise.all([api('/admin/stats'), api(artworkPath()), api('/tags'), api('/admin/users'), api('/admin/settings')])
     stats.value = a; artworks.value = b.items; artworkTotal.value = b.total; tags.value = c.items
     users.value = d.items
-    userPage.value = Math.min(userPage.value, Math.max(1, Math.ceil(users.value.length / usersPerPage)))
+    userPage.value = Math.min(userPage.value, Math.max(1, Math.ceil(filteredUsers.value.length / usersPerPage)))
     settings.value = { tag_weight: Number(e.items.tag_weight ?? 3), itemcf_weight: Number(e.items.itemcf_weight ?? 2) }; error.value = ''
   } catch (err) { error.value = err.message }
 }
@@ -149,6 +159,7 @@ async function saveSettings() {
 }
 onMounted(load)
 watch(user, load)
+watch(userKeyword, () => { userPage.value = 1 })
 </script>
 
 <template>
@@ -206,8 +217,13 @@ watch(user, load)
           <el-table :data="tags" class="admin-table"><el-table-column prop="name" label="名称" /><el-table-column prop="category" label="类别" /><el-table-column label="操作"><template #default="scope"><el-button text type="primary" @click="editTag(scope.row)">编辑</el-button><el-button text type="danger" @click="removeTag(scope.row.id)">删除</el-button></template></el-table-column></el-table>
         </el-tab-pane>
         <el-tab-pane label="用户管理">
-          <el-table :data="visibleUsers" row-key="id">
-            <el-table-column prop="username" label="用户名" />
+          <div class="user-search">
+            <el-input v-model="userQuery" placeholder="搜索用户名或昵称" aria-label="搜索用户名或昵称" clearable />
+            <span role="status">共 {{ filteredUsers.length }} 人</span>
+          </div>
+          <el-table :data="visibleUsers" row-key="id" :empty-text="userKeyword ? '没有匹配的用户' : '暂无用户'">
+            <el-table-column prop="username" label="用户名" min-width="140" />
+            <el-table-column prop="display_name" label="昵称" min-width="100" />
             <el-table-column prop="role" label="角色" />
             <el-table-column label="状态">
               <template #default="{ row }">{{ row.enabled ? '启用' : '禁用' }}</template>
@@ -221,17 +237,15 @@ watch(user, load)
             </el-table-column>
           </el-table>
           <el-pagination
-            v-if="users.length > usersPerPage"
+            v-if="filteredUsers.length > usersPerPage"
             v-model:current-page="userPage"
             class="pagination"
             background
-            layout="slot, prev, pager, next"
-            :total="users.length"
+            layout="prev, pager, next"
+            :total="filteredUsers.length"
             :page-size="usersPerPage"
             :pager-count="5"
-          >
-            <span>共 {{ users.length }} 人</span>
-          </el-pagination>
+          />
         </el-tab-pane>
         <el-tab-pane label="推荐配置"><div class="form-row"><el-input-number v-model="settings.tag_weight" :min="0" :max="100" /> 标签权重 <el-input-number v-model="settings.itemcf_weight" :min="0" :max="100" /> 协同过滤权重 <el-button type="primary" @click="saveSettings">保存</el-button></div></el-tab-pane>
       </el-tabs>
@@ -246,6 +260,16 @@ watch(user, load)
   align-items: center;
   gap: 12px;
 }
+
+.user-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.user-search .el-input { max-width: 340px; }
+.user-search > span { white-space: nowrap; }
 
 .tag-editor {
   display: grid;
