@@ -40,7 +40,7 @@ SQLite 文件在 `backend/instance/artworks.db`，本地上传默认在 `backend
 
 ### 导入作品样本
 
-数据库初始化后，在项目根目录运行 `.\backend\.venv\Scripts\python.exe .\scripts\import_artworks.py`。仓库附有 100 件馆方标记为公有领域的绘画样本及图片；导入可重复执行，不会重复创建作品。样本来源、筛选和标签映射见 [docs/data-collection.md](docs/data-collection.md)。
+数据库初始化后，在项目根目录运行 `.\backend\.venv\Scripts\python.exe .\scripts\import_artworks.py`。仓库附有 500 件馆方标记为公有领域的绘画样本及图片。已有数据库也可直接重复运行该命令以补入缺少的作品。样本来源、筛选和标签映射见 [docs/data-collection.md](docs/data-collection.md)。
 
 ### 生成演示用户
 

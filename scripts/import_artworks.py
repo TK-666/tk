@@ -6,6 +6,7 @@ repository root after `flask --app run init-db`. Existing artworks are kept.
 
 import hashlib
 import json
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -90,9 +91,11 @@ def import_catalog(artworks):
         created = skipped = 0
         for item in artworks:
             image_url, cover_url = ensure_images(item, upload_dir)
+            # Some museum IDs are prefixes of other IDs, such as 869 and 86998.
+            source_url_pattern = re.escape(item["source_url"]) + r"([^0-9]|$)"
             if db.session.scalar(db.select(Artwork.id).where(or_(
                 Artwork.image_url == image_url,
-                Artwork.description.contains(item["source_url"]),
+                Artwork.description.regexp_match(source_url_pattern),
             ))) is not None:
                 skipped += 1
                 continue

@@ -28,14 +28,19 @@ HEADERS = {
 }
 IMAGE_WIDTH = 843
 STYLES = (
-    ("Impressionism", "印象派", 24),
-    ("Post-Impressionism", "后印象派", 16),
-    ("Realism", "写实主义", 19),
-    ("Renaissance", "文艺复兴", 14),
+    ("Impressionism", "印象派", 120),
+    ("Post-Impressionism", "后印象派", 35),
+    ("Realism", "写实主义", 28),
+    ("Renaissance", "文艺复兴", 20),
     ("Baroque", "巴洛克", 5),
     ("Pointillism", "点彩派", 1),
-    ("Chinese (culture or style)", "国风", 16),
+    ("Chinese (culture or style)", "国风", 115),
     ("Neoclassicism", "新古典主义", 5),
+    ("Japanese (culture or style)", "日本绘画", 65),
+    ("South Asian", "南亚绘画", 52),
+    ("Himalayan", "喜马拉雅绘画", 30),
+    ("Folk Art", "民间艺术", 12),
+    ("Modernism", "现代主义", 12),
 )
 FIELDS = ",".join((
     "id", "title", "image_id", "artist_title", "artist_display",
@@ -98,11 +103,17 @@ def search(client, style):
             {"term": {"artwork_type_title.keyword": "Painting"}},
             {"exists": {"field": "image_id"}},
         ]}},
-        "limit": 60,
+        "limit": 100,
         "fields": FIELDS,
     }
-    request = Request(f"{API}?{urlencode({'params': json.dumps(body, separators=(',', ':'))})}", headers=HEADERS)
-    return json.loads(client.fetch(request))["data"]
+    for page in range(1, 11):
+        body["page"] = page
+        params = urlencode({"params": json.dumps(body, separators=(",", ":"))})
+        request = Request(f"{API}?{params}", headers=HEADERS)
+        result = json.loads(client.fetch(request))
+        yield from result["data"]
+        if page >= result["pagination"]["total_pages"]:
+            break
 
 
 def main():
@@ -192,7 +203,9 @@ def main():
         "collected_at": datetime.now(timezone.utc).isoformat(),
         "artworks": artworks,
     }
-    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    pending_manifest = manifest_path.with_suffix(".json.tmp")
+    pending_manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    pending_manifest.replace(manifest_path)
     print(f"Saved {len(artworks)} artworks to {OUTPUT}")
 
 
