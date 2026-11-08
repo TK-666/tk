@@ -157,13 +157,21 @@ class RecommendationTest(unittest.TestCase):
         guest = self.client()
         hot, latest = self.order(guest, "hot"), self.order(guest, "latest")
         tag_reason = "与浏览历史风格相近"
-        cf_reason = "欣赏相近作品的用户也喜欢"
+        cf_reason = "基于其他用户的共同互动"
 
         def check(first, reason):
             personal = self.recommendations(client)
             self.assertEqual(personal["strategy"], "hybrid")
             self.assertEqual(personal["items"][0]["id"], first.id)
             self.assertEqual(personal["items"][0]["recommendation_reason"], reason)
+            if reason == cf_reason:
+                self.assertEqual(personal["items"][0]["itemcf_evidence"], {
+                    "source_artwork_id": source.id,
+                    "source_title": source.title,
+                    "shared_user_count": 1,
+                })
+            elif reason == "热门作品":
+                self.assertNotIn("itemcf_evidence", personal["items"][0])
             self.assertEqual(self.order(guest), hot)
             self.assertEqual(self.order(client, "hot"), hot)
             self.assertEqual(self.order(client, "latest"), latest)
@@ -303,12 +311,49 @@ class RecommendationTest(unittest.TestCase):
         client = self.client(viewer)
         first = client.get("/api/recommendations?kind=personal").json["items"]
         self.assertEqual(first[0]["id"], collaborative.id)
-        self.assertEqual(first[0]["recommendation_reason"], "欣赏相近作品的用户也喜欢")
+        self.assertEqual(first[0]["recommendation_reason"], "基于其他用户的共同互动")
 
         db.session.delete(db.session.get(Favorite, (peer.id, collaborative.id)))
         db.session.add(BehaviorLog(user_id=peer.id, artwork_id=collaborative.id, action="favorite"))
         db.session.commit()
-        self.assertEqual(client.get("/api/recommendations?kind=personal").json["items"][0]["id"], featured.id)
+        items = self.recommendations(client)["items"]
+        self.assertEqual(items[0]["id"], featured.id)
+        self.assertTrue(all("itemcf_evidence" not in item for item in items))
+
+    def test_same_preferences_different_histories_produce_different_itemcf_recommendations(self):
+        style = Tag(name="水彩", category="style")
+        tag_match = self.artwork("风格匹配", [style])
+        first_source, second_source = self.artwork("山间"), self.artwork("港湾")
+        first_match, second_match = self.artwork("林中"), self.artwork("渔船")
+        viewers = [self.user("viewer-a"), self.user("viewer-b")]
+        peers = [self.user("peer-a"), self.user("peer-b")]
+        disabled = self.user("disabled")
+        disabled.enabled = False
+        pairs = [(first_source, first_match), (second_source, second_match)]
+        for viewer, peer, (source, candidate) in zip(viewers, peers, pairs):
+            viewer.preferences = [style]
+            db.session.add_all([
+                Favorite(user_id=peer.id, artwork_id=source.id),
+                Favorite(user_id=peer.id, artwork_id=candidate.id),
+                BehaviorLog(user_id=peer.id, artwork_id=candidate.id, action="view"),
+                Favorite(user_id=disabled.id, artwork_id=source.id),
+                Favorite(user_id=disabled.id, artwork_id=candidate.id),
+            ])
+        db.session.commit()
+
+        for viewer, (source, candidate) in zip(viewers, pairs):
+            with self.subTest(viewer=viewer.username):
+                client = self.client(viewer)
+                self.assertEqual(self.order(client)[0], tag_match.id)
+                self.interact(client, source, "like", active=True)
+                self.interact(client, source, "favorite", active=True)
+                item = self.recommendations(client)["items"][0]
+                self.assertEqual(item["id"], candidate.id)
+                self.assertEqual(item["itemcf_evidence"], {
+                    "source_artwork_id": source.id,
+                    "source_title": source.title,
+                    "shared_user_count": 1,
+                })
 
     def test_personal_excludes_disliked_work_even_at_cold_start(self):
         disliked = self.artwork("不喜欢", featured=True)

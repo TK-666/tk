@@ -79,9 +79,10 @@ def _signals():
 
 
 def _item_similarities(profiles):
-    """Cosine similarity of item columns in the user-item behavior matrix."""
+    """Return adjusted cosine similarity and shared user count for each item pair."""
     norms = Counter()
     cooccurrence = Counter()
+    shared_users = Counter()
     for profile in profiles.values():
         capped = {artwork_id: min(strength, 5.0) for artwork_id, strength in profile.items()}
         for artwork_id, strength in capped.items():
@@ -90,9 +91,11 @@ def _item_similarities(profiles):
             continue
         activity_penalty = log2(len(capped) + 1)
         for (left_id, left_strength), (right_id, right_strength) in combinations(sorted(capped.items()), 2):
-            cooccurrence[left_id, right_id] += left_strength * right_strength / activity_penalty
+            pair = (left_id, right_id)
+            cooccurrence[pair] += left_strength * right_strength / activity_penalty
+            shared_users[pair] += 1
     return {
-        pair: shared / sqrt(norms[pair[0]] * norms[pair[1]])
+        pair: (shared / sqrt(norms[pair[0]] * norms[pair[1]]), shared_users[pair])
         for pair, shared in cooccurrence.items()
     }
 
@@ -112,9 +115,11 @@ def _tag_affinity(user, profile, by_id):
     return affinity, explicit_styles
 
 
-def _serialize(artwork, reason):
+def _serialize(artwork, reason, itemcf_evidence=None):
     result = artwork.to_dict()
     result["recommendation_reason"] = reason
+    if itemcf_evidence is not None:
+        result["itemcf_evidence"] = itemcf_evidence
     return result
 
 
@@ -139,39 +144,63 @@ def recommend(kind, user, limit=20):
         ]}
 
     profile = profiles.get(user.id, {})
-    affinity, explicit_styles = _tag_affinity(user, profile, {item.id: item for item in artworks})
+    by_id = {item.id: item for item in artworks}
+    affinity, explicit_styles = _tag_affinity(user, profile, by_id)
     if not profile and not explicit_styles:
         visible = [item for item in hot if item.id not in disliked.get(user.id, set())]
         return {"kind": kind, "strategy": "cold_start", "items": [
             _serialize(item, "编辑精选" if item.featured else "热门作品") for item in visible[:limit]
         ]}
 
-    similarities = _item_similarities(profiles) if profile else {}
     tag_weight = _weight("tag_weight", 3.0)
     cf_weight = _weight("itemcf_weight", 2.0)
+    similarities = _item_similarities(profiles) if profile and cf_weight else {}
     scored = []
     for artwork in artworks:
         if artwork.id in disliked.get(user.id, set()):
             continue
         tag_score = tag_weight * sum(affinity[tag.id] for tag in artwork.tags)
-        cf_score = cf_weight * sum(
-            strength * similarities.get(tuple(sorted((source_id, artwork.id))), 0.0)
-            for source_id, strength in profile.items() if source_id != artwork.id
-        )
+        cf_total = 0.0
+        evidence = None
+        if similarities:
+            best_contribution = 0.0
+            source_with_evidence = None
+            peer_count_with_evidence = 0
+            own_overlap = int(artwork.id in profile)
+            for source_id, strength in profile.items():
+                pair = tuple(sorted((source_id, artwork.id)))
+                pair_stats = similarities.get(pair)
+                if pair_stats is None:
+                    continue
+                similarity, shared_users = pair_stats
+                contribution = strength * similarity
+                cf_total += contribution
+                peer_count = shared_users - own_overlap
+                if peer_count > 0 and contribution > best_contribution and source_id in by_id:
+                    best_contribution = contribution
+                    source_with_evidence = source_id
+                    peer_count_with_evidence = peer_count
+            if source_with_evidence is not None:
+                evidence = {
+                    "source_artwork_id": source_with_evidence,
+                    "source_title": by_id[source_with_evidence].title,
+                    "shared_user_count": peer_count_with_evidence,
+                }
+        cf_score = cf_weight * cf_total
         score = tag_score + cf_score + 0.2 * log1p(popularity[artwork.id]) + (2.0 if artwork.featured else 0.0)
-        if cf_score > tag_score and cf_score > 0:
-            reason = "欣赏相近作品的用户也喜欢"
+        if evidence and cf_score > tag_score:
+            reason = "基于其他用户的共同互动"
         elif any(tag.id in explicit_styles for tag in artwork.tags) and tag_score > 0:
             reason = "符合你偏好的风格"
         elif tag_score > 0:
             reason = "与浏览历史风格相近"
         else:
             reason = "编辑精选" if artwork.featured else "热门作品"
-        scored.append((artwork, score, reason))
+        scored.append((artwork, score, reason, evidence))
     scored.sort(
         key=lambda row: (row[0].id not in profile, row[1], row[0].created_at, row[0].id),
         reverse=True,
     )
     return {"kind": kind, "strategy": "hybrid" if profile else "preferences", "items": [
-        _serialize(artwork, reason) for artwork, _, reason in scored[:limit]
+        _serialize(artwork, reason, evidence) for artwork, _, reason, evidence in scored[:limit]
     ]}
